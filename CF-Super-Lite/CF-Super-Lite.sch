@@ -167,12 +167,6 @@ Text GLabel 2600 7000 2    50   Input ~ 0
 A02
 Text GLabel 2600 6900 2    50   Input ~ 0
 A03
-Text GLabel 2600 6800 2    50   Input ~ 0
-A04
-Text GLabel 2600 6700 2    50   Input ~ 0
-A05
-Text GLabel 2600 6600 2    50   Input ~ 0
-A06
 Text GLabel 2600 6500 2    50   Input ~ 0
 A07
 Text GLabel 2600 6400 2    50   Input ~ 0
@@ -187,18 +181,6 @@ Text GLabel 2600 6000 2    50   Input ~ 0
 A12
 Text GLabel 2600 5900 2    50   Input ~ 0
 A13
-Text GLabel 2600 5800 2    50   Input ~ 0
-A14
-Text GLabel 2600 5700 2    50   Input ~ 0
-A15
-Text GLabel 2600 5600 2    50   Input ~ 0
-A16
-Text GLabel 2600 5500 2    50   Input ~ 0
-A17
-Text GLabel 2600 5400 2    50   Input ~ 0
-A18
-Text GLabel 2600 5300 2    50   Input ~ 0
-A19
 Text GLabel 2600 5200 2    50   Input ~ 0
 AEN
 Text GLabel 2600 5100 2    50   Input ~ 0
@@ -344,48 +326,369 @@ Wire Wire Line
 $Comp
 L 00Common:IDE_CONNECTOR J2
 U 1 1 60482C53
-P 6050 2850
-F 0 "J2" H 6050 3015 50  0000 C CNN
-F 1 "IDE_CONNECTOR" H 6050 2924 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 6050 2850 50  0001 C CNN
-F 3 "" H 6050 2850 50  0001 C CNN
-	1    6050 2850
+P 10400 4550
+F 0 "J2" H 10400 4715 50  0000 C CNN
+F 1 "IDE_CONNECTOR" H 10400 4624 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 10400 4550 50  0001 C CNN
+F 3 "" H 10400 4550 50  0001 C CNN
+	1    10400 4550
 	1    0    0    -1  
 $EndComp
 Text Notes 600  1200 0    50   ~ 0
-Target spec notes:\nGoal is to only use 3 ICs: flash rom, 245 tranceiver and GAL15V8.\nROM base addresses of D800 and C800\nROM mapped in size of 16K (maybe 32 to save a pin?)\nAdd ROM disable jumper if easy\nAdd V20 select jumper if easy (sets a flash ROM pin high/low to use a different bank)\nAdd activity LED header if l pins available - would require two\nLeave out slot 8 support unless logic pins availble. 
+Target spec notes:\nYES Goal is to only use 3 ICs: flash rom, 245 tranceiver and GAL15V8.\nYES ROM base addresses of D800 and C800\nROM mapped in size of 16K (maybe 32 to save a pin?)\nNO Add ROM disable jumper if easy\nYES Add V20 select jumper if easy (sets a flash ROM pin high/low to use a different bank)\nNO Add activity LED header if pins available - would require two\nNO Leave out slot 8 support unless logic pins availble. 
 $Comp
 L Memory_Flash:SST39SF040 U1
 U 1 1 603B5177
-P 11850 5050
-F 0 "U1" H 11850 6621 50  0000 C CNN
-F 1 "BIOS FLASH" H 11850 6530 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 11850 5350 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 11850 5350 50  0001 C CNN
-F 4 "SST39SF010, SST39SF020, SST39SF040 or similar" H 11850 6439 50  0000 C CNN "Note"
-	1    11850 5050
+P 7450 5800
+F 0 "U1" H 7450 7371 50  0000 C CNN
+F 1 "BIOS FLASH" H 7450 7280 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 7450 6100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 7450 6100 50  0001 C CNN
+F 4 "SST39SF010, SST39SF020, SST39SF040 or similar" H 7450 7189 50  0000 C CNN "Note"
+	1    7450 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L 74xx:74LS245 U2
 U 1 1 603B775F
-P 14300 8150
-F 0 "U2" H 14300 9131 50  0000 C CNN
-F 1 "74HCT245" H 14300 9040 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 14300 8150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 14300 8150 50  0001 C CNN
-	1    14300 8150
+P 5050 6650
+F 0 "U2" H 5250 7400 50  0000 C CNN
+F 1 "74HCT245" H 5250 7300 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 5050 6650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 5050 6650 50  0001 C CNN
+	1    5050 6650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Logic_Programmable:GAL16V8 U3
 U 1 1 603B89A9
-P 14650 5300
-F 0 "U3" H 14650 6181 50  0000 C CNN
-F 1 "GAL16V8" H 14650 6090 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 14650 5300 50  0001 C CNN
-F 3 "" H 14650 5300 50  0001 C CNN
-	1    14650 5300
+P 5000 4450
+F 0 "U3" H 5150 5200 50  0000 C CNN
+F 1 "GAL16V8" H 5200 5100 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 5000 4450 50  0001 C CNN
+F 3 "" H 5000 4450 50  0001 C CNN
+	1    5000 4450
 	1    0    0    -1  
 $EndComp
+NoConn ~ 10800 4750
+NoConn ~ 10800 4850
+NoConn ~ 10800 4950
+NoConn ~ 10800 5050
+NoConn ~ 10800 5150
+NoConn ~ 10800 5250
+NoConn ~ 10800 5350
+NoConn ~ 10800 5450
+Text GLabel 10000 5450 0    50   Input ~ 0
+D0_BUF
+Text GLabel 10000 5350 0    50   Input ~ 0
+D1_BUF
+Text GLabel 10000 5250 0    50   Input ~ 0
+D2_BUF
+Text GLabel 10000 5150 0    50   Input ~ 0
+D3_BUF
+Text GLabel 10000 5050 0    50   Input ~ 0
+D4_BUF
+Text GLabel 10000 4950 0    50   Input ~ 0
+D5_BUF
+Text GLabel 10000 4850 0    50   Input ~ 0
+D6_BUF
+Text GLabel 10000 4750 0    50   Input ~ 0
+D7_BUF
+Wire Wire Line
+	10800 4650 11150 4650
+Wire Wire Line
+	11150 4650 11150 5650
+$Comp
+L power:GND #PWR?
+U 1 1 603C9C07
+P 11150 6700
+F 0 "#PWR?" H 11150 6450 50  0001 C CNN
+F 1 "GND" H 11155 6527 50  0000 C CNN
+F 2 "" H 11150 6700 50  0001 C CNN
+F 3 "" H 11150 6700 50  0001 C CNN
+	1    11150 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 5650 11150 5650
+Connection ~ 11150 5650
+Wire Wire Line
+	11150 5650 11150 5750
+Wire Wire Line
+	10800 5750 11150 5750
+Connection ~ 11150 5750
+Wire Wire Line
+	11150 5750 11150 5850
+Wire Wire Line
+	10800 5850 11150 5850
+Connection ~ 11150 5850
+Wire Wire Line
+	11150 5850 11150 5950
+Wire Wire Line
+	10800 6050 11150 6050
+Connection ~ 11150 6050
+Wire Wire Line
+	11150 6050 11150 6550
+Wire Wire Line
+	10800 5950 11150 5950
+Connection ~ 11150 5950
+Wire Wire Line
+	11150 5950 11150 6050
+NoConn ~ 10800 6150
+NoConn ~ 10800 6250
+Text GLabel 10000 6350 0    50   Input ~ 0
+A0
+Text GLabel 10000 6250 0    50   Input ~ 0
+A1
+Text GLabel 10800 6350 2    50   Input ~ 0
+A2
+Text GLabel 10800 6450 2    39   Input ~ 0
+~CS1~_ATA
+Text GLabel 10000 6450 0    39   Input ~ 0
+~CS0~_ATA
+Wire Wire Line
+	10800 6550 11150 6550
+Connection ~ 11150 6550
+Wire Wire Line
+	11150 6550 11150 6700
+Text GLabel 10000 6550 0    50   Input ~ 0
+DASP_ATA
+NoConn ~ 10000 6150
+NoConn ~ 10000 6050
+$Comp
+L power:GND #PWR?
+U 1 1 603E741A
+P 9500 6700
+F 0 "#PWR?" H 9500 6450 50  0001 C CNN
+F 1 "GND" H 9505 6527 50  0000 C CNN
+F 2 "" H 9500 6700 50  0001 C CNN
+F 3 "" H 9500 6700 50  0001 C CNN
+	1    9500 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 6700 9500 5550
+Wire Wire Line
+	9500 5550 10000 5550
+Text GLabel 10000 5850 0    39   Input ~ 0
+~IOR
+Text GLabel 10000 5750 0    39   Input ~ 0
+~IOW
+Text Notes 8950 5650 0    50   ~ 0
+What to do with this? -->
+Text Notes 8950 5950 0    50   ~ 0
+What to do with this? -->
+Text GLabel 10000 4650 0    39   Input ~ 0
+~RESET
+Text GLabel 4550 6150 0    50   Input ~ 0
+D0
+Text GLabel 4550 6250 0    50   Input ~ 0
+D1
+Text GLabel 4550 6350 0    50   Input ~ 0
+D2
+Text GLabel 4550 6450 0    50   Input ~ 0
+D3
+Text GLabel 4550 6550 0    50   Input ~ 0
+D4
+Text GLabel 4550 6650 0    50   Input ~ 0
+D5
+Text GLabel 4550 6750 0    50   Input ~ 0
+D6
+Text GLabel 4550 6850 0    50   Input ~ 0
+D7
+Text GLabel 5550 6150 2    50   Input ~ 0
+D0_BUF
+Text GLabel 5550 6250 2    50   Input ~ 0
+D1_BUF
+Text GLabel 5550 6350 2    50   Input ~ 0
+D2_BUF
+Text GLabel 5550 6450 2    50   Input ~ 0
+D3_BUF
+Text GLabel 5550 6550 2    50   Input ~ 0
+D4_BUF
+Text GLabel 5550 6650 2    50   Input ~ 0
+D5_BUF
+Text GLabel 5550 6750 2    50   Input ~ 0
+D6_BUF
+Text GLabel 5550 6850 2    50   Input ~ 0
+D7_BUF
+$Comp
+L power:VCC #PWR?
+U 1 1 603F73EA
+P 5050 5850
+F 0 "#PWR?" H 5050 5700 50  0001 C CNN
+F 1 "VCC" H 5065 6023 50  0000 C CNN
+F 2 "" H 5050 5850 50  0001 C CNN
+F 3 "" H 5050 5850 50  0001 C CNN
+	1    5050 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60418B5F
+P 5050 7450
+F 0 "#PWR?" H 5050 7200 50  0001 C CNN
+F 1 "GND" H 5055 7277 50  0000 C CNN
+F 2 "" H 5050 7450 50  0001 C CNN
+F 3 "" H 5050 7450 50  0001 C CNN
+	1    5050 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60418ECC
+P 5000 5150
+F 0 "#PWR?" H 5000 4900 50  0001 C CNN
+F 1 "GND" H 5005 4977 50  0000 C CNN
+F 2 "" H 5000 5150 50  0001 C CNN
+F 3 "" H 5000 5150 50  0001 C CNN
+	1    5000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60419399
+P 5000 3750
+F 0 "#PWR?" H 5000 3600 50  0001 C CNN
+F 1 "VCC" H 5015 3923 50  0000 C CNN
+F 2 "" H 5000 3750 50  0001 C CNN
+F 3 "" H 5000 3750 50  0001 C CNN
+	1    5000 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4550 7150 0    39   Input ~ 0
+~CE~_D_BUF
+Text GLabel 4550 7050 0    39   Input ~ 0
+~IOR
+Text GLabel 6850 4600 0    50   Input ~ 0
+A00
+Text GLabel 6850 4700 0    50   Input ~ 0
+A01
+Text GLabel 6850 4800 0    50   Input ~ 0
+A02
+Text GLabel 6850 4900 0    50   Input ~ 0
+A03
+Text GLabel 6850 5000 0    50   Input ~ 0
+A04
+Text GLabel 6850 5100 0    50   Input ~ 0
+A05
+Text GLabel 6850 5200 0    50   Input ~ 0
+A06
+Text GLabel 6850 5300 0    50   Input ~ 0
+A07
+Text GLabel 6850 5400 0    50   Input ~ 0
+A08
+Text GLabel 6850 5500 0    50   Input ~ 0
+A09
+Text GLabel 6850 5600 0    50   Input ~ 0
+A10
+Text GLabel 6850 5700 0    50   Input ~ 0
+A11
+Text GLabel 6850 5800 0    50   Input ~ 0
+A12
+Text GLabel 6850 5900 0    50   Input ~ 0
+A13
+Text GLabel 6850 6000 0    50   Input ~ 0
+A14
+Text GLabel 6850 6100 0    50   Input ~ 0
+A15
+Text GLabel 6850 6200 0    50   Input ~ 0
+A16
+Wire Wire Line
+	6850 6400 6450 6400
+Wire Wire Line
+	6450 6400 6450 7200
+$Comp
+L power:GND #PWR?
+U 1 1 6042FC5C
+P 6450 7200
+F 0 "#PWR?" H 6450 6950 50  0001 C CNN
+F 1 "GND" H 6455 7027 50  0000 C CNN
+F 2 "" H 6450 7200 50  0001 C CNN
+F 3 "" H 6450 7200 50  0001 C CNN
+	1    6450 7200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6850 6600 0    39   Input ~ 0
+~MEMW
+Text GLabel 6850 6900 0    39   Input ~ 0
+~MEMR
+Text GLabel 6850 6800 0    39   Input ~ 0
+~CE~_BIOS
+Text GLabel 8050 4600 2    50   Input ~ 0
+D0_BUF
+Text GLabel 8050 4700 2    50   Input ~ 0
+D1_BUF
+Text GLabel 8050 4800 2    50   Input ~ 0
+D2_BUF
+Text GLabel 8050 4900 2    50   Input ~ 0
+D3_BUF
+Text GLabel 8050 5000 2    50   Input ~ 0
+D4_BUF
+Text GLabel 8050 5100 2    50   Input ~ 0
+D5_BUF
+Text GLabel 8050 5200 2    50   Input ~ 0
+D6_BUF
+Text GLabel 8050 5300 2    50   Input ~ 0
+D7_BUF
+Text Notes 8450 6600 0    50   ~ 0
+For LED DRIVE. Ignore if\nno GAL pins remaining \nto drive signal         -->
+Text GLabel 5500 3950 2    39   Input ~ 0
+~CS0~_ATA
+Text GLabel 5500 4050 2    39   Input ~ 0
+~CS1~_ATA
+Text GLabel 5500 4150 2    39   Input ~ 0
+~CE~_BIOS
+Text GLabel 5500 4250 2    39   Input ~ 0
+~CE~_D_BUF
+Text GLabel 2600 6600 2    50   Input ~ 0
+A06
+Text GLabel 2600 6700 2    50   Input ~ 0
+A05
+Text GLabel 2600 6800 2    50   Input ~ 0
+A04
+Text Notes 10000 6850 0    50   ~ 0
+Look into using A3.
+Text GLabel 4500 4250 0    50   Input ~ 0
+A07
+Text GLabel 4500 4350 0    50   Input ~ 0
+A08
+Text GLabel 4500 4450 0    50   Input ~ 0
+A09
+Text GLabel 4500 4150 0    50   Input ~ 0
+A06
+Text GLabel 4500 4050 0    50   Input ~ 0
+A05
+Text GLabel 4500 3950 0    50   Input ~ 0
+A04
+Text GLabel 2600 5300 2    50   Input ~ 0
+A19
+Text GLabel 2600 5400 2    50   Input ~ 0
+A18
+Text GLabel 2600 5500 2    50   Input ~ 0
+A17
+Text GLabel 2600 5600 2    50   Input ~ 0
+A16
+Text GLabel 2600 5700 2    50   Input ~ 0
+A15
+Text GLabel 2600 5800 2    50   Input ~ 0
+A14
+Text GLabel 5500 4650 2    50   Input ~ 0
+A19
+Text GLabel 5500 4550 2    50   Input ~ 0
+A18
+Text GLabel 4500 4850 0    50   Input ~ 0
+A17
+Text GLabel 4500 4750 0    50   Input ~ 0
+A16
+Text GLabel 4500 4650 0    50   Input ~ 0
+A15
+Text GLabel 4500 4550 0    50   Input ~ 0
+A14
+Text GLabel 5500 4350 2    50   Input ~ 0
+ROM_ADDR_JUMPER
+Text GLabel 5500 4450 2    50   Input ~ 0
+ATA_ADDR_JUMPER
+Text GLabel 6850 6300 0    50   Input ~ 0
+V20_JUMPER
 $EndSCHEMATC
