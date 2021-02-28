@@ -1,7 +1,7 @@
 EESchema Schematic File Version 4
 EELAYER 30 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title ""
@@ -350,6 +350,42 @@ F 1 "IDE_CONNECTOR" H 6050 2924 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 6050 2850 50  0001 C CNN
 F 3 "" H 6050 2850 50  0001 C CNN
 	1    6050 2850
+	1    0    0    -1  
+$EndComp
+Text Notes 600  1200 0    50   ~ 0
+Target spec notes:\nGoal is to only use 3 ICs: flash rom, 245 tranceiver and GAL15V8.\nROM base addresses of D800 and C800\nROM mapped in size of 16K (maybe 32 to save a pin?)\nAdd ROM disable jumper if easy\nAdd V20 select jumper if easy (sets a flash ROM pin high/low to use a different bank)\nAdd activity LED header if l pins available - would require two\nLeave out slot 8 support unless logic pins availble. 
+$Comp
+L Memory_Flash:SST39SF040 U1
+U 1 1 603B5177
+P 11850 5050
+F 0 "U1" H 11850 6621 50  0000 C CNN
+F 1 "BIOS FLASH" H 11850 6530 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 11850 5350 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 11850 5350 50  0001 C CNN
+F 4 "SST39SF010, SST39SF020, SST39SF040 or similar" H 11850 6439 50  0000 C CNN "Note"
+	1    11850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U2
+U 1 1 603B775F
+P 14300 8150
+F 0 "U2" H 14300 9131 50  0000 C CNN
+F 1 "74HCT245" H 14300 9040 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 14300 8150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 14300 8150 50  0001 C CNN
+	1    14300 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Logic_Programmable:GAL16V8 U3
+U 1 1 603B89A9
+P 14650 5300
+F 0 "U3" H 14650 6181 50  0000 C CNN
+F 1 "GAL16V8" H 14650 6090 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 14650 5300 50  0001 C CNN
+F 3 "" H 14650 5300 50  0001 C CNN
+	1    14650 5300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
