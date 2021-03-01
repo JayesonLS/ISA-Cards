@@ -621,13 +621,13 @@ Text GLabel 7600 3400 2    50   Input ~ 0
 D6_BUF
 Text GLabel 7600 3500 2    50   Input ~ 0
 D7_BUF
-Text GLabel 4650 1400 2    39   Input ~ 0
-~CS0~_ATA
-Text GLabel 4650 1500 2    39   Input ~ 0
-~CS1~_ATA
 Text GLabel 4650 1600 2    39   Input ~ 0
-~CE~_BIOS
+~CS0~_ATA
 Text GLabel 4650 1700 2    39   Input ~ 0
+~CS1~_ATA
+Text GLabel 4650 1900 2    39   Input ~ 0
+~CE~_BIOS
+Text GLabel 4650 1800 2    39   Input ~ 0
 ~CE~_D_BUF
 Text GLabel 2700 3500 2    50   Input ~ 0
 A06
@@ -673,9 +673,9 @@ Text GLabel 3650 2100 0    50   Input ~ 0
 A15
 Text GLabel 3650 2000 0    50   Input ~ 0
 A14
-Text GLabel 4650 1800 2    50   Input ~ 0
+Text GLabel 4650 1500 2    50   Input ~ 0
 ROM_ADDR_JUMPER
-Text GLabel 4650 1900 2    50   Input ~ 0
+Text GLabel 4650 1400 2    50   Input ~ 0
 ATA_ADDR_JUMPER
 Text GLabel 6400 4300 0    50   Input ~ 0
 V20_JUMPER
