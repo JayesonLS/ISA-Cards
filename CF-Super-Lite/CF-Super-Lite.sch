@@ -426,11 +426,11 @@ Wire Wire Line
 NoConn ~ 9650 2550
 NoConn ~ 9650 2650
 Text GLabel 8850 2750 0    50   Input ~ 0
-A0
+A01
 Text GLabel 8850 2650 0    50   Input ~ 0
-A1
+A02
 Text GLabel 9650 2750 2    50   Input ~ 0
-A2
+A03
 Text GLabel 9650 2850 2    39   Input ~ 0
 ~CS1~_ATA
 Text GLabel 8850 2850 0    39   Input ~ 0
@@ -441,7 +441,6 @@ Connection ~ 10000 2950
 Wire Wire Line
 	10000 2950 10000 3100
 NoConn ~ 8850 2550
-NoConn ~ 8850 2450
 $Comp
 L power:GND #PWR0107
 U 1 1 603E741A
@@ -461,8 +460,6 @@ Text GLabel 8850 2250 0    39   Input ~ 0
 ~IOR
 Text GLabel 8850 2150 0    39   Input ~ 0
 ~IOW
-Text Notes 8550 4600 1    50   ~ 0
-What to do with these?
 Text GLabel 8850 1050 0    39   Input ~ 0
 ~RESET
 Text GLabel 3850 3950 0    50   Input ~ 0
@@ -624,8 +621,6 @@ Text GLabel 2700 3600 2    50   Input ~ 0
 A05
 Text GLabel 2700 3700 2    50   Input ~ 0
 A04
-Text Notes 8850 5900 1    50   ~ 0
-Review how addressing works to make sure this is right.
 Text GLabel 3650 1700 0    50   Input ~ 0
 A07
 Text GLabel 3650 1800 0    50   Input ~ 0
@@ -972,30 +967,6 @@ F 3 "" H 7750 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 8850 2950
-Wire Notes Line
-	8500 3700 8500 2050
-Wire Notes Line
-	8500 2050 8800 2050
-Wire Notes Line
-	8800 2350 8500 2350
-Wire Notes Line
-	8800 3650 8800 3250
-Wire Notes Line
-	9850 3250 9850 2750
-Wire Notes Line
-	9850 2750 9800 2750
-Wire Notes Line
-	8550 3250 8550 2650
-Wire Notes Line
-	8550 2650 8650 2650
-Wire Notes Line
-	8650 2750 8550 2750
-Wire Notes Line
-	8700 3250 8700 2900
-Wire Notes Line
-	8550 3250 9850 3250
-Wire Notes Line
-	9750 3250 9750 2900
 $Comp
 L 00Common:IDE_CONNECTOR J1
 U 1 1 603E717C
@@ -1040,4 +1011,21 @@ F 3 "" H 9450 4000 50  0001 C CNN
 	1    9450 4000
 	1    0    0    -1  
 $EndComp
+NoConn ~ 8850 2050
+NoConn ~ 8850 2350
+$Comp
+L power:VCC #PWR0125
+U 1 1 603F3CE5
+P 8550 2250
+F 0 "#PWR0125" H 8550 2100 50  0001 C CNN
+F 1 "VCC" H 8565 2423 50  0000 C CNN
+F 2 "" H 8550 2250 50  0001 C CNN
+F 3 "" H 8550 2250 50  0001 C CNN
+	1    8550 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2450 8550 2450
+Wire Wire Line
+	8550 2450 8550 2250
 $EndSCHEMATC
