@@ -242,10 +242,10 @@ ALE
 Wire Wire Line
 	1600 3800 1100 3800
 $Comp
-L 00Common:Bus_ISA_8bit J1
+L 00Common:Bus_ISA_8bit J3
 U 1 1 6039F90B
 P 2100 2600
-F 0 "J1" H 2100 4367 50  0000 C CNN
+F 0 "J3" H 2100 4367 50  0000 C CNN
 F 1 "Bus_ISA_8bit" H 2100 4276 50  0000 C CNN
 F 2 "00Custom:BUS_XT" H 2100 2600 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2100 2600 50  0001 C CNN
@@ -323,17 +323,6 @@ Text GLabel 1050 1400 0    50   Input ~ 0
 IRQ2
 Wire Wire Line
 	1050 1400 1600 1400
-$Comp
-L 00Common:IDE_CONNECTOR J2
-U 1 1 60482C53
-P 9250 950
-F 0 "J2" H 9250 1115 50  0000 C CNN
-F 1 "ATA_CONNECTOR" H 9250 1024 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 9250 950 50  0001 C CNN
-F 3 "" H 9250 950 50  0001 C CNN
-	1    9250 950 
-	1    0    0    -1  
-$EndComp
 Text Notes 550  7700 0    50   ~ 0
 Target spec notes:\nYES Goal is to only use 3 ICs: flash rom, 245 tranceiver and GAL15V8.\nYES ROM base addresses of D800 and C800\nROM mapped in size of 16K (maybe 32 to save a pin?)\nNO Add ROM disable jumper if easy\nYES Add V20 select jumper if easy (sets a flash ROM pin high/low to use a different bank)\nNO Add activity LED header if pins available - would require two\nNO Leave out slot 8 support unless logic pins availble. 
 $Comp
@@ -1007,4 +996,48 @@ Wire Notes Line
 	8550 3250 9850 3250
 Wire Notes Line
 	9750 3250 9750 2900
+$Comp
+L 00Common:IDE_CONNECTOR J1
+U 1 1 603E717C
+P 9250 950
+F 0 "J1" H 9250 1115 50  0000 C CNN
+F 1 "IDE_CONNECTOR" H 9250 1024 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 9250 950 50  0001 C CNN
+F 3 "" H 9250 950 50  0001 C CNN
+	1    9250 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J2
+U 1 1 603E8D26
+P 9650 4000
+F 0 "J2" H 9730 3992 50  0000 L CNN
+F 1 "CF Adapter Power" H 9730 3901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9650 4000 50  0001 C CNN
+F 3 "~" H 9650 4000 50  0001 C CNN
+	1    9650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 603E9698
+P 9450 4100
+F 0 "#PWR0123" H 9450 3850 50  0001 C CNN
+F 1 "GND" H 9455 3927 50  0000 C CNN
+F 2 "" H 9450 4100 50  0001 C CNN
+F 3 "" H 9450 4100 50  0001 C CNN
+	1    9450 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0124
+U 1 1 603E9A78
+P 9450 4000
+F 0 "#PWR0124" H 9450 3850 50  0001 C CNN
+F 1 "VCC" H 9465 4173 50  0000 C CNN
+F 2 "" H 9450 4000 50  0001 C CNN
+F 3 "" H 9450 4000 50  0001 C CNN
+	1    9450 4000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
