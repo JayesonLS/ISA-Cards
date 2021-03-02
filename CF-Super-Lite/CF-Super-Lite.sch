@@ -106,8 +106,6 @@ Wire Wire Line
 Wire Wire Line
 	3000 2900 3100 2900
 Wire Wire Line
-	3000 3000 3100 3000
-Wire Wire Line
 	3000 3100 3100 3100
 Wire Wire Line
 	3100 3200 3000 3200
@@ -295,10 +293,6 @@ Text GLabel 9250 2950 0    50   Input ~ 0
 A02
 Text GLabel 10050 3050 2    50   Input ~ 0
 A03
-Text GLabel 10050 3150 2    39   Input ~ 0
-~CS1~_ATA
-Text GLabel 9250 3150 0    39   Input ~ 0
-~CS0~_ATA
 Wire Wire Line
 	10050 3250 10400 3250
 Connection ~ 10400 3250
@@ -472,9 +466,9 @@ D6_BUF
 Text GLabel 8000 3800 2    50   Input ~ 0
 D7_BUF
 Text GLabel 5050 1900 2    39   Input ~ 0
-~CS0~_ATA
-Text GLabel 5050 2000 2    39   Input ~ 0
 ~CS1~_ATA
+Text GLabel 5050 2000 2    39   Input ~ 0
+~RESET
 Text GLabel 5050 2200 2    39   Input ~ 0
 ~CE~_BIOS
 Text GLabel 5050 2100 2    39   Input ~ 0
@@ -507,8 +501,6 @@ Text GLabel 3100 2800 2    50   Input ~ 0
 A16
 Text GLabel 3100 2900 2    50   Input ~ 0
 A15
-Text GLabel 3100 3000 2    50   Input ~ 0
-A14
 Text GLabel 5050 2400 2    50   Input ~ 0
 A19
 Text GLabel 5050 2300 2    50   Input ~ 0
@@ -519,8 +511,6 @@ Text GLabel 4050 2500 0    50   Input ~ 0
 A16
 Text GLabel 4050 2400 0    50   Input ~ 0
 A15
-Text GLabel 4050 2300 0    50   Input ~ 0
-A14
 Text GLabel 5050 1800 2    50   Input ~ 0
 ROM_ADDR_JUMPER
 Text GLabel 5050 1700 2    50   Input ~ 0
@@ -919,4 +909,24 @@ NoConn ~ 2000 2000
 NoConn ~ 2000 2200
 Text Notes 750  6400 0    118  ~ 0
 TODO: Need to handle RESET signal.
+Text GLabel 4050 2300 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	10050 3150 10500 3150
+Wire Wire Line
+	10500 3150 10500 3000
+$Comp
+L power:VCC #PWR0103
+U 1 1 60476F5F
+P 10500 3000
+F 0 "#PWR0103" H 10500 2850 50  0001 C CNN
+F 1 "VCC" H 10515 3173 50  0000 C CNN
+F 2 "" H 10500 3000 50  0001 C CNN
+F 3 "" H 10500 3000 50  0001 C CNN
+	1    10500 3000
+	1    0    0    -1  
+$EndComp
+Text GLabel 9250 3150 0    39   Input ~ 0
+~CS1~_ATA
+NoConn ~ 3000 3000
 $EndSCHEMATC
