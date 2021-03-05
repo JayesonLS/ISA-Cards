@@ -907,8 +907,6 @@ NoConn ~ 3000 2400
 NoConn ~ 2000 1800
 NoConn ~ 2000 2000
 NoConn ~ 2000 2200
-Text Notes 750  6400 0    118  ~ 0
-TODO: Need to handle RESET signal.
 Text GLabel 4050 2300 0    50   Input ~ 0
 RESET
 Wire Wire Line
