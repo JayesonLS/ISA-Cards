@@ -374,8 +374,6 @@ Text GLabel 7900 3900 2    50   Input ~ 0
 D7_BUF
 Text GLabel 4950 1600 2    39   Input ~ 0
 ~CS1~_ATA
-Text GLabel 4950 2000 2    39   Input ~ 0
-~RESET
 Text GLabel 4950 1700 2    39   Input ~ 0
 ~CE~_ROM
 Text GLabel 4950 2100 2    39   Input ~ 0
@@ -638,8 +636,6 @@ NoConn ~ 2500 2000
 NoConn ~ 1500 1400
 NoConn ~ 1500 1600
 NoConn ~ 1500 1800
-Text GLabel 4950 1800 2    50   Input ~ 0
-RESET
 Wire Wire Line
 	9950 2750 10400 2750
 Wire Wire Line
@@ -726,9 +722,9 @@ Text GLabel 4150 3850 0    50   Input ~ 0
 D0
 Text GLabel 4150 4750 0    39   Input ~ 0
 ~IOR_OR_MEMR
-Text GLabel 4950 1400 2    50   Input ~ 0
-ROM_ADDR_JUMPER
 Text GLabel 4950 1300 2    50   Input ~ 0
+ROM_ADDR_JUMPER
+Text GLabel 4950 1200 2    50   Input ~ 0
 ATA_ADDR_JUMPER
 $Comp
 L 00Common:GAL22V10 U3
@@ -747,10 +743,6 @@ Wire Wire Line
 	2500 2600 2600 2600
 Text GLabel 3950 1800 0    50   Input ~ 0
 A14
-Text GLabel 4950 1200 2    39   Input ~ 0
-~IOR_OR_MEMR
-Text GLabel 4950 1500 2    39   Input ~ 0
-~IOR
 Text GLabel 4950 1900 2    39   Input ~ 0
 ~MEMR
 $Comp
@@ -1248,4 +1240,12 @@ F 3 "~" H 1700 5150 50  0001 C CNN
 	1    1700 5150
 	1    0    0    -1  
 $EndComp
+Text GLabel 4950 2000 2    39   Input ~ 0
+~IOR_OR_MEMR
+Text GLabel 4950 1800 2    50   Input ~ 0
+RESET
+Text GLabel 4950 1500 2    39   Input ~ 0
+~RESET
+Text GLabel 4950 1400 2    39   Input ~ 0
+~IOR
 $EndSCHEMATC
