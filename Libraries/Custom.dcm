@@ -6,6 +6,12 @@ K ISA
 F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
 $ENDCMP
 #
+$CMP Conn_03x03
+D Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+K connector
+F ~
+$ENDCMP
+#
 $CMP GAL22V10
 D Programmable Logic Array, DIP-24/SOIC-24/PLCC-24
 K GAL PLD 22V10

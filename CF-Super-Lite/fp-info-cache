@@ -1,4 +1,4 @@
-18995786057423047
+19166363077722582
 00Custom
 BUS_XT
 AT ISA 16 bits Bus Edge Connector
@@ -13,6 +13,13 @@ C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor
 0
 2
 2
+00Custom
+PinHeader_3x03_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+9
+9
 00Custom
 R_ThroughHole
 Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
@@ -81668,6 +81675,349 @@ test point THT pad
 0
 1
 1
+Titanium
+Binding_Post_Banana
+
+
+0
+1
+1
+Titanium
+CocoCardEdge
+
+
+0
+40
+40
+Titanium
+CocoCardEdgeNo12v
+
+
+0
+40
+38
+Titanium
+CocoKeyboardFlatFlexEdge
+
+
+0
+16
+16
+Titanium
+Crystal_DIP8_DIP14
+14-lead dip package, row spacing 7.62 mm (300 mils), longer pads
+dil dip 2.54 300
+0
+6
+6
+Titanium
+DIN41612-44-RightAngle
+
+
+0
+44
+44
+Titanium
+DIN_4_SOCKET
+
+
+0
+8
+5
+Titanium
+DIN_5_SOCKET
+
+
+0
+9
+6
+Titanium
+DIN_6_SOCKET
+
+
+0
+10
+7
+Titanium
+DIP-14_Pin_Header
+14-lead dip package, row spacing 7.62 mm (300 mils)
+dil dip 2.54 300
+0
+14
+14
+Titanium
+DIP-16_Pin_Header
+16-lead dip package, row spacing 7.62 mm (300 mils)
+dil dip 2.54 300
+0
+16
+16
+Titanium
+DIP-20_Pin_Header
+16-lead dip package, row spacing 7.62 mm (300 mils)
+dil dip 2.54 300
+0
+20
+20
+Titanium
+EBoardLayout
+
+
+0
+0
+0
+Titanium
+FromServiceManual
+
+
+0
+0
+0
+Titanium
+LED-RGB-5MM
+5mm common cathode RGB LED
+RGB LED 5mm Common Cathode
+0
+4
+4
+Titanium
+LED_WURTH_WL-SFTW
+http://www.world-semi.com/uploads/soft/150522/1-150522091P5.pdf
+LED NeoPixel
+0
+4
+4
+Titanium
+MULTICOMP_2MD_SWITCH
+
+
+0
+6
+6
+Titanium
+MouseBiteX4
+
+
+0
+0
+0
+Titanium
+MulticompSPC21352_3.5mm_Jack
+
+
+0
+5
+3
+Titanium
+Pin_Header_ISP_3x2
+Through hole pin header
+pin header
+0
+6
+6
+Titanium
+Pin_Header_Straight_1x04_Round_Hole
+Through hole pin header
+pin header
+0
+4
+4
+Titanium
+Pin_Header_Straight_1x12_Round_Hole
+Through hole pin header
+pin header
+0
+12
+12
+Titanium
+Pin_Header_Straight_2x03_Horizontal_Duplicated
+Through hole pin header
+pin header
+0
+6
+3
+Titanium
+Pin_Header_Straight_2x04_Horizontal_Duplicated
+Through hole pin header
+pin header
+0
+8
+4
+Titanium
+SIP-1_Pin_Header
+16-lead dip package, row spacing 7.62 mm (300 mils)
+dil dip 2.54 300
+0
+1
+1
+Titanium
+SIP-8_Pin_Header
+16-lead dip package, row spacing 7.62 mm (300 mils)
+dil dip 2.54 300
+0
+8
+8
+Titanium
+SOP32
+
+
+0
+32
+32
+Titanium
+SOP32-WIDE
+
+
+0
+32
+32
+Titanium
+Socket_Strip_Straight_1x04_Round_Hole
+Through hole pin header
+pin header
+0
+4
+4
+Titanium
+Socket_Strip_Straight_1x12_Round_Hole
+Through hole pin header
+pin header
+0
+12
+12
+Titanium
+Socket_Strip_Straight_2x12_Horizontal_Duplicated
+Through hole socket strip
+socket strip
+0
+24
+12
+Titanium
+SolderBridgeSmall
+
+
+0
+2
+2
+Titanium
+SolderBridgeSmallWide
+
+
+0
+4
+2
+Titanium
+Switch_Old_Plan_Photocopier
+
+
+0
+6
+3
+Titanium
+Switch_Slide_OS102011MA1QN1
+
+
+0
+5
+4
+Titanium
+TRSticksPanelText
+
+
+0
+0
+0
+Titanium
+Teensy_2.0
+24-lead dip package, row spacing 15.24 mm (600 mils)
+dil dip 2.54 600
+0
+31
+31
+Titanium
+Teensy_2.0PP
+40-lead dip package, row spacing 15.24 mm (600 mils)
+dil dip 2.54 600
+0
+52
+52
+Titanium
+Teensy_3.0
+24-lead dip package, row spacing 15.24 mm (600 mils)
+dil dip 2.54 600
+0
+37
+37
+Titanium
+Teensy_3.5_3.6
+24-lead dip package, row spacing 15.24 mm (600 mils)
+dil dip 2.54 600
+0
+62
+62
+Titanium
+TinyTestPoint
+
+
+0
+1
+1
+Titanium
+TitaniumLogoFront
+
+
+0
+0
+0
+Titanium
+TitaniumLogoRear
+
+
+0
+0
+0
+Titanium
+TrimmerPanasonicEvm2gEvm2n
+SMT trimmer, Panasonic EVM2G/2N
+
+0
+3
+3
+Titanium
+USB_Micro-B_Molex_105017-0001
+Micro USB Type B 10103594-0001LF
+USB USB_B USB_micro USB_OTG
+0
+13
+6
+Titanium
+zif-socket-28-wide
+
+Socket-ZIF40
+0
+28
+28
+Titanium
+zif-socket-32
+
+Socket-ZIF40
+0
+32
+32
+Titanium
+zif-socket-40
+
+Socket-ZIF40
+0
+40
+40
+Titanium
+zif-socket-48
+
+Socket-ZIF40
+0
+48
+48
 Transformer_SMD
 Pulse_P0926NL
 SMT Gate Drive Transformer, 1:1:1, 8.0x6.3x5.3mm (https://productfinder.pulseeng.com/products/datasheets/SPM2007_61.pdf)
