@@ -192,8 +192,6 @@ Connection ~ 1900 2300
 Wire Wire Line
 	1900 2300 1900 4400
 NoConn ~ 2000 2100
-Text Notes 550  7700 0    50   ~ 0
-Target spec notes:\nYES Goal is to only use 3 ICs: flash rom, 245 tranceiver and GAL15V8.\nYES ROM base addresses of D800 and C800\nROM mapped in size of 16K (maybe 32 to save a pin?)\nNO Add ROM disable jumper if easy\nYES Add V20 select jumper if easy (sets a flash ROM pin high/low to use a different bank)\nNO Add activity LED header if pins available - would require two\nNO Slot 8 support if logic pins availble. 
 $Comp
 L Memory_Flash:SST39SF040 U1
 U 1 1 603B5177
