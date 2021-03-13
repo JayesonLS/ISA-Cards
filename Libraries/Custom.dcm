@@ -6,4 +6,9 @@ K ISA
 F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
 $ENDCMP
 #
+$CMP GAL22V10
+D Programmable Logic Array, DIP-24/SOIC-24/PLCC-24
+K GAL PLD 22V10
+$ENDCMP
+#
 #End Doc Library

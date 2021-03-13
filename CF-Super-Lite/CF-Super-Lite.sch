@@ -206,28 +206,6 @@ F 4 "SST39SF010, SST39SF020, SST39SF040 or similar" H 7400 5689 50  0000 C CNN "
 	1    7400 4300
 	1    0    0    -1  
 $EndComp
-$Comp
-L 74xx:74LS245 U2
-U 1 1 603B775F
-P 4750 4750
-F 0 "U2" H 4950 5500 50  0000 C CNN
-F 1 "74HCT245" H 4950 5400 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4750 4750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 4750 4750 50  0001 C CNN
-	1    4750 4750
-	1    0    0    -1  
-$EndComp
-$Comp
-L Logic_Programmable:GAL16V8 U3
-U 1 1 603B89A9
-P 4550 2200
-F 0 "U3" H 4700 2950 50  0000 C CNN
-F 1 "GAL16V8" H 4750 2850 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4550 2200 50  0001 C CNN
-F 3 "" H 4550 2200 50  0001 C CNN
-	1    4550 2200
-	1    0    0    -1  
-$EndComp
 NoConn ~ 10050 1450
 NoConn ~ 10050 1550
 NoConn ~ 10050 1650
@@ -320,60 +298,6 @@ Text GLabel 9250 2450 0    39   Input ~ 0
 ~IOW
 Text GLabel 9250 1350 0    39   Input ~ 0
 ~RESET
-Text GLabel 4250 4250 0    50   Input ~ 0
-D0
-Text GLabel 4250 4350 0    50   Input ~ 0
-D1
-Text GLabel 4250 4450 0    50   Input ~ 0
-D2
-Text GLabel 4250 4550 0    50   Input ~ 0
-D3
-Text GLabel 4250 4650 0    50   Input ~ 0
-D4
-Text GLabel 4250 4750 0    50   Input ~ 0
-D5
-Text GLabel 4250 4850 0    50   Input ~ 0
-D6
-Text GLabel 4250 4950 0    50   Input ~ 0
-D7
-Text GLabel 5250 4250 2    50   Input ~ 0
-D0_BUF
-Text GLabel 5250 4350 2    50   Input ~ 0
-D1_BUF
-Text GLabel 5250 4450 2    50   Input ~ 0
-D2_BUF
-Text GLabel 5250 4550 2    50   Input ~ 0
-D3_BUF
-Text GLabel 5250 4650 2    50   Input ~ 0
-D4_BUF
-Text GLabel 5250 4750 2    50   Input ~ 0
-D5_BUF
-Text GLabel 5250 4850 2    50   Input ~ 0
-D6_BUF
-Text GLabel 5250 4950 2    50   Input ~ 0
-D7_BUF
-$Comp
-L power:VCC #PWR0108
-U 1 1 603F73EA
-P 4750 3950
-F 0 "#PWR0108" H 4750 3800 50  0001 C CNN
-F 1 "VCC" H 4765 4123 50  0000 C CNN
-F 2 "" H 4750 3950 50  0001 C CNN
-F 3 "" H 4750 3950 50  0001 C CNN
-	1    4750 3950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0109
-U 1 1 60418B5F
-P 4750 5550
-F 0 "#PWR0109" H 4750 5300 50  0001 C CNN
-F 1 "GND" H 4755 5377 50  0000 C CNN
-F 2 "" H 4750 5550 50  0001 C CNN
-F 3 "" H 4750 5550 50  0001 C CNN
-	1    4750 5550
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0110
 U 1 1 60418ECC
@@ -388,18 +312,14 @@ $EndComp
 $Comp
 L power:VCC #PWR0111
 U 1 1 60419399
-P 4550 1500
-F 0 "#PWR0111" H 4550 1350 50  0001 C CNN
-F 1 "VCC" H 4565 1673 50  0000 C CNN
-F 2 "" H 4550 1500 50  0001 C CNN
-F 3 "" H 4550 1500 50  0001 C CNN
-	1    4550 1500
+P 4550 1400
+F 0 "#PWR0111" H 4550 1250 50  0001 C CNN
+F 1 "VCC" H 4565 1573 50  0000 C CNN
+F 2 "" H 4550 1400 50  0001 C CNN
+F 3 "" H 4550 1400 50  0001 C CNN
+	1    4550 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4250 5250 0    39   Input ~ 0
-~CE~_D_BUF
-Text GLabel 4250 5150 0    39   Input ~ 0
-~IOR
 Text GLabel 6800 3100 0    50   Input ~ 0
 A00
 Text GLabel 6800 3200 0    50   Input ~ 0
@@ -465,13 +385,13 @@ Text GLabel 8000 3700 2    50   Input ~ 0
 D6_BUF
 Text GLabel 8000 3800 2    50   Input ~ 0
 D7_BUF
-Text GLabel 5050 1900 2    39   Input ~ 0
-~CS1~_ATA
 Text GLabel 5050 2000 2    39   Input ~ 0
+~CS1~_ATA
+Text GLabel 5050 2400 2    39   Input ~ 0
 ~RESET
 Text GLabel 5050 2200 2    39   Input ~ 0
 ~CE~_BIOS
-Text GLabel 5050 2100 2    39   Input ~ 0
+Text GLabel 5050 2500 2    39   Input ~ 0
 ~CE~_D_BUF
 Text GLabel 3100 3800 2    50   Input ~ 0
 A06
@@ -479,17 +399,17 @@ Text GLabel 3100 3900 2    50   Input ~ 0
 A05
 Text GLabel 3100 4000 2    50   Input ~ 0
 A04
-Text GLabel 4050 2000 0    50   Input ~ 0
-A07
-Text GLabel 4050 2100 0    50   Input ~ 0
-A08
-Text GLabel 4050 2200 0    50   Input ~ 0
-A09
 Text GLabel 4050 1900 0    50   Input ~ 0
-A06
+A07
+Text GLabel 4050 2000 0    50   Input ~ 0
+A08
+Text GLabel 4050 2100 0    50   Input ~ 0
+A09
 Text GLabel 4050 1800 0    50   Input ~ 0
-A05
+A06
 Text GLabel 4050 1700 0    50   Input ~ 0
+A05
+Text GLabel 4050 1600 0    50   Input ~ 0
 A04
 Text GLabel 3100 2500 2    50   Input ~ 0
 A19
@@ -501,20 +421,16 @@ Text GLabel 3100 2800 2    50   Input ~ 0
 A16
 Text GLabel 3100 2900 2    50   Input ~ 0
 A15
-Text GLabel 5050 2400 2    50   Input ~ 0
+Text GLabel 4050 2700 0    50   Input ~ 0
 A19
-Text GLabel 5050 2300 2    50   Input ~ 0
-A18
 Text GLabel 4050 2600 0    50   Input ~ 0
-A17
+A18
 Text GLabel 4050 2500 0    50   Input ~ 0
-A16
+A17
 Text GLabel 4050 2400 0    50   Input ~ 0
+A16
+Text GLabel 4050 2300 0    50   Input ~ 0
 A15
-Text GLabel 5050 1800 2    50   Input ~ 0
-ROM_ADDR_JUMPER
-Text GLabel 5050 1700 2    50   Input ~ 0
-ATA_ADDR_JUMPER
 Text GLabel 6800 4600 0    50   Input ~ 0
 V20_JUMPER
 Wire Wire Line
@@ -907,7 +823,7 @@ NoConn ~ 3000 2400
 NoConn ~ 2000 1800
 NoConn ~ 2000 2000
 NoConn ~ 2000 2200
-Text GLabel 4050 2300 0    50   Input ~ 0
+Text GLabel 5050 2100 2    50   Input ~ 0
 RESET
 Wire Wire Line
 	10050 3150 10500 3150
@@ -926,5 +842,100 @@ F 3 "" H 10500 3000 50  0001 C CNN
 $EndComp
 Text GLabel 9250 3150 0    39   Input ~ 0
 ~CS1~_ATA
-NoConn ~ 3000 3000
+Text GLabel 4250 5250 0    39   Input ~ 0
+~CE~_D_BUF
+$Comp
+L power:GND #PWR0109
+U 1 1 60418B5F
+P 4750 5550
+F 0 "#PWR0109" H 4750 5300 50  0001 C CNN
+F 1 "GND" H 4755 5377 50  0000 C CNN
+F 2 "" H 4750 5550 50  0001 C CNN
+F 3 "" H 4750 5550 50  0001 C CNN
+	1    4750 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0108
+U 1 1 603F73EA
+P 4750 3950
+F 0 "#PWR0108" H 4750 3800 50  0001 C CNN
+F 1 "VCC" H 4765 4123 50  0000 C CNN
+F 2 "" H 4750 3950 50  0001 C CNN
+F 3 "" H 4750 3950 50  0001 C CNN
+	1    4750 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U2
+U 1 1 603B775F
+P 4750 4750
+F 0 "U2" H 4950 5500 50  0000 C CNN
+F 1 "74HCT245" H 4950 5400 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4750 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 4750 4750 50  0001 C CNN
+	1    4750 4750
+	1    0    0    -1  
+$EndComp
+Text GLabel 5250 4950 2    50   Input ~ 0
+D7_BUF
+Text GLabel 5250 4850 2    50   Input ~ 0
+D6_BUF
+Text GLabel 5250 4750 2    50   Input ~ 0
+D5_BUF
+Text GLabel 5250 4650 2    50   Input ~ 0
+D4_BUF
+Text GLabel 5250 4550 2    50   Input ~ 0
+D3_BUF
+Text GLabel 5250 4450 2    50   Input ~ 0
+D2_BUF
+Text GLabel 5250 4350 2    50   Input ~ 0
+D1_BUF
+Text GLabel 5250 4250 2    50   Input ~ 0
+D0_BUF
+Text GLabel 4250 4950 0    50   Input ~ 0
+D7
+Text GLabel 4250 4850 0    50   Input ~ 0
+D6
+Text GLabel 4250 4750 0    50   Input ~ 0
+D5
+Text GLabel 4250 4650 0    50   Input ~ 0
+D4
+Text GLabel 4250 4550 0    50   Input ~ 0
+D3
+Text GLabel 4250 4450 0    50   Input ~ 0
+D2
+Text GLabel 4250 4350 0    50   Input ~ 0
+D1
+Text GLabel 4250 4250 0    50   Input ~ 0
+D0
+Text GLabel 4250 5150 0    39   Input ~ 0
+~IOR_OR_MEMR
+Text GLabel 5050 1800 2    50   Input ~ 0
+ROM_ADDR_JUMPER
+Text GLabel 5050 1700 2    50   Input ~ 0
+ATA_ADDR_JUMPER
+$Comp
+L 00Common:GAL22V10 U3
+U 1 1 604CA5F0
+P 4550 2100
+F 0 "U3" H 4750 2850 50  0000 C CNN
+F 1 "GAL22V10" H 4800 2750 50  0000 C CNN
+F 2 "Package_DIP:DIP-24_W7.62mm_Socket" H 4550 2100 50  0001 C CNN
+F 3 "" H 4550 2100 50  0001 C CNN
+	1    4550 2100
+	1    0    0    -1  
+$EndComp
+Text GLabel 3100 3000 2    50   Input ~ 0
+A14
+Wire Wire Line
+	3000 3000 3100 3000
+Text GLabel 4050 2200 0    50   Input ~ 0
+A14
+Text GLabel 5050 1600 2    39   Input ~ 0
+~IOR_OR_MEMR
+Text GLabel 5050 1900 2    39   Input ~ 0
+~IOR
+Text GLabel 5050 2300 2    39   Input ~ 0
+~MEMR
 $EndSCHEMATC
