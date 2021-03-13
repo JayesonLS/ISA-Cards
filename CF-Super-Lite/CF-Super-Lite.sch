@@ -389,7 +389,7 @@ Text GLabel 5050 2000 2    39   Input ~ 0
 ~CS1~_ATA
 Text GLabel 5050 2400 2    39   Input ~ 0
 ~RESET
-Text GLabel 5050 2200 2    39   Input ~ 0
+Text GLabel 5050 2100 2    39   Input ~ 0
 ~CE~_BIOS
 Text GLabel 5050 2500 2    39   Input ~ 0
 ~CE~_D_BUF
@@ -725,7 +725,7 @@ NoConn ~ 3000 2400
 NoConn ~ 2000 1800
 NoConn ~ 2000 2000
 NoConn ~ 2000 2200
-Text GLabel 5050 2100 2    50   Input ~ 0
+Text GLabel 5050 2200 2    50   Input ~ 0
 RESET
 Wire Wire Line
 	10050 3150 10500 3150

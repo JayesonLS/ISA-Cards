@@ -7,7 +7,13 @@ F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
 $ENDCMP
 #
 $CMP Conn_03x03
-D Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)
+D Generic connector, double row, 03x03
+K connector
+F ~
+$ENDCMP
+#
+$CMP Conn_03x04
+D Generic connector, double row, 03x04
 K connector
 F ~
 $ENDCMP
