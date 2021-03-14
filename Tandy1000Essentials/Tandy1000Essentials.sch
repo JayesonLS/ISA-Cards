@@ -184,13 +184,13 @@ NoConn ~ 1500 1700
 $Comp
 L Memory_Flash:SST39SF040 U1
 U 1 1 603B5177
-P 7300 4400
-F 0 "U1" H 7300 5971 50  0000 C CNN
-F 1 "BIOS FLASH" H 7300 5880 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 7300 4700 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 7300 4700 50  0001 C CNN
-F 4 "SST39SF010, SST39SF020, SST39SF040 or similar" H 7300 5789 50  0000 C CNN "Note"
-	1    7300 4400
+P 7300 4800
+F 0 "U1" H 7300 6371 50  0000 C CNN
+F 1 "BIOS FLASH" H 7300 6280 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 7300 5100 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 7300 5100 50  0001 C CNN
+F 4 "SST39SF010, SST39SF020, SST39SF040 or similar" H 7300 6189 50  0000 C CNN "Note"
+	1    7300 4800
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9950 1050
@@ -307,75 +307,75 @@ F 3 "" H 4450 1000 50  0001 C CNN
 	1    4450 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 6700 3200 0    50   Input ~ 0
-A00
-Text GLabel 6700 3300 0    50   Input ~ 0
-A01
-Text GLabel 6700 3400 0    50   Input ~ 0
-A02
-Text GLabel 6700 3500 0    50   Input ~ 0
-A03
 Text GLabel 6700 3600 0    50   Input ~ 0
-A04
+A00
 Text GLabel 6700 3700 0    50   Input ~ 0
-A05
+A01
 Text GLabel 6700 3800 0    50   Input ~ 0
-A06
+A02
 Text GLabel 6700 3900 0    50   Input ~ 0
-A07
+A03
 Text GLabel 6700 4000 0    50   Input ~ 0
-A08
+A04
 Text GLabel 6700 4100 0    50   Input ~ 0
-A09
+A05
 Text GLabel 6700 4200 0    50   Input ~ 0
-A10
+A06
 Text GLabel 6700 4300 0    50   Input ~ 0
-A11
+A07
 Text GLabel 6700 4400 0    50   Input ~ 0
-A12
+A08
 Text GLabel 6700 4500 0    50   Input ~ 0
+A09
+Text GLabel 6700 4600 0    50   Input ~ 0
+A10
+Text GLabel 6700 4700 0    50   Input ~ 0
+A11
+Text GLabel 6700 4800 0    50   Input ~ 0
+A12
+Text GLabel 6700 4900 0    50   Input ~ 0
 A13
 Wire Wire Line
-	6700 5000 6300 5000
+	6700 5400 6300 5400
 Wire Wire Line
-	6300 5000 6300 5700
+	6300 5400 6300 6100
 $Comp
 L power:GND #PWR0112
 U 1 1 6042FC5C
-P 6300 5700
-F 0 "#PWR0112" H 6300 5450 50  0001 C CNN
-F 1 "GND" H 6305 5527 50  0000 C CNN
-F 2 "" H 6300 5700 50  0001 C CNN
-F 3 "" H 6300 5700 50  0001 C CNN
-	1    6300 5700
+P 6300 6100
+F 0 "#PWR0112" H 6300 5850 50  0001 C CNN
+F 1 "GND" H 6305 5927 50  0000 C CNN
+F 2 "" H 6300 6100 50  0001 C CNN
+F 3 "" H 6300 6100 50  0001 C CNN
+	1    6300 6100
 	1    0    0    -1  
 $EndComp
-Text GLabel 6700 5200 0    39   Input ~ 0
+Text GLabel 6700 5600 0    39   Input ~ 0
 ~MEMW
-Text GLabel 6700 5500 0    39   Input ~ 0
+Text GLabel 6700 5900 0    39   Input ~ 0
 ~MEMR
-Text GLabel 6700 5400 0    39   Input ~ 0
+Text GLabel 6700 5800 0    39   Input ~ 0
 ~CE~_BIOS
-Text GLabel 7900 3200 2    50   Input ~ 0
-D0_BUF
-Text GLabel 7900 3300 2    50   Input ~ 0
-D1_BUF
-Text GLabel 7900 3400 2    50   Input ~ 0
-D2_BUF
-Text GLabel 7900 3500 2    50   Input ~ 0
-D3_BUF
 Text GLabel 7900 3600 2    50   Input ~ 0
-D4_BUF
+D0_BUF
 Text GLabel 7900 3700 2    50   Input ~ 0
-D5_BUF
+D1_BUF
 Text GLabel 7900 3800 2    50   Input ~ 0
-D6_BUF
+D2_BUF
 Text GLabel 7900 3900 2    50   Input ~ 0
+D3_BUF
+Text GLabel 7900 4000 2    50   Input ~ 0
+D4_BUF
+Text GLabel 7900 4100 2    50   Input ~ 0
+D5_BUF
+Text GLabel 7900 4200 2    50   Input ~ 0
+D6_BUF
+Text GLabel 7900 4300 2    50   Input ~ 0
 D7_BUF
 Text GLabel 4950 1600 2    39   Input ~ 0
 ~CS1~_ATA
 Text GLabel 4950 1700 2    39   Input ~ 0
-~CE~_ROM
+~CE~_BIOS_DECODE
 Text GLabel 4950 2100 2    39   Input ~ 0
 ~CE~_D_BUF
 Text GLabel 2600 3400 2    50   Input ~ 0
@@ -416,19 +416,19 @@ Text GLabel 3950 2000 0    50   Input ~ 0
 A16
 Text GLabel 3950 1900 0    50   Input ~ 0
 A15
-Text GLabel 6700 4700 0    50   Input ~ 0
+Text GLabel 6700 5100 0    50   Input ~ 0
 V20_JUMPER
 Wire Wire Line
-	6700 4800 6300 4800
+	6700 5200 6300 5200
 Wire Wire Line
-	6300 4800 6300 4900
-Connection ~ 6300 5000
+	6300 5200 6300 5300
+Connection ~ 6300 5400
 Wire Wire Line
-	6700 4900 6300 4900
-Connection ~ 6300 4900
+	6700 5300 6300 5300
+Connection ~ 6300 5300
 Wire Wire Line
-	6300 4900 6300 5000
-Text GLabel 6700 4600 0    50   Input ~ 0
+	6300 5300 6300 5400
+Text GLabel 6700 5000 0    50   Input ~ 0
 ATA_ADDR_JUMPER
 $Comp
 L Device:C C1
@@ -510,7 +510,7 @@ Text Notes 3700 3150 0    79   ~ 0
 DATA BUFFERING
 Text Notes 3700 700  0    79   ~ 0
 DECODING
-Text Notes 5950 2800 0    79   ~ 0
+Text Notes 5950 3200 0    79   ~ 0
 BIOS
 Text Notes 8500 700  0    79   ~ 0
 CF ADAPTER
@@ -535,15 +535,7 @@ Wire Notes Line
 Wire Notes Line
 	3650 550  3650 2900
 Wire Notes Line
-	8350 2650 8350 6450
-Wire Notes Line
-	8350 6450 5900 6450
-Wire Notes Line
-	5900 2550 5900 550 
-Wire Notes Line
-	8350 2550 5900 2550
-Wire Notes Line
-	8350 550  8350 2550
+	8350 2950 5900 2950
 Wire Notes Line
 	5900 550  8350 550 
 Text Notes 5950 700  0    79   ~ 0
@@ -748,12 +740,12 @@ Text GLabel 4950 1900 2    39   Input ~ 0
 $Comp
 L power:GND #PWR0104
 U 1 1 6067888C
-P 7100 2000
-F 0 "#PWR0104" H 7100 1750 50  0001 C CNN
-F 1 "GND" H 7105 1827 50  0000 C CNN
-F 2 "" H 7100 2000 50  0001 C CNN
-F 3 "" H 7100 2000 50  0001 C CNN
-	1    7100 2000
+P 7100 2600
+F 0 "#PWR0104" H 7100 2350 50  0001 C CNN
+F 1 "GND" H 7105 2427 50  0000 C CNN
+F 2 "" H 7100 2600 50  0001 C CNN
+F 3 "" H 7100 2600 50  0001 C CNN
+	1    7100 2600
 	1    0    0    -1  
 $EndComp
 Text GLabel 7000 1900 0    50   Input ~ 0
@@ -798,7 +790,6 @@ F 3 "~" H 7500 1100 50  0001 C CNN
 	1    7500 1100
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7300 2200
 $Comp
 L 00Common:Bus_ISA_8bit J4
 U 1 1 6039F90B
@@ -810,9 +801,9 @@ F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2000 2500 5
 	1    2000 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7000 2300 0    39   Input ~ 0
-~CE~_ROM
 Text GLabel 7000 2400 0    39   Input ~ 0
+~CE~_BIOS_DECODE
+Text GLabel 7000 2300 0    39   Input ~ 0
 ~CE~_BIOS
 Wire Wire Line
 	7000 2300 7300 2300
@@ -832,7 +823,7 @@ F 3 "" H 7200 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 1800 7100 2000
+	7100 1800 7100 2600
 Wire Wire Line
 	7200 1600 7200 2000
 Wire Wire Line
@@ -846,12 +837,12 @@ Wire Wire Line
 	2650 6400 2850 6400
 Wire Wire Line
 	3800 6700 4100 6700
-Text GLabel 4100 6700 2    39   Input ~ 0
-~CE~_BIOS
+Text GLabel 4100 6800 2    39   Input ~ 0
+~CE~_BIOS_THRU
 Wire Wire Line
 	3800 6800 4100 6800
-Text GLabel 4100 6800 2    39   Input ~ 0
-~CE~_ROM
+Text GLabel 4100 6700 2    39   Input ~ 0
+~CE~_BIOS_DECODE
 Wire Wire Line
 	3800 6600 4100 6600
 Text GLabel 4100 6600 2    39   Input ~ 0
@@ -988,9 +979,7 @@ F 3 "" H 3300 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	5900 6450 5900 2650
-Wire Notes Line
-	5900 2650 8350 2650
+	5900 3050 8350 3050
 Wire Notes Line
 	5800 550  5800 2900
 Wire Notes Line
@@ -1248,4 +1237,18 @@ Text GLabel 4950 1500 2    39   Input ~ 0
 ~RESET
 Text GLabel 4950 1400 2    39   Input ~ 0
 ~IOR
+Wire Notes Line
+	5900 2950 5900 550 
+Wire Notes Line
+	8350 550  8350 2950
+Wire Notes Line
+	5900 6450 5900 3050
+Wire Notes Line
+	8350 6450 5900 6450
+Wire Notes Line
+	8350 3050 8350 6450
+Text GLabel 7000 2200 0    39   Input ~ 0
+~CE~_BIOS_THRU
+Wire Wire Line
+	7000 2200 7300 2200
 $EndSCHEMATC
