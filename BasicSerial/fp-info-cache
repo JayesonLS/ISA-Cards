@@ -1,4 +1,4 @@
-19171209194903700
+19190634335928322
 00Custom
 BUS_XT
 AT ISA 16 bits Bus Edge Connector
@@ -83418,3 +83418,87 @@ varistor SIOV
 0
 2
 2
+w_conn_d-sub
+DB_9F
+D-SUB 9 pin socket, Tyco P/N 4-1634584-2
+
+0
+11
+9
+w_conn_d-sub
+DB_9M
+D-SUB 9 pin plug, Tyco P/N 4-338168-2
+
+0
+11
+9
+w_conn_d-sub
+DB_15F
+D-SUB 15 pin socket, Tyco P/N 5747845-5
+
+0
+17
+15
+w_conn_d-sub
+DB_15M
+D-SUB 15 pin plug, Tyco P/N 5747841-6
+
+0
+17
+15
+w_conn_d-sub
+DB_25F
+D-SUB 25 pin socket, Tyco P/N 4-106507-2
+
+0
+27
+25
+w_conn_d-sub
+DB_25M
+D-SUB 25 pin plug, Tyco P/N 5747842-5
+
+0
+27
+25
+w_conn_d-sub
+DB_26F
+D-SUB 26 pin receptacle, Tyco Amplimite P/N 5787082-2
+
+0
+28
+26
+w_conn_d-sub
+DB_28F
+D-SUB 28 pin receptacle, Tyco Amplimite P/N 5787082-3
+
+0
+30
+28
+w_conn_d-sub
+DB_37F
+D-SUB 37 pin socket, Assmann P/N A-DF37A/KG-T2
+
+0
+39
+37
+w_conn_d-sub
+DB_50F
+D-SUB 50 pin receptacle, Tyco Amplimite P/N 5787082-5
+
+0
+52
+50
+w_conn_d-sub
+DB_68F
+D-SUB 68 pin receptacle, Tyco Amplimite P/N 5787082-7
+
+0
+70
+68
+w_conn_d-sub
+DB_100F
+D-SUB 100 pin receptacle, Tyco Amplimite P/N 5787082-9
+
+0
+102
+100
