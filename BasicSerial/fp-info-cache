@@ -1,4 +1,4 @@
-19164747467236166
+19171209194903700
 00Custom
 BUS_XT
 AT ISA 16 bits Bus Edge Connector
@@ -13,6 +13,34 @@ C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor
 0
 2
 2
+00Custom
+Crystal_DIP8_DIP14
+14-lead dip package, row spacing 7.62 mm (300 mils), longer pads
+dil dip 2.54 300
+0
+6
+6
+00Custom
+PinHeader_3x02_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
+00Custom
+PinHeader_3x03_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+9
+9
+00Custom
+PinHeader_3x04_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+12
+12
 00Custom
 R_ThroughHole
 Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
