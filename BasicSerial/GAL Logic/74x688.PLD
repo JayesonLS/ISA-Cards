@@ -1,0 +1,75 @@
+/* 
+Implements partial 75LS688 logic
+as needed by Basic Serial board.
+
+Compile with WinCUPL. 
+*/ 
+   
+Name     74x688 ;
+PartNo   74X688 ;
+Date     22/04/2021 ;
+Revision 01 ;
+Designer Jayeson Lee-Steere ;
+Company  Titanium Studios Pty Ltd ;
+Assembly None ;
+Location  ;
+Device   G16V8MA;
+
+/*
+ * 74LS588 pinout, DIP, top view
+ *
+ *     G.[ 1     20 ].VCC
+ *    P0.[ 2     19 ].~P=Q
+ *    Q0.[ 3     18 ].Q7
+ *    P1.[ 4     17 ].P7
+ *    Q1.[ 5     16 ].Q6
+ *    P2.[ 6     15 ].P6
+ *    Q2.[ 7     14 ].Q5
+ *    P3.[ 8     13 ].P5
+ *    Q3.[ 9     12 ].Q4
+ *   GND.[ 10    11 ].P4
+ */
+
+/*
+ * 16V8 GAL pinout, DIP, top view
+ *
+ * I/CLK.[ 1     20 ].VCC
+ *     I.[ 2     19 ].I/O/Q
+ *     I.[ 3     18 ].I/O/Q
+ *     I.[ 4     17 ].I/O/Q
+ *     I.[ 5     16 ].I/O/Q
+ *     I.[ 6     15 ].I/O/Q
+ *     I.[ 7     14 ].I/O/Q
+ *     I.[ 8     13 ].I/O/Q
+ *     I.[ 9     12 ].I/O/Q
+ *   GND.[ 10    11 ].I/~OE
+ */
+
+/* *************** INPUT PINS *********************/
+PIN  1 = G;
+PIN  2 = P0;
+PIN  3 = Q0;
+PIN  4 = P1;
+PIN  5 = Q1; 
+PIN  6 = P2;
+PIN  7 = Q2;
+PIN  8 = P3;
+PIN  9 = Q3;
+PIN 11 = P4;
+PIN 12 = Q4;
+PIN 13 = P5;
+PIN 14 = Q5;
+PIN 15 = P6;
+PIN 16 = Q6;
+PIN 17 = P7;
+PIN 18 = Q7;
+PIn 19 = !P_EQ_Q;
+
+/* 
+Equation
+
+Only the Q2 and Q6 inputs can change, the rest are always 1. 
+This allows the equation to fit within the product limited terms.
+*/
+
+P_EQ_Q = !G & P0 & P1 & !(P2 $ Q2) & P3 & P4 & P5 & !(P6 $ Q6) & P7;
