@@ -1,0 +1,62 @@
+/* 
+Implements decode logic for
+Dual Serial board.
+
+Compile with WinCUPL. 
+*/ 
+   
+Name     DualSerialDecode;
+PartNo   DualSerialDecode;
+Date     22/04/2021 ;
+Revision 01 ;
+Designer Jayeson Lee-Steere ;
+Company  Titanium Studios Pty Ltd ;
+Assembly None ;
+Location  ;
+Device   G16V8A;
+
+/*
+ * 16V8 GAL pinout, DIP, top view
+ *
+ * I/CLK.[ 1     20 ].VCC
+ *     I.[ 2     19 ].I/O/Q
+ *     I.[ 3     18 ].I/O/Q
+ *     I.[ 4     17 ].I/O/Q
+ *     I.[ 5     16 ].I/O/Q
+ *     I.[ 6     15 ].I/O/Q
+ *     I.[ 7     14 ].I/O/Q
+ *     I.[ 8     13 ].I/O/Q
+ *     I.[ 9     12 ].I/O/Q
+ *   GND.[ 10    11 ].I/~OE
+ */
+
+/* *************** INPUT PINS *********************/
+PIN  1 = A3;
+PIN  2 = A4;
+PIN  3 = A5;
+PIN  4 = A6;
+PIN  5 = A7; 
+PIN  6 = A8;
+PIN  7 = A9;
+PIN  8 = COM_A_A4;
+PIN  9 = COM_A_A8;
+PIN 11 = COM_B_A4;
+PIN 12 = COM_B_A8 ;
+PIN 13 = AEN;
+PIN 14 = !UART_A_CS;
+PIN 15 = !UART_B_CS;
+
+/* 
+  Equations 
+ 
+  To select a UART, all address line inputs must be high, except for 
+  the two lines configured by jumper, which must match the jumper input.
+  AEN must be low.
+
+  If the A and B jumpers are configured identically, UART B is
+  never selected (disabled).
+*/
+
+UART_A_CS = !AEN & A3 & !(A4 $ COM_A_A4) & A5 & A6 & A7 & !(A8 $ COM_A_A8) & A9;
+A_B_SAME_PORT = !(COM_A_A4 $ COM_B_A4) & !(COM_A_A8 $ COM_B_A8);
+UART_B_CS = !A_B_SAME_PORT & !AEN & A3 & !(A4 $ COM_B_A4) & A5 & A6 & A7 & !(A8 $ COM_B_A8) & A9;
