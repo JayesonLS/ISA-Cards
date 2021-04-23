@@ -1,7 +1,7 @@
 
 CUPL(WM)        5.0a  Serial# 60008009
 Device          g16v8ma  Library DLIB-h-40-8
-Created         Fri Apr 23 12:49:46 2021
+Created         Fri Apr 23 13:13:36 2021
 Name            BasicSerialDecode 
 Partno          BasicSerialDecode 
 Revision        01 
@@ -25,4 +25,4 @@ Location
 *L02144 11111111111111111111111111111111
 *L02176 111111111111111111
 *C1E50
-*B007
+*AFFE

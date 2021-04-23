@@ -13,7 +13,7 @@ Designer Jayeson Lee-Steere ;
 Company  Titanium Studios Pty Ltd ;
 Assembly None ;
 Location  ;
-Device   G16V8MA;
+Device   G16V8A;
 
 /*
  * 74LS588 pinout, DIP, top view
@@ -66,10 +66,19 @@ PIN 18 = Q7;
 PIn 19 = !P_EQ_Q;
 
 /* 
-Equation
+Equations
 
 Only the Q2 and Q6 inputs can change, the rest are always 1. 
 This allows the equation to fit within the product limited terms.
 */
 
 P_EQ_Q = !G & P1 & !(P2 $ Q2) & P3 & P4 & P5 & !(P6 $ Q6) & P7;
+
+Q4.oe = 'b'0;
+P5.oe = 'b'0;
+Q5.oe = 'b'0;
+P6.oe = 'b'0;
+Q6.oe = 'b'0;
+P7.oe = 'b'0;
+Q7.oe = 'b'0;
+P_EQ_Q.oe = 'b'1;
