@@ -45,6 +45,7 @@ PIN 12 = COM_B_A8 ;
 PIN 13 = AEN;
 PIN 14 = !UART_A_CS;
 PIN 15 = !UART_B_CS;
+PIN 16 = A_B_SAME_PORT_OUT;
 
 /* 
   Equations 
@@ -60,3 +61,4 @@ PIN 15 = !UART_B_CS;
 UART_A_CS = !AEN & A3 & !(A4 $ COM_A_A4) & A5 & A6 & A7 & !(A8 $ COM_A_A8) & A9;
 A_B_SAME_PORT = !(COM_A_A4 $ COM_B_A4) & !(COM_A_A8 $ COM_B_A8);
 UART_B_CS = !A_B_SAME_PORT & !AEN & A3 & !(A4 $ COM_B_A4) & A5 & A6 & A7 & !(A8 $ COM_B_A8) & A9;
+A_B_SAME_PORT_OUT = A_B_SAME_PORT;
