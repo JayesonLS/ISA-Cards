@@ -5,8 +5,8 @@ as needed by Basic Serial board.
 Compile with WinCUPL. 
 */ 
    
-Name     74x688 ;
-PartNo   74X688 ;
+Name     BasicSerialDecode ;
+PartNo   BasicSerialDecode ;
 Date     22/04/2021 ;
 Revision 01 ;
 Designer Jayeson Lee-Steere ;
@@ -72,4 +72,4 @@ Only the Q2 and Q6 inputs can change, the rest are always 1.
 This allows the equation to fit within the product limited terms.
 */
 
-P_EQ_Q = !G & P0 & P1 & !(P2 $ Q2) & P3 & P4 & P5 & !(P6 $ Q6) & P7;
+P_EQ_Q = !G & P1 & !(P2 $ Q2) & P3 & P4 & P5 & !(P6 $ Q6) & P7;
