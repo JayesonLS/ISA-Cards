@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name 00Custom)(type KiCad)(uri ${KIPRJMOD}/../Libraries/Custom.pretty)(options "")(descr ""))
+  (lib (name w_conn_d-sub)(type KiCad)(uri ${KIPRJMOD}/../Libraries/smisioto/w_conn_d-sub.pretty)(options "")(descr ""))
+)
