@@ -6,6 +6,12 @@ K ISA
 F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
 $ENDCMP
 #
+$CMP Bus_ISA_8bit_For_Pass_Through
+D 8-bit ISA-PC bus connector
+K ISA
+F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
+$ENDCMP
+#
 $CMP Conn_03x02
 D Generic connector, double row, 03x03
 K connector
