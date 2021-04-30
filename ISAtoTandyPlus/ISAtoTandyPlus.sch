@@ -275,13 +275,13 @@ Wire Wire Line
 Wire Wire Line
 	5000 2350 4500 2350
 Wire Wire Line
-	5000 2450 4500 2450
+	5000 2450 4850 2450
 Wire Wire Line
-	5000 2550 4500 2550
+	5000 2550 4850 2550
 Wire Wire Line
-	5000 2650 4500 2650
+	5000 2650 4850 2650
 Wire Wire Line
-	5000 2750 4500 2750
+	5000 2750 4850 2750
 Wire Wire Line
 	5000 2850 4500 2850
 Wire Wire Line
@@ -470,7 +470,7 @@ IRQ4
 Text GLabel 4500 3450 0    50   Input ~ 0
 IRQ3
 Wire Wire Line
-	4500 3250 5000 3250
+	4500 3250 4650 3250
 Wire Wire Line
 	5000 3350 4500 3350
 Wire Wire Line
@@ -492,7 +492,7 @@ Text GLabel 4500 1850 0    50   Input ~ 0
 Text GLabel 4500 1450 0    50   Input ~ 0
 -5V
 Wire Wire Line
-	5000 1450 4500 1450
+	5000 1450 4850 1450
 Wire Wire Line
 	5000 1650 4500 1650
 Text GLabel 4500 1650 0    50   Input ~ 0
@@ -520,7 +520,7 @@ Wire Wire Line
 Text GLabel 4500 1750 0    50   Input ~ 0
 UNUSED_THRU
 Wire Wire Line
-	4500 1750 5000 1750
+	4500 1750 4650 1750
 Text GLabel 4500 1050 0    50   Input ~ 0
 GND1
 Wire Wire Line
@@ -551,4 +551,95 @@ Wire Wire Line
 	1300 1850 1800 1850
 Wire Wire Line
 	1300 1950 1800 1950
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 608BE3C3
+P 4750 1450
+F 0 "JP1" H 4600 1500 50  0000 C CNN
+F 1 "-5V" H 4750 1544 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 1450 50  0001 C CNN
+F 3 "~" H 4750 1450 50  0001 C CNN
+	1    4750 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1450 4500 1450
+Wire Wire Line
+	4650 2450 4500 2450
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 608BFBA5
+P 4750 2550
+F 0 "JP4" H 4600 2600 50  0000 C CNN
+F 1 "DRQ3" H 4750 2644 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 2550 50  0001 C CNN
+F 3 "~" H 4750 2550 50  0001 C CNN
+	1    4750 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2550 4500 2550
+$Comp
+L Device:Jumper_NO_Small JP5
+U 1 1 608BFCFE
+P 4750 2650
+F 0 "JP5" H 4600 2700 50  0000 C CNN
+F 1 "~DACK1" H 4750 2744 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 2650 50  0001 C CNN
+F 3 "~" H 4750 2650 50  0001 C CNN
+	1    4750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2650 4500 2650
+$Comp
+L Device:Jumper_NO_Small JP6
+U 1 1 608BFE8A
+P 4750 2750
+F 0 "JP6" H 4600 2800 50  0000 C CNN
+F 1 "DRQ1" H 4750 2844 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 2750 50  0001 C CNN
+F 3 "~" H 4750 2750 50  0001 C CNN
+	1    4750 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 2750 4500 2750
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 608C03A0
+P 4750 1750
+F 0 "JP2" H 4600 1800 50  0000 C CNN
+F 1 "AUDIO_IN" H 4750 1844 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 1750 50  0001 C CNN
+F 3 "~" H 4750 1750 50  0001 C CNN
+	1    4750 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 1750 5000 1750
+$Comp
+L Device:Jumper_NO_Small JP7
+U 1 1 608C0609
+P 4750 3250
+F 0 "JP7" H 4600 3300 50  0000 C CNN
+F 1 "IRQ5" H 4750 3344 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 3250 50  0001 C CNN
+F 3 "~" H 4750 3250 50  0001 C CNN
+	1    4750 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 3250 5000 3250
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 608BEEB6
+P 4750 2450
+F 0 "JP3" H 4600 2500 50  0000 C CNN
+F 1 "~DACK3" H 4750 2544 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 4750 2450 50  0001 C CNN
+F 3 "~" H 4750 2450 50  0001 C CNN
+	1    4750 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
