@@ -1,4 +1,4 @@
-19172829306346679
+19174449149238334
 00Custom
 BUS_XT
 AT ISA 16 bits Bus Edge Connector
@@ -26,6 +26,13 @@ Fuseholder, 5x20, open, horizontal, Type-III, universal, inline, lateral,
 Fuseholder 5x20 open horizontal Type-III universal inline lateral Sicherungshalter offen 
 0
 8
+2
+00Custom
+GroundHook
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
 2
 00Custom
 PinHeader_3x02_P2.54mm_Vertical

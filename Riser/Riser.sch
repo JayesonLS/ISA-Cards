@@ -559,7 +559,7 @@ U 1 1 6097E872
 P 4800 5150
 F 0 "J3" H 4880 5142 50  0000 L CNN
 F 1 "GND Hook" H 4880 5051 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 5150 50  0001 C CNN
+F 2 "00Custom:GroundHook" H 4800 5150 50  0001 C CNN
 F 3 "~" H 4800 5150 50  0001 C CNN
 	1    4800 5150
 	1    0    0    -1  
@@ -576,7 +576,7 @@ U 1 1 60990853
 P 4800 5700
 F 0 "J4" H 4880 5692 50  0000 L CNN
 F 1 "GND Hook" H 4880 5601 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 5700 50  0001 C CNN
+F 2 "00Custom:GroundHook" H 4800 5700 50  0001 C CNN
 F 3 "~" H 4800 5700 50  0001 C CNN
 	1    4800 5700
 	1    0    0    -1  
@@ -599,7 +599,7 @@ U 1 1 6099A2D3
 P 4800 6200
 F 0 "J5" H 4880 6192 50  0000 L CNN
 F 1 "GND Hook" H 4880 6101 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 6200 50  0001 C CNN
+F 2 "00Custom:GroundHook" H 4800 6200 50  0001 C CNN
 F 3 "~" H 4800 6200 50  0001 C CNN
 	1    4800 6200
 	1    0    0    -1  
@@ -803,4 +803,37 @@ Connection ~ 4450 5150
 Wire Wire Line
 	4450 5700 4350 5700
 Connection ~ 4450 5700
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 608E34EA
+P 6100 5150
+F 0 "H1" V 6054 5300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6145 5300 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 6100 5150 50  0001 C CNN
+F 3 "~" H 6100 5150 50  0001 C CNN
+	1    6100 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 608E3C9B
+P 6100 5400
+F 0 "H2" V 6054 5550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 6145 5550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 6100 5400 50  0001 C CNN
+F 3 "~" H 6100 5400 50  0001 C CNN
+	1    6100 5400
+	0    1    1    0   
+$EndComp
+Text GLabel 5800 5150 0    50   Input ~ 0
+GND1
+Wire Wire Line
+	6000 5150 5900 5150
+Wire Wire Line
+	5900 5150 5900 5400
+Wire Wire Line
+	5900 5400 6000 5400
+Wire Wire Line
+	5900 5150 5800 5150
+Connection ~ 5900 5150
 $EndSCHEMATC
