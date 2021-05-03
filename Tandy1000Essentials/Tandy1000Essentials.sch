@@ -553,36 +553,36 @@ F 3 "" H 9550 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x01 J2
 U 1 1 603E8D26
-P 10850 1200
-F 0 "J2" H 10800 1350 50  0000 L CNN
-F 1 "CF Adapter Power" V 11000 800 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10850 1200 50  0001 C CNN
-F 3 "~" H 10850 1200 50  0001 C CNN
-	1    10850 1200
+P 10750 950
+F 0 "J2" H 10700 1100 50  0000 L CNN
+F 1 "CF Adapter Power" V 10900 550 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 10750 950 50  0001 C CNN
+F 3 "~" H 10750 950 50  0001 C CNN
+	1    10750 950 
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0123
 U 1 1 603E9698
-P 10650 1300
-F 0 "#PWR0123" H 10650 1050 50  0001 C CNN
-F 1 "GND" H 10655 1127 50  0000 C CNN
-F 2 "" H 10650 1300 50  0001 C CNN
-F 3 "" H 10650 1300 50  0001 C CNN
-	1    10650 1300
+P 10500 2200
+F 0 "#PWR0123" H 10500 1950 50  0001 C CNN
+F 1 "GND" H 10505 2027 50  0000 C CNN
+F 2 "" H 10500 2200 50  0001 C CNN
+F 3 "" H 10500 2200 50  0001 C CNN
+	1    10500 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VCC #PWR0124
 U 1 1 603E9A78
-P 10650 1200
-F 0 "#PWR0124" H 10650 1050 50  0001 C CNN
-F 1 "VCC" H 10665 1373 50  0000 C CNN
-F 2 "" H 10650 1200 50  0001 C CNN
-F 3 "" H 10650 1200 50  0001 C CNN
-	1    10650 1200
+P 10550 950
+F 0 "#PWR0124" H 10550 800 50  0001 C CNN
+F 1 "VCC" H 10565 1123 50  0000 C CNN
+F 2 "" H 10550 950 50  0001 C CNN
+F 3 "" H 10550 950 50  0001 C CNN
+	1    10550 950 
 	1    0    0    -1  
 $EndComp
 NoConn ~ 9150 1950
@@ -1251,4 +1251,67 @@ Text GLabel 7000 2200 0    39   Input ~ 0
 ~CE~_BIOS_THRU
 Wire Wire Line
 	7000 2200 7300 2200
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 60909CFD
+P 10700 1500
+F 0 "H1" V 10700 1650 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10745 1650 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10700 1500 50  0001 C CNN
+F 3 "~" H 10700 1500 50  0001 C CNN
+	1    10700 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6090B119
+P 10700 1700
+F 0 "H2" V 10700 1850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10745 1850 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10700 1700 50  0001 C CNN
+F 3 "~" H 10700 1700 50  0001 C CNN
+	1    10700 1700
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6090B31B
+P 10700 1900
+F 0 "H3" V 10700 2050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10745 2050 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10700 1900 50  0001 C CNN
+F 3 "~" H 10700 1900 50  0001 C CNN
+	1    10700 1900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6090B462
+P 10700 2100
+F 0 "H4" V 10700 2250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 10745 2250 50  0001 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 10700 2100 50  0001 C CNN
+F 3 "~" H 10700 2100 50  0001 C CNN
+	1    10700 2100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10600 1500 10500 1500
+Wire Wire Line
+	10500 1500 10500 1700
+Wire Wire Line
+	10500 2100 10600 2100
+Connection ~ 10500 2100
+Wire Wire Line
+	10500 2100 10500 2200
+Wire Wire Line
+	10600 1900 10500 1900
+Connection ~ 10500 1900
+Wire Wire Line
+	10500 1900 10500 2100
+Wire Wire Line
+	10500 1700 10600 1700
+Connection ~ 10500 1700
+Wire Wire Line
+	10500 1700 10500 1900
 $EndSCHEMATC

@@ -648,25 +648,14 @@ F 3 "" H 9650 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x01 J2
 U 1 1 603E8D26
 P 9450 4050
 F 0 "J2" H 9530 4042 50  0000 L CNN
 F 1 "CF Adapter Power" H 9530 3951 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9450 4050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 9450 4050 50  0001 C CNN
 F 3 "~" H 9450 4050 50  0001 C CNN
 	1    9450 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 603E9698
-P 9250 4150
-F 0 "#PWR0123" H 9250 3900 50  0001 C CNN
-F 1 "GND" H 9255 3977 50  0000 C CNN
-F 2 "" H 9250 4150 50  0001 C CNN
-F 3 "" H 9250 4150 50  0001 C CNN
-	1    9250 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -911,4 +900,78 @@ Wire Wire Line
 Connection ~ 7200 1650
 Wire Wire Line
 	7200 1650 7200 2050
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 608FEC20
+P 9400 4600
+F 0 "H1" V 9354 4750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 4750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 4600 50  0001 C CNN
+F 3 "~" H 9400 4600 50  0001 C CNN
+	1    9400 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 608FF3EA
+P 9400 4800
+F 0 "H2" V 9354 4950 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 4950 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 4800 50  0001 C CNN
+F 3 "~" H 9400 4800 50  0001 C CNN
+	1    9400 4800
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 608FF69F
+P 9400 5000
+F 0 "H3" V 9354 5150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 5150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 5000 50  0001 C CNN
+F 3 "~" H 9400 5000 50  0001 C CNN
+	1    9400 5000
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 608FF85E
+P 9400 5200
+F 0 "H4" V 9354 5350 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 5350 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 5200 50  0001 C CNN
+F 3 "~" H 9400 5200 50  0001 C CNN
+	1    9400 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 4600 9200 4600
+Wire Wire Line
+	9200 4600 9200 4800
+Wire Wire Line
+	9300 5200 9200 5200
+Connection ~ 9200 5200
+Wire Wire Line
+	9200 5200 9200 5300
+Wire Wire Line
+	9300 5000 9200 5000
+Connection ~ 9200 5000
+Wire Wire Line
+	9200 5000 9200 5200
+Wire Wire Line
+	9300 4800 9200 4800
+Connection ~ 9200 4800
+Wire Wire Line
+	9200 4800 9200 5000
+$Comp
+L power:GND #PWR0113
+U 1 1 60909374
+P 9200 5300
+F 0 "#PWR0113" H 9200 5050 50  0001 C CNN
+F 1 "GND" H 9205 5127 50  0000 C CNN
+F 2 "" H 9200 5300 50  0001 C CNN
+F 3 "" H 9200 5300 50  0001 C CNN
+	1    9200 5300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

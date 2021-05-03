@@ -629,25 +629,14 @@ F 3 "" H 9650 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x01 J2
 U 1 1 603E8D26
 P 9450 4050
 F 0 "J2" H 9530 4042 50  0000 L CNN
 F 1 "CF Adapter Power" H 9530 3951 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9450 4050 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 9450 4050 50  0001 C CNN
 F 3 "~" H 9450 4050 50  0001 C CNN
 	1    9450 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0123
-U 1 1 603E9698
-P 9250 4150
-F 0 "#PWR0123" H 9250 3900 50  0001 C CNN
-F 1 "GND" H 9255 3977 50  0000 C CNN
-F 2 "" H 9250 4150 50  0001 C CNN
-F 3 "" H 9250 4150 50  0001 C CNN
-	1    9250 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1112,4 +1101,78 @@ Wire Notes Line
 	5900 6100 1050 6100
 Text Notes 1100 6250 0    79   ~ 0
 REAL TIME CLOCK
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6091DBFC
+P 9400 4850
+F 0 "H1" V 9354 5000 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 5000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 4850 50  0001 C CNN
+F 3 "~" H 9400 4850 50  0001 C CNN
+	1    9400 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 6091E4CA
+P 9400 5050
+F 0 "H2" V 9354 5200 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 5200 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 5050 50  0001 C CNN
+F 3 "~" H 9400 5050 50  0001 C CNN
+	1    9400 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6091E66C
+P 9400 5250
+F 0 "H3" V 9354 5400 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 5400 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 5250 50  0001 C CNN
+F 3 "~" H 9400 5250 50  0001 C CNN
+	1    9400 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6091E800
+P 9400 5450
+F 0 "H4" V 9354 5600 50  0000 L CNN
+F 1 "MountingHole_Pad" V 9445 5600 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 9400 5450 50  0001 C CNN
+F 3 "~" H 9400 5450 50  0001 C CNN
+	1    9400 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9300 4850 9200 4850
+Wire Wire Line
+	9200 4850 9200 5050
+Wire Wire Line
+	9200 5450 9300 5450
+Connection ~ 9200 5450
+Wire Wire Line
+	9200 5450 9200 5550
+Wire Wire Line
+	9300 5250 9200 5250
+Connection ~ 9200 5250
+Wire Wire Line
+	9200 5250 9200 5450
+Wire Wire Line
+	9200 5050 9300 5050
+Connection ~ 9200 5050
+Wire Wire Line
+	9200 5050 9200 5250
+$Comp
+L power:GND #PWR01
+U 1 1 6092F423
+P 9200 5550
+F 0 "#PWR01" H 9200 5300 50  0001 C CNN
+F 1 "GND" H 9205 5377 50  0000 C CNN
+F 2 "" H 9200 5550 50  0001 C CNN
+F 3 "" H 9200 5550 50  0001 C CNN
+	1    9200 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

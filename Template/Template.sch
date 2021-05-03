@@ -342,12 +342,12 @@ IRQ2
 Wire Wire Line
 	950  4500 1500 4500
 $Comp
-L Connector_Generic:Conn_01x02 J2
+L Connector_Generic:Conn_01x01 J2
 U 1 1 603ED503
 P 7250 3750
 F 0 "J2" H 7330 3742 50  0000 L CNN
 F 1 "CF Adapter Power" H 7330 3651 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7250 3750 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 7250 3750 50  0001 C CNN
 F 3 "~" H 7250 3750 50  0001 C CNN
 	1    7250 3750
 	1    0    0    -1  
@@ -364,17 +364,6 @@ F 3 "" H 7050 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0107
-U 1 1 603EF04F
-P 7050 3850
-F 0 "#PWR0107" H 7050 3600 50  0001 C CNN
-F 1 "GND" H 7055 3677 50  0000 C CNN
-F 2 "" H 7050 3850 50  0001 C CNN
-F 3 "" H 7050 3850 50  0001 C CNN
-	1    7050 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L 00Common:IDE_CONNECTOR J1
 U 1 1 603E88FA
 P 5700 2800
@@ -384,5 +373,49 @@ F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H 5700 2800 50 
 F 3 "" H 5700 2800 50  0001 C CNN
 	1    5700 2800
 	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 608FC9D0
+P 7200 4100
+F 0 "H1" V 7154 4250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7245 4250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7200 4100 50  0001 C CNN
+F 3 "~" H 7200 4100 50  0001 C CNN
+	1    7200 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 608FD692
+P 7200 4350
+F 0 "H2" V 7154 4500 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7245 4500 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7200 4350 50  0001 C CNN
+F 3 "~" H 7200 4350 50  0001 C CNN
+	1    7200 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 608FD8F9
+P 7200 4600
+F 0 "H3" V 7154 4750 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7245 4750 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7200 4600 50  0001 C CNN
+F 3 "~" H 7200 4600 50  0001 C CNN
+	1    7200 4600
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 608FDAF1
+P 7200 4850
+F 0 "H4" V 7154 5000 50  0000 L CNN
+F 1 "MountingHole_Pad" V 7245 5000 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 7200 4850 50  0001 C CNN
+F 3 "~" H 7200 4850 50  0001 C CNN
+	1    7200 4850
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
