@@ -70,14 +70,11 @@ Tandy 1000's in mind which have no COM ports from the factory.
 Decoding is handled by a 74xx688. Alternatively, a JED file is provided
 for programming the needed decode functionality into a GAL16V8/ATF16V8.
 
-Configuration
--------------
-
-Before installing, configure the port selection jumpers to a COM port
-not yet present in the system. Details are located on the board by the
-port jumpers. Configure the IRQ jumper to an approriate selection. For
-no IRQ, remove the IRQ jumper. Suggested IRQ settings are located on
-the board by the IRQ jumper.
+**Configuration:** Before installing, configure the port selection jumpers
+to a COM port not yet present in the system. Details are located on the
+board by the port jumpers. Configure the IRQ jumper to an approriate
+selection. For no IRQ, remove the IRQ jumper. Suggested IRQ settings are
+located on the board by the IRQ jumper.
 
 DualSerial <sup>1</sup>
 ==========
@@ -88,14 +85,11 @@ approximate (waiting on a bracket to arrive for reference).
 Adds *two* 9 pin serial ports to a vintage PC. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
 
-Configuration
--------------
-
-Before installing, configure the port selection jumpers to COM ports
-not yet present in the system. Details are located on the board by
-the port jumpers. Configure the IRQ jumpers to an approriate selection.
-For no IRQ, remove the IRQ jumper. Suggested IRQ settings are located
-on the board by the IRQ jumpers.
+**Configuration:** Before installing, configure the port selection jumpers
+to COM ports not yet present in the system. Details are located on the
+board by the port jumpers. Configure the IRQ jumpers to an approriate
+selection. For no IRQ, remove the IRQ jumper. Suggested IRQ settings are
+located on the board by the IRQ jumpers.
 
 Riser
 =====
