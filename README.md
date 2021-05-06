@@ -1,7 +1,7 @@
 ISA-Cards
 =========
 
-ISA Card Designs for use in Vintage PCs.
+ISA card designs for use in Vintage PCs.
 
 Template
 ========
