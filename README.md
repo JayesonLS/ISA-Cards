@@ -1,8 +1,7 @@
 ISA-Cards
 =========
 
-ISA Card Designs for use in Vintage PCs. For each card,
-there may be a more detailed README in the card's folder.
+ISA Card Designs for use in Vintage PCs.
 
 Template
 ========
@@ -26,27 +25,35 @@ in fit has been found between various commercial ISA cards.
 CF-Super-Lite
 =============
 
-Status: Untested.
+Status: Untested. BIOS image not yet created.
 
 A fully-contained compact flash card with XT-IDE BIOS. It features
 a much simplified design using only 3 ICs. It makes use of 
 a commonly availalbe, inexpensive compact flash adapter with integrated 
 mounting bracket.
 
+[1][2]
+
 CF-Clock-Combo
 ==============
 
-Status: Untested.
+Status: Untested. BIOS image not yet created.
 
 Identical to CF-Super-Lite, with the addition of an integrated
 DS1216-E compatible SmartWatch. See 
 https://github.com/JayesonLS/SmartWatchRedux for more information
 about the Dallas SmartWatch.
 
+To make this board, a GAL22V10/ATF22V10 must be pre-programmed with
+the provided JED file. A flash ROM must be pre-programmed with
+the provided BIOS image (not yet created).
+
+[1][2]
+
 Tandy1000Essentials
 ===================
 
-Status: Untested.
+Status: Untested. BIOS image not yet created.
 
 Only for original Tandy 1000/1000A/1000HD models (25-1000, 25-1000A,
 25-1001). No other memory upgrade can be installed at the same time
@@ -61,13 +68,22 @@ Do not use in any other model of Tandy 1000 or PC. The memory mapping
 is only correct for the supported Tandy 1000 models and will result
 in memory conflicts in any other system.
 
+To make this board, a GAL22V10/ATF22V10 must be pre-programmed with
+the provided JED file. A flash ROM must be pre-programmed with
+the provided BIOS image (not yet created).
+
+[1][2]
+
 BasicSerial
 ===========
 
 Status: Untested.
 
-Adds a single 9 pin serial port to a PC. Created with early Tandy 1000's
-in mind which have no COM ports from the factory.
+Adds a single 9 pin serial port to a vintage PC. Created with early
+Tandy 1000's in mind which have no COM ports from the factory.
+
+Decoding is handled by a 74xx688. Alternatively, a JED file is provided
+for programming the needed decode functionality into a GAL16V8/ATF16V8.
 
 DualSerial
 ==========
@@ -75,8 +91,10 @@ DualSerial
 Status: Untested. Vertical positions of serial connectors are only
 approximate (waiting on a bracket to arrive for reference).
 
-Adds *two* 9 pin serial ports to a PC. Created with early Tandy 1000's
-in mind which have no COM ports from the factory.
+Adds *two* 9 pin serial ports to a vintage PC. Created with early
+Tandy 1000's in mind which have no COM ports from the factory.
+
+[1]
 
 Riser
 =====
@@ -101,3 +119,13 @@ ISA slot. Intended for use on an ISA riser board for
 development/testing only. 
 
 Not intended for permanent installation.
+
+
+[1] Requires programming of one or more GAL16V8/ATF16V8 or
+    GAL22V10/ATF22V10 simple programmable logic devices. 
+    JED file provided. A TL866 or similar programmer
+    can program most of these devices.
+[2] Requires programming of the required BIOS image into
+    the flash ROM. A TL866 and most other common programmers
+    can be used for this.
+
