@@ -123,5 +123,5 @@ Not intended for permanent installation.
     
 <sup>**2**</sup> Construction requires programming of the required
     BIOS image into the flash ROM. Most common programmers, such as
-    TL866, can be used for this.
+    the TL866, can be used for this.
 
