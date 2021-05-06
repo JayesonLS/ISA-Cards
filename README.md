@@ -69,3 +69,13 @@ Status: Untested.
 Adds a single 9 pin serial port to a PC. Created with early Tandy 1000's
 in mind which have no COM ports from the factory.
 
+DualSerial
+==========
+
+Status: Untested. Vertical positions of serial connectors are only
+approximate (waiting on a bracket to arrive for reference).
+
+Adds *two* 9 pin serial ports to a PC. Created with early Tandy 1000's
+in mind which have no COM ports from the factory.
+
+
