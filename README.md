@@ -22,7 +22,7 @@ There may be some variation in fit due to various tolerances.
 The fit does not seem to be very important - a wide variation
 in fit has been found between various commercial ISA cards.
 
-CF-Super-Lite
+CF-Super-Lite <sup>1, 2</sup>
 =============
 
 Status: Untested. BIOS image not yet created.
@@ -32,9 +32,7 @@ a much simplified design using only 3 ICs. It makes use of
 a commonly availalbe, inexpensive compact flash adapter with integrated 
 mounting bracket.
 
-[1][2]
-
-CF-Clock-Combo
+CF-Clock-Combo <sup>1, 2</sup>
 ==============
 
 Status: Untested. BIOS image not yet created.
@@ -48,9 +46,7 @@ To make this board, a GAL22V10/ATF22V10 must be pre-programmed with
 the provided JED file. A flash ROM must be pre-programmed with
 the provided BIOS image (not yet created).
 
-[1][2]
-
-Tandy1000Essentials
+Tandy1000Essentials <sup>1, 2</sup>
 ===================
 
 Status: Untested. BIOS image not yet created.
@@ -72,8 +68,6 @@ To make this board, a GAL22V10/ATF22V10 must be pre-programmed with
 the provided JED file. A flash ROM must be pre-programmed with
 the provided BIOS image (not yet created).
 
-[1][2]
-
 BasicSerial
 ===========
 
@@ -85,7 +79,7 @@ Tandy 1000's in mind which have no COM ports from the factory.
 Decoding is handled by a 74xx688. Alternatively, a JED file is provided
 for programming the needed decode functionality into a GAL16V8/ATF16V8.
 
-DualSerial
+DualSerial <sup>1</sup>
 ==========
 
 Status: Untested. Vertical positions of serial connectors are only
@@ -93,8 +87,6 @@ approximate (waiting on a bracket to arrive for reference).
 
 Adds *two* 9 pin serial ports to a vintage PC. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
-
-[1]
 
 Riser
 =====
@@ -120,13 +112,13 @@ development/testing only.
 
 Not intended for permanent installation.
 
-
-[1] Requires programming of one or more GAL16V8/ATF16V8 or
+---------------
+<sup>**1**</sup> Requires programming of one or more GAL16V8/ATF16V8 or
     GAL22V10/ATF22V10 simple programmable logic devices. 
     JED file provided. A TL866 or similar programmer
     can program most of these devices.
     
-[2] Requires programming of the required BIOS image into
+<sup>**2**</sup> Requires programming of the required BIOS image into
     the flash ROM. A TL866 and most other common programmers
     can be used for this.
 
