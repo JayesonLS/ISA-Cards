@@ -116,12 +116,12 @@ development/testing only.
 Not intended for permanent installation.
 
 ---------------
-<sup>**1**</sup> Requires programming of one or more GAL16V8/ATF16V8 or
-    GAL22V10/ATF22V10 simple programmable logic devices. 
-    JED file provided. A TL866 or similar programmer
+<sup>**1**</sup> Construction requires programming of one or
+    more GAL16V8/ATF16V8 and/or GAL22V10/ATF22V10 simple programmable
+    logic devices. JED file provided. A TL866 or similar programmer
     can program most of these devices.
     
-<sup>**2**</sup> Requires programming of the required BIOS image into
-    the flash ROM. A TL866 and most other common programmers
-    can be used for this.
+<sup>**2**</sup> Construction requires programming of the required
+    BIOS image into the flash ROM. Most common programmers, such as
+    TL866, can be used for this.
 
