@@ -78,4 +78,24 @@ approximate (waiting on a bracket to arrive for reference).
 Adds *two* 9 pin serial ports to a PC. Created with early Tandy 1000's
 in mind which have no COM ports from the factory.
 
+Riser
+=====
 
+Status: Untested.
+
+Raises an 8 bit ISA card up out of a desktop case. Makes it easier
+to probe ISA cards during development/testing. Can optionally fuse
+the ISA power rails. Low-ohm resistors can be fitted to the power 
+rails to assist with current measurement. ISA pins are marked for 
+easy identification.
+
+Not intended for permanent installation. 
+
+ISAtoTandyPlus
+==============
+
+Allows connection of a Tandy 1000 EX/HX Plus board in a standard
+ISA slot. Intended for use on an ISA riser board for 
+development/testing only. 
+
+Not intended for permanent installation.
