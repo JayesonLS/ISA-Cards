@@ -94,6 +94,8 @@ Not intended for permanent installation.
 ISAtoTandyPlus
 ==============
 
+Status: Untested.
+
 Allows connection of a Tandy 1000 EX/HX Plus board in a standard
 ISA slot. Intended for use on an ISA riser board for 
 development/testing only. 
