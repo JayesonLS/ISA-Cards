@@ -20,7 +20,7 @@ same Tandy 1000. It too was a perfect fit.
 
 There may be some variation in fit due to various tolerances. 
 The fit does not seem to be very important - a wide variation
-in fit has been found between various commercial ISA cards.
+in fit has been found across various commercial ISA cards.
 
 CF-Super-Lite <sup>1, 2</sup>
 =============
