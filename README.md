@@ -42,10 +42,6 @@ DS1216-E compatible SmartWatch. See
 https://github.com/JayesonLS/SmartWatchRedux for more information
 about the Dallas SmartWatch.
 
-To make this board, a GAL22V10/ATF22V10 must be pre-programmed with
-the provided JED file. A flash ROM must be pre-programmed with
-the provided BIOS image (not yet created).
-
 Tandy1000Essentials <sup>1, 2</sup>
 ===================
 
