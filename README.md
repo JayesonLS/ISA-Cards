@@ -47,7 +47,7 @@ Tandy1000Essentials <sup>1, 2</sup>
 
 Status: Untested. BIOS image not yet created.
 
-* Only for original Tandy 1000/1000A/1000HD models (25-1000, 25-1000A,
+*Only for original Tandy 1000/1000A/1000HD models (25-1000, 25-1000A,
 25-1001). No other memory upgrade can be installed at the same time
 as this card. Do not use in any other model of Tandy 1000 or PC. The
 memory mapping is only correct for the supported Tandy 1000 models and
