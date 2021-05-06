@@ -57,16 +57,11 @@ as this card.
 
 This is identical to the CF-Clock-Combo, with the additionl of 512K
 of SRAM memory. Brings a stock Tandy 1000 to 640K, adds a SmartWatch, 
-a compact flash adapter and an XT-IDE BIOS. Covers most of the essential
-upgrades that the Tandy 1000 was missing in 1984.
+a compact flash adapter and an XT-IDE BIOS.
 
 Do not use in any other model of Tandy 1000 or PC. The memory mapping
 is only correct for the supported Tandy 1000 models and will result
 in memory conflicts in any other system.
-
-To make this board, a GAL22V10/ATF22V10 must be pre-programmed with
-the provided JED file. A flash ROM must be pre-programmed with
-the provided BIOS image (not yet created).
 
 BasicSerial
 ===========
