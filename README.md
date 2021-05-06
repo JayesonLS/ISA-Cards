@@ -6,7 +6,7 @@ ISA Card Designs for use in Vintage PCs.
 Template
 ========
 
-Status: Fits tested.
+Status: Fit tested and appears correct.
 
 A template from which to build ISA cards. The board dimensions
 around the edge connector are from an early IBM PC Technical
@@ -27,7 +27,35 @@ CF-Super-Lite
 
 Status: Untested.
 
-A fully-contained XT-IDE compact flash board. It features a much
-simplified design using only 3 ICs. It also makes use of a commonly
-availalbe, inexpensive compact flash adapter with integrated 
-mounting bracket. 
+A fully-contained compact flash board with XT-IDE BIOS. It features
+a much simplified design using only 3 ICs. It makes use of 
+a commonly availalbe, inexpensive compact flash adapter with integrated 
+mounting bracket.
+
+CF-Clock-Combo
+==============
+
+Status: Untested.
+
+Identical to CF-Super-Lite, with the addition of an integrated
+DS1216-E compatible SmartWatch. See 
+https://github.com/JayesonLS/SmartWatchRedux for more information
+about the Dallas SmartWatch.
+
+Tandy1000Essentials
+===================
+
+Status: Untested.
+
+Only for original Tandy 1000/1000A/1000HD models (25-1000, 25-1000A,
+25-1001). No other memory board can be installed with this board.
+
+Identical to the CF-Clock-Combo, with the additionl of 512K of SRAM
+memory. Brings a stock Tandy 1000 to 640K, adds a SmartWatch, 
+compact flash adapter and XT-IDE BIOS. Covers all the essential
+upgrades that the Tandy 1000 was missing in 1984.
+
+Do not use in any other model of Tandy 1000 or PC. The memory mapping
+is only correct for the supported Tandy 1000 models and will result
+in memory conflicts in any other system.
+
