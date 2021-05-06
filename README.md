@@ -125,6 +125,7 @@ Not intended for permanent installation.
     GAL22V10/ATF22V10 simple programmable logic devices. 
     JED file provided. A TL866 or similar programmer
     can program most of these devices.
+    
 [2] Requires programming of the required BIOS image into
     the flash ROM. A TL866 and most other common programmers
     can be used for this.
