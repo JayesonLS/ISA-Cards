@@ -990,8 +990,8 @@ Wire Notes Line
 	5800 7300 5800 5700
 Wire Notes Line
 	5800 5700 550  5700
-Text Notes 600  5850 0    79   ~ 0
-REAL TIME CLOCK
+Text Notes 600  6000 0    79   ~ 0
+REAL TIME CLOCK\n(OPTIONAL)
 $Comp
 L Memory_RAM:AS6C4008-55PCN U5
 U 1 1 605402C7
@@ -1063,8 +1063,8 @@ Text GLabel 10200 5200 2    39   Input ~ 0
 ~MEMR~_DELAYED
 Text GLabel 10200 5300 2    39   Input ~ 0
 ~MEMW
-Text Notes 8500 3600 0    79   ~ 0
-SRAM
+Text Notes 8500 3750 0    79   ~ 0
+TANDY 1000 SRAM\n(OPTIONAL)
 Wire Notes Line
 	8450 3450 11150 3450
 Wire Notes Line
