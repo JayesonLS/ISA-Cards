@@ -56,13 +56,16 @@ PIN 20  = !RESET_OUT             ; /* Inverted reset */
 /* Equations */
 DECODE_320 = A09 & A08 & !A07 & !A06 & A05 & !A04;
 DECODE_1F0 = !A09 & A08 & A07 & A06 & A05 & A04;
-CS1_ATA_TEMP = (DECODE_320 & !ATA_ADDR_JMPR) # (DECODE_1F0 & ATA_ADDR_JMPR);
+/* CS1_ATA_TEMP = (DECODE_320 & !ATA_ADDR_JMPR) # (DECODE_1F0 & ATA_ADDR_JMPR);*/
+CS1_ATA_TEMP = A09 & A08 & !A07 & !A06 & !A05 & !A04; /* 300 */
 
 DECODE_C800 = A19 & A18 & !A17 & !A16 & A15;
 DECODE_D800 = A19 & A18 & !A17 & A16 & A15;
-CE_BIOS_DECODE_TEMP = (DECODE_C800 & !ROM_ADDR_JMPR) # (DECODE_D800 & ROM_ADDR_JMPR);
+/* CE_BIOS_DECODE_TEMP = (DECODE_C800 & !ROM_ADDR_JMPR) # (DECODE_D800 & ROM_ADDR_JMPR); */
+CE_BIOS_DECODE_TEMP = A19 & A18 & !A17 & A16 & !A15; /* D000 */
 
-RAM_DECODE = !A19; /* Lower 512K */
+/* RAM_DECODE = !A19; *//* Lower 512K */
+RAM_DECODE = 'b'0; 
 BUF_DIR_TEMP = (IOR & CS1_ATA_TEMP) # (MEMR & (CE_BIOS_DECODE_TEMP # RAM_DECODE));
 
 /* Outputs */
@@ -70,5 +73,8 @@ RESET_OUT = RESET_IN; /* Only for inverting reset signal. */
 CS1_ATA = CS1_ATA_TEMP;
 CE_BIOS_DECODE = CE_BIOS_DECODE_TEMP;
 BUF_DIR = BUF_DIR_TEMP;
-IOR_DELAYED = BUF_DIR & IOR; /* Intentionally uses BUF_DIR to slightly delay signal */
-MEMR_DELAYED = BUF_DIR & MEMR; /* Intentionally uses BUF_DIR to slightly delay signal */
+/* Intentionally uses BUF_DIR rather than BUF_DIR_TEMP to slightly delay the 
+   IOR and MEMR signals. This is to ensure the buffer direction does not change
+   **after** the devices on the board are trying to output values. */
+IOR_DELAYED = BUF_DIR & IOR;
+MEMR_DELAYED = BUF_DIR & MEMR;
