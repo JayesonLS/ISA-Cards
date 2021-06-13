@@ -42,8 +42,8 @@ PIN 11  = A18                    ; /* ISA address line */
 PIN 13  = A19                    ; /* ISA address line */
 PIN 17  = !MEMR                  ; /* ISA memory read */
 PIN 21  = !IOR                   ; /* ISA IO Read */
-PIN 22  = ROM_ADDR_JMPR          ; /* BIOS ROM Address Jumper */
-PIN 23  = ATA_ADDR_JMPR          ; /* ATA Address Jumper */
+PIN 22  = ATA_ADDR_JMPR          ; /* ATA Address Jumper */
+PIN 23  = ROM_ADDR_JMPR          ; /* BIOS ROM Address Jumper */
 
 /* *************** OUTPUT PINS *********************/
 PIN 14  = !IOR_DELAYED           ; /* IOR, delayed to come slightly after setting BUF_DIR for reads. */
@@ -54,15 +54,13 @@ PIN 19  = !CS1_ATA               ; /* Chip select 1 for ATA. */
 PIN 20  = !RESET_OUT             ; /* Inverted reset */
 
 /* Equations */
-DECODE_320 = A09 & A08 & !A07 & !A06 & A05 & !A04;
-DECODE_1F0 = !A09 & A08 & A07 & A06 & A05 & A04;
-/* CS1_ATA_TEMP = (DECODE_320 & !ATA_ADDR_JMPR) # (DECODE_1F0 & ATA_ADDR_JMPR);*/
-CS1_ATA_TEMP = A09 & A08 & !A07 & !A06 & !A05 & !A04; /* 300 */
+DECODE_300 = A09 & A08 & !A07 & !A06 & !A05 & !A04;
+DECODE_320 = A09 & A08 & !A07 & !A06 &  A05 & !A04;
+CS1_ATA_TEMP = (DECODE_300 & !ATA_ADDR_JMPR) # (DECODE_320 & ATA_ADDR_JMPR);
 
-DECODE_C800 = A19 & A18 & !A17 & !A16 & A15;
-DECODE_D800 = A19 & A18 & !A17 & A16 & A15;
-/* CE_BIOS_DECODE_TEMP = (DECODE_C800 & !ROM_ADDR_JMPR) # (DECODE_D800 & ROM_ADDR_JMPR); */
-CE_BIOS_DECODE_TEMP = A19 & A18 & !A17 & A16 & !A15; /* D000 */
+DECODE_D000 = A19 & A18 & !A17 &  A16 & !A15;
+DECODE_C800 = A19 & A18 & !A17 & !A16 &  A15;
+CE_BIOS_DECODE_TEMP = (DECODE_D000 & !ROM_ADDR_JMPR) # (DECODE_C800 & ROM_ADDR_JMPR);
 
 /* RAM_DECODE = !A19; *//* Lower 512K */
 RAM_DECODE = 'b'0; 
