@@ -1,4 +1,4 @@
-19167978697722839
+19174449149238334
 00Custom
 BUS_XT
 AT ISA 16 bits Bus Edge Connector
@@ -13,6 +13,34 @@ C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor
 0
 2
 2
+00Custom
+Crystal_DIP8_DIP14
+14-lead dip package, row spacing 7.62 mm (300 mils), longer pads
+dil dip 2.54 300
+0
+6
+6
+00Custom
+Fuseholder5x20_horiz_open_universal_Type-III
+Fuseholder, 5x20, open, horizontal, Type-III, universal, inline, lateral,
+Fuseholder 5x20 open horizontal Type-III universal inline lateral Sicherungshalter offen 
+0
+8
+2
+00Custom
+GroundHook
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+00Custom
+PinHeader_3x02_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
 00Custom
 PinHeader_3x03_P2.54mm_Vertical
 Through hole straight pin header, 2x03, 2.54mm pitch, double rows

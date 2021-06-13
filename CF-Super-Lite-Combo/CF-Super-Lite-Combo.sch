@@ -416,8 +416,6 @@ Text GLabel 3950 2000 0    50   Input ~ 0
 A16
 Text GLabel 3950 1900 0    50   Input ~ 0
 A15
-Text GLabel 6700 5100 0    50   Input ~ 0
-V20_JUMPER
 Wire Wire Line
 	6700 5200 6100 5200
 Wire Wire Line
@@ -428,7 +426,7 @@ Wire Wire Line
 Connection ~ 6100 5300
 Wire Wire Line
 	6100 5300 6100 5400
-Text GLabel 6700 5000 0    50   Input ~ 0
+Text GLabel 6700 5100 0    50   Input ~ 0
 ATA_ADDR_JUMPER
 $Comp
 L Device:C C1
@@ -553,12 +551,12 @@ F 3 "" H 9550 850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J2
+L Connector_Generic:Conn_01x02 J2
 U 1 1 603E8D26
 P 10750 950
 F 0 "J2" H 10700 1100 50  0000 L CNN
 F 1 "CF Adapter Power" V 10900 550 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x01_P2.54mm_Vertical" H 10750 950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 10750 950 50  0001 C CNN
 F 3 "~" H 10750 950 50  0001 C CNN
 	1    10750 950 
 	1    0    0    -1  
@@ -712,9 +710,9 @@ Text GLabel 4150 3850 0    50   Input ~ 0
 D0
 Text GLabel 4150 4750 0    39   Input ~ 0
 ~IOR_OR_MEMR
-Text GLabel 4950 1300 2    50   Input ~ 0
-ROM_ADDR_JUMPER
 Text GLabel 4950 1200 2    50   Input ~ 0
+ROM_ADDR_JUMPER
+Text GLabel 4950 1300 2    50   Input ~ 0
 ATA_ADDR_JUMPER
 $Comp
 L 00Common:GAL22V10 U3
@@ -736,97 +734,16 @@ RESET
 Text GLabel 4950 1800 2    39   Input ~ 0
 ~MEMR
 $Comp
-L power:GND #PWR0104
-U 1 1 6067888C
-P 7100 2600
-F 0 "#PWR0104" H 7100 2350 50  0001 C CNN
-F 1 "GND" H 7105 2427 50  0000 C CNN
-F 2 "" H 7100 2600 50  0001 C CNN
-F 3 "" H 7100 2600 50  0001 C CNN
-	1    7100 2600
-	1    0    0    -1  
-$EndComp
-Text GLabel 7000 1900 0    50   Input ~ 0
-ROM_ADDR_JUMPER
-Text GLabel 7000 1500 0    50   Input ~ 0
-ATA_ADDR_JUMPER
-Text GLabel 7000 1100 0    50   Input ~ 0
-V20_JUMPER
-Wire Wire Line
-	7000 1100 7300 1100
-Wire Wire Line
-	7300 1500 7000 1500
-Wire Wire Line
-	7000 1900 7300 1900
-Wire Wire Line
-	7100 1000 7100 1400
-Wire Wire Line
-	7300 1000 7100 1000
-Wire Wire Line
-	7300 1400 7100 1400
-Connection ~ 7100 1400
-Wire Wire Line
-	7100 1400 7100 1800
-Wire Wire Line
-	7300 1800 7100 1800
-Connection ~ 7100 1800
-Wire Wire Line
-	7300 1600 7200 1600
-Wire Wire Line
-	7300 1200 7200 1200
-Connection ~ 7200 1200
-Wire Wire Line
-	7200 1200 7200 1600
-$Comp
-L 00Common:Conn_03x04 J3
-U 1 1 604DDF80
-P 7500 1100
-F 0 "J3" H 7680 542 50  0000 L CNN
-F 1 "Jumpers" H 7680 451 50  0000 L CNN
-F 2 "00Custom:PinHeader_3x04_P2.54mm_Vertical" H 7500 1100 50  0001 C CNN
-F 3 "~" H 7500 1100 50  0001 C CNN
-	1    7500 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 00Common:Bus_ISA_8bit J4
+L 00Common:Bus_ISA_8bit J3
 U 1 1 6039F90B
 P 2000 2500
-F 0 "J4" H 2000 4267 50  0000 C CNN
+F 0 "J3" H 2000 4267 50  0000 C CNN
 F 1 "Bus_ISA_8bit" H 2000 4176 50  0000 C CNN
 F 2 "00Custom:BUS_XT" H 2000 2500 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2000 2500 50  0001 C CNN
 	1    2000 2500
 	1    0    0    -1  
 $EndComp
-Text GLabel 7000 2400 0    39   Input ~ 0
-~CE~_BIOS_DECODE
-Text GLabel 7000 2300 0    39   Input ~ 0
-~CE~_BIOS
-Wire Wire Line
-	7000 2300 7300 2300
-Wire Wire Line
-	7300 2400 7000 2400
-Wire Wire Line
-	7200 900  7200 1200
-$Comp
-L power:VCC #PWR0114
-U 1 1 60683761
-P 7200 900
-F 0 "#PWR0114" H 7200 750 50  0001 C CNN
-F 1 "VCC" H 7215 1073 50  0000 C CNN
-F 2 "" H 7200 900 50  0001 C CNN
-F 3 "" H 7200 900 50  0001 C CNN
-	1    7200 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 1800 7100 2600
-Wire Wire Line
-	7200 1600 7200 2000
-Wire Wire Line
-	7200 2000 7300 2000
-Connection ~ 7200 1600
 Text Label 2500 6300 0    50   ~ 0
 XTAL2
 Text Label 2500 6200 0    50   ~ 0
@@ -1243,10 +1160,6 @@ Wire Notes Line
 	8350 6450 5900 6450
 Wire Notes Line
 	8350 3050 8350 6450
-Text GLabel 7000 2200 0    39   Input ~ 0
-~CE~_BIOS_THRU
-Wire Wire Line
-	7000 2200 7300 2200
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 60909CFD
@@ -1327,4 +1240,140 @@ Wire Wire Line
 	4150 4850 4050 4850
 Wire Wire Line
 	4050 4850 4050 5150
+Text GLabel 6700 5000 0    50   Input ~ 0
+A14
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J4
+U 1 1 60CA67F2
+P 7050 1300
+F 0 "J4" H 7100 1617 50  0000 C CNN
+F 1 "Addresses" H 7100 1526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7050 1300 50  0001 C CNN
+F 3 "~" H 7050 1300 50  0001 C CNN
+	1    7050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0104
+U 1 1 60CA784E
+P 6750 1100
+F 0 "#PWR0104" H 6750 950 50  0001 C CNN
+F 1 "VCC" H 6765 1273 50  0000 C CNN
+F 2 "" H 6750 1100 50  0001 C CNN
+F 3 "" H 6750 1100 50  0001 C CNN
+	1    6750 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 60CA7D3F
+P 7450 1100
+F 0 "#PWR0114" H 7450 950 50  0001 C CNN
+F 1 "VCC" H 7465 1273 50  0000 C CNN
+F 2 "" H 7450 1100 50  0001 C CNN
+F 3 "" H 7450 1100 50  0001 C CNN
+	1    7450 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0135
+U 1 1 60CA7F88
+P 6750 1500
+F 0 "#PWR0135" H 6750 1250 50  0001 C CNN
+F 1 "GND" H 6755 1327 50  0000 C CNN
+F 2 "" H 6750 1500 50  0001 C CNN
+F 3 "" H 6750 1500 50  0001 C CNN
+	1    6750 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0136
+U 1 1 60CA8362
+P 7450 1500
+F 0 "#PWR0136" H 7450 1250 50  0001 C CNN
+F 1 "GND" H 7455 1327 50  0000 C CNN
+F 2 "" H 7450 1500 50  0001 C CNN
+F 3 "" H 7450 1500 50  0001 C CNN
+	1    7450 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 1100 6750 1200
+Wire Wire Line
+	6750 1200 6850 1200
+Wire Wire Line
+	6850 1400 6750 1400
+Wire Wire Line
+	6750 1400 6750 1500
+Wire Wire Line
+	7350 1400 7450 1400
+Wire Wire Line
+	7450 1400 7450 1500
+Wire Wire Line
+	7350 1200 7450 1200
+Wire Wire Line
+	7450 1200 7450 1100
+Text GLabel 7350 1300 2    50   Input ~ 0
+ATA_ADDR_JUMPER
+Text GLabel 6850 1300 0    50   Input ~ 0
+ROM_ADDR_JUMPER
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J5
+U 1 1 60CBC28F
+P 7050 2300
+F 0 "J5" H 7100 2617 50  0000 C CNN
+F 1 "Addresses" H 7100 2526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7050 2300 50  0001 C CNN
+F 3 "~" H 7050 2300 50  0001 C CNN
+	1    7050 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0137
+U 1 1 60CBC833
+P 6750 2100
+F 0 "#PWR0137" H 6750 1950 50  0001 C CNN
+F 1 "VCC" H 6765 2273 50  0000 C CNN
+F 2 "" H 6750 2100 50  0001 C CNN
+F 3 "" H 6750 2100 50  0001 C CNN
+	1    6750 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0138
+U 1 1 60CBC847
+P 6750 2500
+F 0 "#PWR0138" H 6750 2250 50  0001 C CNN
+F 1 "GND" H 6755 2327 50  0000 C CNN
+F 2 "" H 6750 2500 50  0001 C CNN
+F 3 "" H 6750 2500 50  0001 C CNN
+	1    6750 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 2100 6750 2200
+Wire Wire Line
+	6750 2200 6850 2200
+Wire Wire Line
+	6850 2400 6750 2400
+Wire Wire Line
+	6750 2400 6750 2500
+Text GLabel 7350 2200 2    39   Input ~ 0
+~CE~_BIOS_DECODE
+Text GLabel 7350 2300 2    39   Input ~ 0
+~CE~_BIOS
+Text GLabel 7350 2400 2    39   Input ~ 0
+~CE~_BIOS_THRU
+NoConn ~ 6850 2300
+$Comp
+L power:GND #PWR?
+U 1 1 60ED8F42
+P 10550 1050
+F 0 "#PWR?" H 10550 800 50  0001 C CNN
+F 1 "GND" H 10555 877 50  0000 C CNN
+F 2 "" H 10550 1050 50  0001 C CNN
+F 3 "" H 10550 1050 50  0001 C CNN
+	1    10550 1050
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
