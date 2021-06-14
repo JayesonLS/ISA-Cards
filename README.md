@@ -82,7 +82,7 @@ located on the board by the IRQ jumpers.
 Riser
 =====
 
-Status: Untested.
+Status: Tested and works well. 
 
 Raises an 8 bit ISA card up out of a desktop case. Makes it easier
 to probe ISA cards during development/testing. Can optionally fuse
@@ -91,6 +91,10 @@ rails to assist with current measurement. ISA pins are marked for
 easy identification.
 
 Not intended for permanent installation. 
+
+The bracket is from a Compact Flash to IDE adapter intended for
+installation into PCI slots. It must be raised off the board using
+standoffs totalling 14.6mm high.
 
 ISAtoTandyPlus
 ==============
