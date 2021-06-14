@@ -50,7 +50,7 @@ The board optionally supports the following features:
 BasicSerial
 ===========
 
-Status: Untested.
+Status: Built and fully tested. No issues found.
 
 Adds a single 9 pin serial port to a vintage PC. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
