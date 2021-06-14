@@ -22,42 +22,30 @@ There may be some variation in fit due to various tolerances.
 The fit does not seem to be very important - a wide variation
 in fit has been found across various commercial ISA cards.
 
-CF-Super-Lite <sup>1, 2</sup>
-=============
-
-Status: Untested. BIOS image not yet created.
-
-A fully-contained compact flash card with XT-IDE BIOS. It features
-a much simplified design using only 3 ICs. It makes use of 
-a commonly availalbe, inexpensive compact flash adapter with integrated 
-mounting bracket.
-
-CF-Clock-Combo <sup>1, 2</sup>
-==============
-
-Status: Untested. BIOS image not yet created.
-
-Identical to CF-Super-Lite, with the addition of an integrated
-DS1216-E compatible SmartWatch. See 
-https://github.com/JayesonLS/SmartWatchRedux for more information
-about the Dallas SmartWatch.
-
-Tandy1000Essentials <sup>1, 2</sup>
+CF-Combo-Super-Lite <sup>1, 2</sup>
 ===================
 
-Status: Untested. BIOS image not yet created.
+Status: The previous revision with numerous bodges has been
+tested to work. Revised boards are not yet tested. 
+BIOS image not yet created.
 
-*Only for original Tandy 1000/1000A/1000HD models (25-1000, 25-1000A,
-25-1001). No other memory upgrade can be installed at the same time
-as this card. Do not use in any other model of Tandy 1000 or PC. The
-memory mapping is only correct for the supported Tandy 1000 models and
-will result in memory conflicts in any other system.*
+An 8 bit ISA card with fully-contained compact flash card and
+XT-IDE BIOS. This simplified design uses only 3 ICs. It makes use
+of a commonly availalbe, inexpensive compact flash adapter with
+integrated mounting bracket.
 
-This is identical to the CF-Clock-Combo, with the additionl of 512K
-of SRAM memory. Brings a stock Tandy 1000 to 640K, adds a SmartWatch, 
-a compact flash adapter and an XT-IDE BIOS. See 
-https://github.com/JayesonLS/SmartWatchRedux for more information
-about the Dallas SmartWatch
+The board optionally supports the following features:
+
+* An integrated DS1216-E compatible SmartWatch. See 
+  https://github.com/JayesonLS/SmartWatchRedux for more information
+   about the Dallas SmartWatch.
+* 512K of SRAM for the Tandy 1000, 1000A or 1000 HD models only
+  (25-1000, 25-1000A, 25-1001). This will bring a stock Tandy
+  1000 to 640K. Remove any other memory upgradebefore installing.
+
+  *Do not use in any other model of Tandy 1000 or PC. The memory
+  mapping is only correct for the supported Tandy 1000 models and
+  will result in memory conflicts in any other system.*
 
 BasicSerial
 ===========
