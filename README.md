@@ -6,9 +6,9 @@ ISA card designs for use in Vintage PCs.
 Template
 ========
 
-Status: Fit tested and appears correct.
+**Status:** Fit tested and appears correct.
 
-A template from which to build ISA cards. The board dimensions
+**Description:** A template from which to build ISA cards. The board dimensions
 around the edge connector are from an early IBM PC Technical
 Reference Manual (5150 or 5160). The rear bracket positioning
 has been measured from an original IBM floppy controller taken
@@ -25,11 +25,11 @@ in fit has been found across various commercial ISA cards.
 CF-Combo-Super-Lite <sup>1, 2</sup>
 ===================
 
-Status: The previous revision with numerous bodges has been
+**Status:** The previous revision with numerous bodges has been
 tested to work. Revised boards are not yet tested. 
 BIOS image not yet created.
 
-An 8 bit ISA card with fully-contained compact flash card and
+**Description:** An 8 bit ISA card with fully-contained compact flash card and
 XT-IDE BIOS. This simplified design uses only 3 ICs. It makes use
 of a commonly availalbe, inexpensive compact flash adapter with
 integrated mounting bracket.
@@ -50,9 +50,9 @@ The board optionally supports the following features:
 BasicSerial
 ===========
 
-Status: Built and fully tested. No issues found.
+**Status:** Built and fully tested. No issues found.
 
-Adds a single 9 pin serial port to a vintage PC. Created with early
+**Description:** Adds a single 9 pin serial port to a vintage PC. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
 
 Decoding is handled by a 74xx688. Alternatively, a JED file is provided
@@ -67,10 +67,10 @@ located on the board by the IRQ jumper.
 DualSerial <sup>1</sup>
 ==========
 
-Status: Untested. Vertical positions of serial connectors are only
+**Status:** Untested. Vertical positions of serial connectors are only
 approximate (waiting on a bracket to arrive for reference).
 
-Adds *two* 9 pin serial ports to a vintage PC. Created with early
+**Description:** Adds *two* 9 pin serial ports to a vintage PC. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
 
 **Configuration:** Before installing, configure the port selection jumpers
@@ -82,9 +82,9 @@ located on the board by the IRQ jumpers.
 Riser
 =====
 
-Status: Tested and works well. 
+**Status:** Tested and works well. 
 
-Raises an 8 bit ISA card up out of a desktop case. Makes it easier
+**Description:** Raises an 8 bit ISA card up out of a desktop case. Makes it easier
 to probe ISA cards during development/testing. Can optionally fuse
 the ISA power rails. Low-ohm resistors can be fitted to the power 
 rails to assist with current measurement. ISA pins are marked for 
@@ -99,9 +99,9 @@ standoffs totalling 14.6mm high.
 ISAtoTandyPlus
 ==============
 
-Status: Untested.
+**Status:** Untested.
 
-Allows connection of a Tandy 1000 EX/HX Plus board in a standard
+**Description:** Allows connection of a Tandy 1000 EX/HX Plus board in a standard
 ISA slot. Intended for use on an ISA riser board for 
 development/testing. 
 
