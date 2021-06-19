@@ -350,7 +350,7 @@ Text GLabel 14450 1800 2    50   Input ~ 0
 D6_BUF
 Text GLabel 14450 1900 2    50   Input ~ 0
 D7_BUF
-Text GLabel 8200 3600 2    39   Input ~ 0
+Text GLabel 8200 3700 2    39   Input ~ 0
 ~IOR~_DELAYED
 Text GLabel 2650 3450 2    50   Input ~ 0
 A06
@@ -1005,7 +1005,7 @@ F 3 "~" H 9350 7700 50  0001 C CNN
 	1    9350 7700
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 3700 2    39   Input ~ 0
+Text GLabel 8200 3800 2    39   Input ~ 0
 ~BUFF_READ
 Text GLabel 7200 3500 0    39   Input ~ 0
 ~IOR
@@ -1078,7 +1078,7 @@ Wire Wire Line
 Connection ~ 11250 5100
 Wire Wire Line
 	11250 5100 11250 5300
-Text GLabel 8200 3500 2    39   Input ~ 0
+Text GLabel 8200 3600 2    39   Input ~ 0
 ~MEMR~_DELAYED
 $Comp
 L power:GND #PWR0134
@@ -1895,19 +1895,17 @@ Wire Wire Line
 	4650 4450 4550 4450
 Wire Wire Line
 	4550 4450 4550 4550
-Text GLabel 4650 4350 0    50   Input ~ 0
-COM_ENABLE
-Text GLabel 7200 3300 0    50   Input ~ 0
-COM_ENABLE
-Text GLabel 8200 4000 2    39   Input ~ 0
-~IOR
+Text GLabel 4650 4350 0    39   Input ~ 0
+~UART_ENABLE
+Text GLabel 7200 3300 0    39   Input ~ 0
+~UART_ENABLE
 Text GLabel 8200 1650 2    39   Input ~ 0
 ~RESET
 Text GLabel 8200 1750 2    50   Input ~ 0
 RESET
 Text GLabel 8200 3300 2    39   Input ~ 0
 ~CS1~_ATA
-Text GLabel 8200 3400 2    39   Input ~ 0
+Text GLabel 8200 3500 2    39   Input ~ 0
 ~UART_CS
 Text GLabel 8200 1350 2    39   Input ~ 0
 ~CE~_RAM_DECODE
@@ -1988,7 +1986,7 @@ Text GLabel 5150 2350 2    50   Input ~ 0
 BASE_RAM_SIZE
 Text GLabel 5150 1400 2    50   Input ~ 0
 ATA_ADDR_JUMPER
-Text GLabel 8200 3800 2    50   Input ~ 0
+Text GLabel 8200 3900 2    50   Input ~ 0
 MEMR_DECODE
 Text GLabel 8200 1250 2    39   Input ~ 0
 ~CE~_BIOS_DECODE
@@ -2079,10 +2077,10 @@ Text GLabel 5150 4450 2    39   Input ~ 0
 ~CE~_BIOS_THRU
 Text Notes 5350 4650 0    50   ~ 0
 RTC Enable
-Text GLabel 7200 1250 0    50   Input ~ 0
-BASE_RAM_ENABLE
-Text GLabel 4650 2350 0    50   Input ~ 0
-BASE_RAM_ENABLE
+Text GLabel 7200 1250 0    39   Input ~ 0
+~BASE_RAM_ENABLE
+Text GLabel 4650 2350 0    39   Input ~ 0
+~BASE_RAM_ENABLE
 Text GLabel 7200 1350 0    50   Input ~ 0
 BASE_RAM_SIZE
 Text GLabel 7200 1450 0    50   Input ~ 0
@@ -2123,27 +2121,12 @@ Text GLabel 1050 3350 0    50   Input ~ 0
 IRQ4
 Wire Wire Line
 	1550 3350 1050 3350
-Text GLabel 8200 3900 2    50   Input ~ 0
+Text GLabel 8200 4000 2    50   Input ~ 0
 AEN
 Text GLabel 13150 6500 0    50   Input ~ 0
 A18_MAPPED
 Text GLabel 13150 6400 0    50   Input ~ 0
 A17_MAPPED
-$Comp
-L power:VCC #PWR0177
-U 1 1 60D680E6
-P 11250 6050
-F 0 "#PWR0177" H 11250 5900 50  0001 C CNN
-F 1 "VCC" H 11265 6223 50  0000 C CNN
-F 2 "" H 11250 6050 50  0001 C CNN
-F 3 "" H 11250 6050 50  0001 C CNN
-	1    11250 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 6150 11250 6150
-Wire Wire Line
-	11250 6150 11250 6050
 Text GLabel 4650 1400 0    50   Input ~ 0
 ROM_ADDR_JUMPER
 Text GLabel 8200 1950 2    50   Input ~ 0
@@ -2237,4 +2220,8 @@ Wire Notes Line
 	12250 3850 12250 600 
 Wire Notes Line
 	12250 3950 12250 7050
+Text GLabel 8200 3400 2    39   Input ~ 0
+~CS3~_ATA
+Text GLabel 10700 6150 2    39   Input ~ 0
+~CS3~_ATA
 $EndSCHEMATC
