@@ -1,6 +1,5 @@
 /* Implements glue logic. */
-
-Name     Tandy1000Essentials ;
+Name     CfAndBiosCombo;
 PartNo   T1KTURBO ;
 Date     06/06/2021 ;
 Revision 01 ;
@@ -62,7 +61,6 @@ DECODE_D000 = A19 & A18 & !A17 &  A16 & !A15;
 DECODE_C800 = A19 & A18 & !A17 & !A16 &  A15;
 CE_BIOS_DECODE_TEMP = (DECODE_D000 & !ROM_ADDR_JMPR) # (DECODE_C800 & ROM_ADDR_JMPR);
 
-/* RAM_DECODE = !A19; *//* Lower 512K */
 RAM_DECODE = 'b'0; 
 BUF_DIR_TEMP = (IOR & CS1_ATA_TEMP) # (MEMR & (CE_BIOS_DECODE_TEMP # RAM_DECODE));
 
