@@ -1899,9 +1899,9 @@ Text GLabel 4650 4350 0    39   Input ~ 0
 ~UART_ENABLE
 Text GLabel 7200 3300 0    39   Input ~ 0
 ~UART_ENABLE
-Text GLabel 8200 1650 2    39   Input ~ 0
+Text GLabel 8200 1850 2    39   Input ~ 0
 ~RESET
-Text GLabel 8200 1750 2    50   Input ~ 0
+Text GLabel 8200 1950 2    50   Input ~ 0
 RESET
 Text GLabel 8200 3300 2    39   Input ~ 0
 ~CS1~_ATA
@@ -1990,7 +1990,7 @@ Text GLabel 8200 3900 2    50   Input ~ 0
 MEMR_DECODE
 Text GLabel 8200 1250 2    39   Input ~ 0
 ~CE~_BIOS_DECODE
-Text GLabel 8200 1850 2    50   Input ~ 0
+Text GLabel 8200 1650 2    50   Input ~ 0
 MEMR_DECODE
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J6
@@ -2063,10 +2063,6 @@ Wire Wire Line
 	5150 3250 5250 3250
 Wire Wire Line
 	5250 3250 5250 3150
-Text GLabel 5150 3350 2    50   Input ~ 0
-UMB_SIZE_1
-Text GLabel 4650 3350 0    50   Input ~ 0
-UMB_SIZE_0
 Text GLabel 8200 1450 2    50   Input ~ 0
 A18_MAPPED
 Text GLabel 5150 4350 2    39   Input ~ 0
@@ -2083,10 +2079,10 @@ Text GLabel 4650 2350 0    39   Input ~ 0
 ~BASE_RAM_ENABLE
 Text GLabel 7200 1350 0    50   Input ~ 0
 BASE_RAM_SIZE
-Text GLabel 7200 1450 0    50   Input ~ 0
-UMB_SIZE_0
+Text GLabel 7200 1450 0    39   Input ~ 0
+~UMB_ENABLE
 Text GLabel 7200 1550 0    50   Input ~ 0
-UMB_SIZE_1
+UMB_SIZE
 $Comp
 L power:+12V #PWR0175
 U 1 1 60CE9453
@@ -2127,10 +2123,6 @@ Text GLabel 13150 6500 0    50   Input ~ 0
 A18_MAPPED
 Text GLabel 13150 6400 0    50   Input ~ 0
 A17_MAPPED
-Text GLabel 4650 1400 0    50   Input ~ 0
-ROM_ADDR_JUMPER
-Text GLabel 8200 1950 2    50   Input ~ 0
-ROM_ADDR_JUMPER
 $Comp
 L Device:CP C10
 U 1 1 60D20354
@@ -2154,10 +2146,10 @@ F 3 "~" H 13950 7700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0121
 U 1 1 60E3DBDE
 P 13400 7550
-F 0 "#PWR?" H 13400 7400 50  0001 C CNN
+F 0 "#PWR0121" H 13400 7400 50  0001 C CNN
 F 1 "VCC" H 13415 7723 50  0000 C CNN
 F 2 "" H 13400 7550 50  0001 C CNN
 F 3 "" H 13400 7550 50  0001 C CNN
@@ -2165,10 +2157,10 @@ F 3 "" H 13400 7550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0122
 U 1 1 60E3E530
 P 13400 7850
-F 0 "#PWR?" H 13400 7600 50  0001 C CNN
+F 0 "#PWR0122" H 13400 7600 50  0001 C CNN
 F 1 "GND" H 13405 7677 50  0000 C CNN
 F 2 "" H 13400 7850 50  0001 C CNN
 F 3 "" H 13400 7850 50  0001 C CNN
@@ -2224,4 +2216,16 @@ Text GLabel 8200 3400 2    39   Input ~ 0
 ~CS3~_ATA
 Text GLabel 10700 6150 2    39   Input ~ 0
 ~CS3~_ATA
+Text Label 8550 1800 0    50   ~ 0
+UMB_DECODE
+Wire Wire Line
+	8200 1750 8550 1750
+NoConn ~ 8550 1800
+Wire Wire Line
+	8550 1750 8550 1800
+NoConn ~ 4650 1400
+Text GLabel 4650 3350 0    39   Input ~ 0
+~UMB_ENABLE
+Text GLabel 5150 3350 2    50   Input ~ 0
+UMB_SIZE
 $EndSCHEMATC

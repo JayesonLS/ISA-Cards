@@ -1,0 +1,70 @@
+/* Implements glue logic. */
+Name     MemLogic;
+PartNo   EXHXMEM ;
+Date     19/06/2021 ;
+Revision 01 ;
+Designer Jayeson Lee-Steere ;
+Company  Titanium Studios Pty Ltd ;
+Assembly None ;
+Location  ;
+Device   G16V8AS;
+
+/* *************** INPUT PINS *********************/
+PIN  1  = !BASE_RAM_ENABLE       ; /* Base RAM enable jumper */
+PIN  2  = BASE_RAM_SIZE          ; /* Base RAM size jumper */
+PIN  3  = !UMB_ENABLE             ; /* UMB enable jumper */
+PIN  4  = UMB_SIZE               ; /* UMB size jumper */
+PIN  5  = !MEMR                  ; /* ISA memory read */
+PIN  6  = A15                    ; /* ISA address line */
+PIN  7  = A16                    ; /* ISA address line */
+PIN  8  = A17                    ; /* ISA address line */
+PIN  9  = A18                    ; /* ISA address line */
+PIN 11  = A19                    ; /* ISA address line */
+PIN 12  = RESET_IN             ; /* ISA reset in */
+
+/* *************** OUTPUT PINS *********************/
+PIN 13  = !RESET_OUT             ; /* Inverted reset */
+PIN 14  = !UMB_DECODE             ; /* When the UMB area is decoded. For debugging. */
+PIN 15  = !MEMR_DECODE          ; /* When a memory read occurs from an IC on the board */
+PIN 16  = A17_MAPPED           ; /* SRAM A17, remapped as needed by the memory decoding */
+PIN 17  = A18_MAPPED           ; /* SRAM A18, remapped as needed by the memory decoding */
+PIN 18  = !CE_RAM_DECODE         ; /* Chip select SRAM. */
+PIN 19  = !CE_BIOS_DECODE        ; /* Chip select BIOS Flash ROM. */
+
+/* Equations */
+DECODE_C000 = A19 & A18 & !A17 & !A16 & !A15;
+DECODE_C800 = A19 & A18 & !A17 & !A16 & A15;
+DECODE_D000 = A19 & A18 & !A17 &  A16 & !A15;
+DECODE_D800 = A19 & A18 & !A17 &  A16 & A15;
+DECODE_E000 = A19 & A18 & A17 & !A16 & !A15;
+DECODE_E800 = A19 & A18 & A17 & !A16 & A15;
+
+CE_BIOS_DECODE_TEMP = DECODE_C000;
+
+BASE_RAM_DECODE_1ST_128 = !A19 & !A18 & !A17 & !BASE_RAM_SIZE;
+BASE_RAM_DECODE_2ND_128 = !A19 & !A18 & A17;
+BASE_RAM_DECODE_3RD_128 = !A19 & A18 & !A17;
+BASE_RAM_DECODE = (BASE_RAM_DECODE_1ST_128 # BASE_RAM_DECODE_2ND_128 # BASE_RAM_DECODE_3RD_128) & BASE_RAM_ENABLE;
+
+UMB_DECODE_C800 = DECODE_C800;
+UMB_DECODE_D000 = DECODE_D000;
+UMB_DECODE_D800 = DECODE_D800;
+UMB_DECODE_E000 = DECODE_E000 & UMB_SIZE;
+UMB_DECODE_E800 = DECODE_E800 & UMB_SIZE & BASE_RAM_SIZE;
+UMB_DECODE_TEMP = (UMB_DECODE_C800 # UMB_DECODE_D000 # UMB_DECODE_D800 # UMB_DECODE_E000 # UMB_DECODE_E800) & UMB_ENABLE;
+
+CE_RAM_DECODE_TEMP = BASE_RAM_DECODE # UMB_DECODE_TEMP;
+
+MEMR_DECODE_TEMP = (CE_BIOS_DECODE_TEMP # CE_RAM_DECODE_TEMP) & MEMR;
+
+A17_MAPPED_TEMP = (DECODE_C800 # DECODE_D000 # DECODE_D800) $ A17;
+A18_MAPPED_TEMP = DECODE_E800 $ A18;
+
+/* Outputs */
+RESET_OUT = RESET_IN; /* Only for inverting reset signal. */
+UMB_DECODE = UMB_DECODE_TEMP;
+MEMR_DECODE  = MEMR_DECODE_TEMP;
+A17_MAPPED = A17_MAPPED_TEMP;
+A18_MAPPED = A18_MAPPED_TEMP;
+CE_RAM_DECODE = CE_RAM_DECODE_TEMP;
+CE_BIOS_DECODE = CE_BIOS_DECODE_TEMP;
