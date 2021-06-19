@@ -12,6 +12,12 @@ K ISA
 F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
 $ENDCMP
 #
+$CMP Bus_Tandy_Plus
+D 8-bit ISA-PC bus connector
+K ISA
+F https://en.wikipedia.org/wiki/Industry_Standard_Architecture
+$ENDCMP
+#
 $CMP Conn_03x02
 D Generic connector, double row, 03x03
 K connector
@@ -28,6 +34,11 @@ $CMP Conn_03x04
 D Generic connector, double row, 03x04
 K connector
 F ~
+$ENDCMP
+#
+$CMP GAL16V8
+D Programmable Logic Array, DIP-20/SOIC-20/PLCC-20
+K GAL PLD 16V8
 $ENDCMP
 #
 $CMP GAL22V10
