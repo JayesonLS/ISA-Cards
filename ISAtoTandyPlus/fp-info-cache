@@ -1,4 +1,4 @@
-19172829306346679
+19179321644702914
 00Custom
 BUS_XT
 AT ISA 16 bits Bus Edge Connector
@@ -28,6 +28,13 @@ Fuseholder 5x20 open horizontal Type-III universal inline lateral Sicherungshalt
 8
 2
 00Custom
+GroundHook
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+00Custom
 PinHeader_3x02_P2.54mm_Vertical
 Through hole straight pin header, 2x03, 2.54mm pitch, double rows
 Through hole pin header THT 2x03 2.54mm double row
@@ -55,6 +62,27 @@ Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W leng
 0
 2
 2
+00Custom
+TandyPlusLongPins
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
+00Custom
+TandyPlusShortPins
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
+00Custom
+TandyPlusSocket
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)

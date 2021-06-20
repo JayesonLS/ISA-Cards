@@ -329,7 +329,7 @@ U 1 1 6039F90B
 P 2000 2550
 F 0 "J1" H 2000 4317 50  0000 C CNN
 F 1 "Input BUS" H 2000 4226 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x31_P2.54mm_Vertical" H 2000 2550 50  0001 C CNN
+F 2 "00Custom:TandyPlusSocket" H 2000 2550 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2000 2550 50  0001 C CNN
 	1    2000 2550
 	1    0    0    -1  
@@ -660,7 +660,7 @@ U 1 1 60D04D1C
 P 4700 2550
 F 0 "J2" H 4700 4317 50  0000 C CNN
 F 1 "Passthrough Bus Short" H 4700 4226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x31_P2.54mm_Vertical" H 4700 2550 50  0001 C CNN
+F 2 "00Custom:TandyPlusShortPins" H 4700 2550 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 4700 2550 50  0001 C CNN
 	1    4700 2550
 	1    0    0    -1  
@@ -991,7 +991,7 @@ U 1 1 60D113A9
 P 7400 2550
 F 0 "J3" H 7400 4317 50  0000 C CNN
 F 1 "Passthrough Bus Tall" H 7400 4226 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x31_P2.54mm_Vertical" H 7400 2550 50  0001 C CNN
+F 2 "00Custom:TandyPlusLongPins" H 7400 2550 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 7400 2550 50  0001 C CNN
 	1    7400 2550
 	1    0    0    -1  

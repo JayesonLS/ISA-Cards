@@ -1,4 +1,4 @@
-19174449149238334
+19179321644729199
 00Custom
 BUS_XT
 AT ISA 16 bits Bus Edge Connector
@@ -62,6 +62,27 @@ Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W leng
 0
 2
 2
+00Custom
+TandyPlusLongPins
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
+00Custom
+TandyPlusShortPins
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
+00Custom
+TandyPlusSocket
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
