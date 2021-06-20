@@ -20,12 +20,12 @@ PIN  7  = A16                    ; /* ISA address line */
 PIN  8  = A17                    ; /* ISA address line */
 PIN  9  = A18                    ; /* ISA address line */
 PIN 11  = A19                    ; /* ISA address line */
-PIN 12  = RESET_IN             ; /* ISA reset in */
+PIN 12  = IOR_DECODE             ; /* The IoLogic has decoded a read from board IO */
 
 /* *************** OUTPUT PINS *********************/
-PIN 13  = !RESET_OUT             ; /* Inverted reset */
-PIN 14  = !UMB_DECODE             ; /* When the UMB area is decoded. For debugging. */
-PIN 15  = !MEMR_DECODE          ; /* When a memory read occurs from an IC on the board */
+PIN 13  = !BUF_READ              ; /* Whether reading from board. Selects direction of bus transceiver. */
+PIN 14  = !IOR_DELAYED           ; /* IOR, delayed to come slightly after setting BUF_DIR for reads. */
+PIN 15  = !MEMR_DELAYED          ; /* MEMR, delayed to come slightly after setting BUF_DIR for reads. */
 PIN 16  = A17_MAPPED           ; /* SRAM A17, remapped as needed by the memory decoding */
 PIN 17  = A18_MAPPED           ; /* SRAM A18, remapped as needed by the memory decoding */
 PIN 18  = !CE_RAM_DECODE         ; /* Chip select SRAM. */
@@ -60,11 +60,17 @@ MEMR_DECODE_TEMP = (CE_BIOS_DECODE_TEMP # CE_RAM_DECODE_TEMP) & MEMR;
 A17_MAPPED_TEMP = (DECODE_C800 # DECODE_D000 # DECODE_D800) $ A17;
 A18_MAPPED_TEMP = DECODE_E800 $ A18;
 
+BUF_READ_TEMP = MEMR_DECODE_TEMP # IOR_DECODE;
+
 /* Outputs */
-RESET_OUT = RESET_IN; /* Only for inverting reset signal. */
-UMB_DECODE = UMB_DECODE_TEMP;
-MEMR_DECODE  = MEMR_DECODE_TEMP;
 A17_MAPPED = A17_MAPPED_TEMP;
 A18_MAPPED = A18_MAPPED_TEMP;
 CE_RAM_DECODE = CE_RAM_DECODE_TEMP;
 CE_BIOS_DECODE = CE_BIOS_DECODE_TEMP;
+
+BUF_READ = BUF_READ_TEMP;
+/* Intentionally uses BUF_READ rather than BUF_READ_TEMP to slightly delay the 
+   IOR and MEMR signals. This is to ensure the buffer direction does not change
+   **after** the devices on the board are trying to output values. */
+IOR_DELAYED = BUF_READ & IOR_DECODE;
+MEMR_DELAYED = BUF_READ & MEMR_DECODE_TEMP;

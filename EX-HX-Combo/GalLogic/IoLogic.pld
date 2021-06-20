@@ -10,8 +10,8 @@ Location  ;
 Device   G16V8AS;
 
 /* *************** INPUT PINS *********************/
-PIN  1  = !UART_ENABLE           ; /* UART (COM port) enable jumper*/
-PIN  2  = ATA_ADDR_JMPR          ; /* ATA address Jumper */
+PIN  1  = UART_PORT_0            ; /* UART (COM port) select jumper 0 */
+PIN  2  = UART_PORT_1            ; /* UART (COM port) select jumper 1 */
 PIN  3  = !IOR                   ; /* ISA IO Read */
 PIN  4  = A03                    ; /* ISA address line */
 PIN  5  = A04                    ; /* ISA address line */
@@ -20,13 +20,13 @@ PIN  7  = A06                    ; /* ISA address line */
 PIN  8  = A07                    ; /* ISA address line */
 PIN  9  = A08                    ; /* ISA address line */
 PIN 11  = A09                    ; /* ISA address line */
-PIN 12  = AEN                    ; /* ISA AEN signal*/
-PIN 13  = MEMR_DECODE            ; /* The MemLogic has decoded a read from board memory */
+PIN 12  = ATA_ADDR_JMPR          ; /* ATA address Jumper */
+PIN 13  = AEN                    ; /* ISA AEN signal*/
+PIN 14  = RESET_IN               ; /* ISA reset in */
 
 /* *************** OUTPUT PINS *********************/
-PIN 14  = !BUF_READ              ; /* Whether reading from board. Selects direction of bus transceiver. */
-PIN 15  = !IOR_DELAYED           ; /* IOR, delayed to come slightly after setting BUF_DIR for reads. */
-PIN 16  = !MEMR_DELAYED          ; /* MEMR, delayed to come slightly after setting BUF_DIR for reads. */
+PIN 15  = !RESET_OUT             ; /* Inverted reset */
+PIN 16  = IOR_DECODE             ; /* Asserted when an IO read occurs from a device on the board. */
 PIN 17  = !UART_CS               ; /* Chip select the UART. */
 PIN 18  = !CS3_ATA               ; /* Chip select 3 for ATA. */
 PIN 19  = !CS1_ATA               ; /* Chip select 1 for ATA. */
@@ -39,18 +39,18 @@ CS1_ATA_TEMP = (DECODE_300 & !ATA_ADDR_JMPR) # (DECODE_320 & ATA_ADDR_JMPR);
 CS3_ATA_TEMP = 'b'0; /* Do not decode for CS3 as it is not required. */
 
 DECODE_3F8 = A09 & A08 & A07 & A06 & A05 & A04 & A03;
-UART_CS_TEMP = DECODE_3F8 & UART_ENABLE;
+DECODE_2F8 = A09 & !A08 & A07 & A06 & A05 & A04 & A03;
+DECODE_3E8 = A09 & A08 & A07 & A06 & A05 & !A04 & A03;
+UART_DECODE_COM1 = DECODE_3F8 & !UART_PORT_0 & !UART_PORT_1;
+UART_DECODE_COM2 = DECODE_2F8 & UART_PORT_0 & !UART_PORT_1;
+UART_DECODE_COM3 = DECODE_3E8 & !UART_PORT_0 & UART_PORT_1;
+UART_CS_TEMP = UART_DECODE_COM1 # UART_DECODE_COM2 # UART_DECODE_COM3;
 
-BUF_READ_TEMP = (IOR & (CS1_ATA_TEMP # CS3_ATA_TEMP # UART_CS_TEMP)) # MEMR_DECODE;
+IOR_DECODE_TEMP = IOR & (CS1_ATA_TEMP # CS3_ATA_TEMP # UART_CS_TEMP);
 
 /* Outputs */
+RESET_OUT = RESET_IN; /* Only for inverting reset signal. */
+IOR_DECODE = IOR_DECODE_TEMP;
 CS1_ATA = CS1_ATA_TEMP;
 CS3_ATA = CS3_ATA_TEMP;
 UART_CS = UART_CS_TEMP;
-
-BUF_READ = BUF_READ_TEMP;
-/* Intentionally uses BUF_READ rather than BUF_READ_TEMP to slightly delay the 
-   IOR and MEMR signals. This is to ensure the buffer direction does not change
-   **after** the devices on the board are trying to output values. */
-IOR_DELAYED = BUF_READ & IOR & (CS1_ATA # CS3_ATA # UART_CS);
-MEMR_DELAYED = BUF_READ & MEMR_DECODE;

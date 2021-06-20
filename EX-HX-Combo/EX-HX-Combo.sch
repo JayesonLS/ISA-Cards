@@ -350,7 +350,7 @@ Text GLabel 14450 1800 2    50   Input ~ 0
 D6_BUF
 Text GLabel 14450 1900 2    50   Input ~ 0
 D7_BUF
-Text GLabel 8200 3700 2    39   Input ~ 0
+Text GLabel 8200 1750 2    39   Input ~ 0
 ~IOR~_DELAYED
 Text GLabel 2650 3450 2    50   Input ~ 0
 A06
@@ -633,7 +633,7 @@ Text GLabel 10100 1700 0    50   Input ~ 0
 D0
 Text GLabel 10100 2600 0    39   Input ~ 0
 ~BUFF_READ
-Text GLabel 7200 3400 0    50   Input ~ 0
+Text GLabel 8200 4000 2    50   Input ~ 0
 ATA_ADDR_JUMPER
 Text GLabel 2650 2650 2    50   Input ~ 0
 A14
@@ -1005,7 +1005,7 @@ F 3 "~" H 9350 7700 50  0001 C CNN
 	1    9350 7700
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 3800 2    39   Input ~ 0
+Text GLabel 8200 1850 2    39   Input ~ 0
 ~BUFF_READ
 Text GLabel 7200 3500 0    39   Input ~ 0
 ~IOR
@@ -1078,7 +1078,7 @@ Wire Wire Line
 Connection ~ 11250 5100
 Wire Wire Line
 	11250 5100 11250 5300
-Text GLabel 8200 3600 2    39   Input ~ 0
+Text GLabel 8200 1650 2    39   Input ~ 0
 ~MEMR~_DELAYED
 $Comp
 L power:GND #PWR0134
@@ -1895,14 +1895,8 @@ Wire Wire Line
 	4650 4450 4550 4450
 Wire Wire Line
 	4550 4450 4550 4550
-Text GLabel 4650 4350 0    39   Input ~ 0
-~UART_ENABLE
-Text GLabel 7200 3300 0    39   Input ~ 0
-~UART_ENABLE
-Text GLabel 8200 1850 2    39   Input ~ 0
-~RESET
-Text GLabel 8200 1950 2    50   Input ~ 0
-RESET
+Text GLabel 7200 3400 0    50   Input ~ 0
+UART_PORT_1
 Text GLabel 8200 3300 2    39   Input ~ 0
 ~CS1~_ATA
 Text GLabel 8200 3500 2    39   Input ~ 0
@@ -1984,14 +1978,12 @@ Wire Wire Line
 	5250 2250 5250 2150
 Text GLabel 5150 2350 2    50   Input ~ 0
 BASE_RAM_SIZE
-Text GLabel 5150 1400 2    50   Input ~ 0
+Text GLabel 4650 4350 0    50   Input ~ 0
 ATA_ADDR_JUMPER
-Text GLabel 8200 3900 2    50   Input ~ 0
-MEMR_DECODE
+Text GLabel 8200 3600 2    50   Input ~ 0
+IOR_DECODE
 Text GLabel 8200 1250 2    39   Input ~ 0
 ~CE~_BIOS_DECODE
-Text GLabel 8200 1650 2    50   Input ~ 0
-MEMR_DECODE
 $Comp
 L Connector_Generic:Conn_02x03_Odd_Even J6
 U 1 1 60F9D4DF
@@ -2117,7 +2109,7 @@ Text GLabel 1050 3350 0    50   Input ~ 0
 IRQ4
 Wire Wire Line
 	1550 3350 1050 3350
-Text GLabel 8200 4000 2    50   Input ~ 0
+Text GLabel 8200 3900 2    50   Input ~ 0
 AEN
 Text GLabel 13150 6500 0    50   Input ~ 0
 A18_MAPPED
@@ -2216,16 +2208,20 @@ Text GLabel 8200 3400 2    39   Input ~ 0
 ~CS3~_ATA
 Text GLabel 10700 6150 2    39   Input ~ 0
 ~CS3~_ATA
-Text Label 8550 1800 0    50   ~ 0
-UMB_DECODE
-Wire Wire Line
-	8200 1750 8550 1750
-NoConn ~ 8550 1800
-Wire Wire Line
-	8550 1750 8550 1800
-NoConn ~ 4650 1400
 Text GLabel 4650 3350 0    39   Input ~ 0
 ~UMB_ENABLE
 Text GLabel 5150 3350 2    50   Input ~ 0
 UMB_SIZE
+Text GLabel 7200 3300 0    50   Input ~ 0
+UART_PORT_0
+Text GLabel 8200 3800 2    50   Input ~ 0
+RESET
+Text GLabel 8200 3700 2    39   Input ~ 0
+~RESET
+Text GLabel 8200 1950 2    50   Input ~ 0
+IOR_DECODE
+Text GLabel 4650 1400 0    50   Input ~ 0
+UART_PORT_0
+Text GLabel 5150 1400 2    50   Input ~ 0
+UART_PORT_1
 $EndSCHEMATC
