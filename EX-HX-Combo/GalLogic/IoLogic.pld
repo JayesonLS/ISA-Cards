@@ -10,8 +10,8 @@ Location  ;
 Device   G16V8AS;
 
 /* *************** INPUT PINS *********************/
-PIN  1  = UART_PORT_0            ; /* UART (COM port) select jumper 0 */
-PIN  2  = UART_PORT_1            ; /* UART (COM port) select jumper 1 */
+PIN  1  = UART_S0                ; /* UART (COM port) select jumper 0 */
+PIN  2  = UART_S1                ; /* UART (COM port) select jumper 1 */
 PIN  3  = !IOR                   ; /* ISA IO Read */
 PIN  4  = A03                    ; /* ISA address line */
 PIN  5  = A04                    ; /* ISA address line */
@@ -32,18 +32,18 @@ PIN 18  = !CS3_ATA               ; /* Chip select 3 for ATA. */
 PIN 19  = !CS1_ATA               ; /* Chip select 1 for ATA. */
 
 /* Equations */
-DECODE_300 = A09 & A08 & !A07 & !A06 & !A05 & !A04;
-DECODE_320 = A09 & A08 & !A07 & !A06 &  A05 & !A04;
-CS1_ATA_TEMP = (DECODE_300 & !ATA_ADDR_JMPR) # (DECODE_320 & ATA_ADDR_JMPR);
+DECODE_1F0 = !A09 & A08 &  A07 &  A06 &  A05 &  A04;
+DECODE_320 =  A09 & A08 & !A07 & !A06 &  A05 & !A04;
+CS1_ATA_TEMP = (DECODE_1F0 & !ATA_ADDR_JMPR) # (DECODE_320 & ATA_ADDR_JMPR);
 
 CS3_ATA_TEMP = 'b'0; /* Do not decode for CS3 as it is not required. */
 
 DECODE_3F8 = A09 & A08 & A07 & A06 & A05 & A04 & A03;
 DECODE_2F8 = A09 & !A08 & A07 & A06 & A05 & A04 & A03;
 DECODE_3E8 = A09 & A08 & A07 & A06 & A05 & !A04 & A03;
-UART_DECODE_COM1 = DECODE_3F8 & !UART_PORT_0 & !UART_PORT_1;
-UART_DECODE_COM2 = DECODE_2F8 & UART_PORT_0 & !UART_PORT_1;
-UART_DECODE_COM3 = DECODE_3E8 & !UART_PORT_0 & UART_PORT_1;
+UART_DECODE_COM1 = DECODE_3F8 & UART_S0 & UART_S1;
+UART_DECODE_COM2 = DECODE_2F8 & !UART_S0 & UART_S1;
+UART_DECODE_COM3 = DECODE_3E8 & UART_S0 & !UART_S1;
 UART_CS_TEMP = UART_DECODE_COM1 # UART_DECODE_COM2 # UART_DECODE_COM3;
 
 IOR_DECODE_TEMP = IOR & (CS1_ATA_TEMP # CS3_ATA_TEMP # UART_CS_TEMP);

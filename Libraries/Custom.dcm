@@ -1,5 +1,11 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 16550_48
+D PC16550D, Universal Asynchronous Receiver/Transmitter with FIFOs, PDIP-40
+K 1ch UART FIFO
+F http://www.ti.com/lit/ds/symlink/pc16550d.pdf
+$ENDCMP
+#
 $CMP Bus_ISA_8bit
 D 8-bit ISA-PC bus connector
 K ISA
