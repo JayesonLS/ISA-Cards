@@ -2107,4 +2107,110 @@ F 3 "~" H 14450 7700 50  0001 C CNN
 	1    14450 7700
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 60D6980C
+P 13200 8550
+F 0 "H1" V 13154 8700 50  0000 L CNN
+F 1 "MountingHole_Pad" V 13245 8700 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 13200 8550 50  0001 C CNN
+F 3 "~" H 13200 8550 50  0001 C CNN
+	1    13200 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 60D6AC46
+P 13200 8750
+F 0 "H2" V 13154 8900 50  0000 L CNN
+F 1 "MountingHole_Pad" V 13245 8900 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 13200 8750 50  0001 C CNN
+F 3 "~" H 13200 8750 50  0001 C CNN
+	1    13200 8750
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 60D6B05B
+P 13200 8950
+F 0 "H3" V 13154 9100 50  0000 L CNN
+F 1 "MountingHole_Pad" V 13245 9100 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 13200 8950 50  0001 C CNN
+F 3 "~" H 13200 8950 50  0001 C CNN
+	1    13200 8950
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 60D6B294
+P 13200 9150
+F 0 "H4" V 13154 9300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 13245 9300 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 13200 9150 50  0001 C CNN
+F 3 "~" H 13200 9150 50  0001 C CNN
+	1    13200 9150
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 60D6B4F1
+P 13200 9350
+F 0 "H5" V 13154 9500 50  0000 L CNN
+F 1 "MountingHole_Pad" V 13245 9500 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 13200 9350 50  0001 C CNN
+F 3 "~" H 13200 9350 50  0001 C CNN
+	1    13200 9350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13100 8550 13000 8550
+Wire Wire Line
+	13000 8550 13000 8750
+Wire Wire Line
+	13100 9350 13000 9350
+Connection ~ 13000 9350
+Wire Wire Line
+	13000 9350 13000 9550
+Wire Wire Line
+	13000 9150 13100 9150
+Connection ~ 13000 9150
+Wire Wire Line
+	13000 9150 13000 9350
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 60D9AE58
+P 13200 9550
+F 0 "H6" V 13154 9700 50  0000 L CNN
+F 1 "MountingHole_Pad" V 13245 9700 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.5mm_Pad" H 13200 9550 50  0001 C CNN
+F 3 "~" H 13200 9550 50  0001 C CNN
+	1    13200 9550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13100 9550 13000 9550
+Connection ~ 13000 9550
+Wire Wire Line
+	13000 9550 13000 9650
+$Comp
+L power:GND #PWR0148
+U 1 1 60DA739E
+P 13000 9650
+F 0 "#PWR0148" H 13000 9400 50  0001 C CNN
+F 1 "GND" H 13005 9477 50  0000 C CNN
+F 2 "" H 13000 9650 50  0001 C CNN
+F 3 "" H 13000 9650 50  0001 C CNN
+	1    13000 9650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13100 8950 13000 8950
+Connection ~ 13000 8950
+Wire Wire Line
+	13000 8950 13000 9150
+Wire Wire Line
+	13100 8750 13000 8750
+Connection ~ 13000 8750
+Wire Wire Line
+	13000 8750 13000 8950
 $EndSCHEMATC
