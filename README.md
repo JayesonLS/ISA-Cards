@@ -118,7 +118,7 @@ with the following differences:
 * Base and upper memory configuration, COM port selection, COM IRQ,
   ATA (IDE) port address, etc. are configurable via dip switches.
   Using the default settings, the board is equivalent to the proven
-  settings used Rob Krineki's 3 in 1 board.
+  configuration of Rob Krineki's 3 in 1 board.
 
 Riser
 =====
