@@ -29,7 +29,7 @@ Tandy PLUS Template
 
 **Description:** A template from which to design cards and/or back plates
 for the Tandy 1000 EX/HX computers. Includes approximate board outlines
-as measured from Tandy's memory/DMA board, a Tandy serial board and
+as measured from Tandy's memory/DMA board, Tandy's serial board and
 Rob Krinecki's 3 in 1 board. Includes various notes about safe areas,
 potential places to extend the board dimensions, etc.
 
@@ -109,9 +109,9 @@ Functionality is very similar to Rob Krinecki's 3 in 1/4 in 1 boards,
 with the following differences:
 * Can be fitted in either the lower or middle board position on the
   EX/HX.
-* Can be used together with Tandy's original DMA/memory board which
-  adds DMA functionality and makes availalbe the top board position
-  for a third upgrade board.
+* Can be used together with Tandy's original DMA/memory board. This
+  configuration adds DMA functionality and makes the top board 
+  position available for a third upgrade board.
 * Support for additional upper memory on the Tandy 1000 EX. The EX
   allows for more upper memory than the HX due to the EX having a
   smaller system ROM than the HX. 
