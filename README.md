@@ -3,8 +3,8 @@ ISA-Cards
 
 ISA card designs for use in Vintage PCs.
 
-Template
-========
+ISA Template
+============
 
 **Status:** Fit tested and appears correct.
 
@@ -21,6 +21,17 @@ same Tandy 1000. It too was a excellent fit.
 There may be some variation in fit due to various tolerances. 
 The fit does not seem to be particularly important - a wide variation
 in fit has been found across various commercial ISA cards.
+
+Tandy PLUS Template
+===================
+
+**Status:** Untested.
+
+**Description:** A template from which to design cards and/or back plates
+for the Tandy 1000 EX/HX computers. Includes approximate board outlines
+as measured from Tandy's memory/DMA board, a Tandy serial board and
+Rob Krinecki's 3 in 1 board. Includes various notes about safe areas,
+potential places to extend the board dimensions, etc.
 
 CF-Combo-Super-Lite <sup>1, 2</sup>
 ===================
@@ -78,6 +89,36 @@ to COM ports not yet present in the system. Details are located on the
 board by the port jumpers. Configure the IRQ jumpers to an approriate
 selection. For no IRQ, remove the IRQ jumper. Suggested IRQ settings are
 located on the board by the IRQ jumpers.
+
+EX-HX Combo <sup>1, 2</sup>
+===========
+
+**Status:** Still in design.
+
+**Description:** Multiple upgrades for the Tandy 1000 EX/HX
+in a single board. It adds the following:
+* Up to 384K of additional base memory to bring the EX/HX up
+  to 640K
+* Up to 160K of upper memory (UMB)
+* Rear accessable Compact Flash
+* XT-IDE BIOS
+* Serial port with 16500 UART 
+* DS1316 SmartWatch real time clock
+
+Functionality is very similar to Rob Krinecki's 3 in 1/4 in 1 boards,
+with the following differences:
+* Can be fitted in either the lower or middle board position on the
+  EX/HX.
+* Can be used together with Tandy's original DMA/memory board which
+  adds DMA functionality and makes availalbe the top board position
+  for a third upgrade board.
+* Support for additional upper memory on the Tandy 1000 EX. The EX
+  allows for more upper memory than the HX due to the EX having a
+  smaller system ROM than the HX. 
+* Base and upper memory configuration, COM port selection, COM IRQ,
+  ATA (IDE) port address, etc. are configurable via dip switches.
+  Using the default settings, the board is equivalent to the proven
+  settings used Rob Krineki's 3 in 1 board.
 
 Riser
 =====
