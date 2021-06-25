@@ -100,9 +100,9 @@ in a single board. It adds the following:
 * Up to 384K of additional base memory to bring the EX/HX up
   to 640K
 * Up to 160K of upper memory (UMB)
-* Rear accessable Compact Flash
+* Rear accessable CF card slot
 * XT-IDE BIOS
-* Serial port with 16500 UART 
+* Serial port with 16550 UART 
 * DS1316 SmartWatch real time clock
 
 Functionality is very similar to Rob Krinecki's 3 in 1/4 in 1 boards,
