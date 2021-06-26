@@ -1,4 +1,4 @@
-update=26/06/2021 11:28:24 AM
+update=26/06/2021 12:11:37 PM
 version=1
 last_client=kicad
 [general]
@@ -236,7 +236,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.26
+Clearance=0.2
 TrackWidth=0.3
 ViaDiameter=0.8
 ViaDrill=0.4
@@ -257,8 +257,19 @@ dPairWidth=0.2
 dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
-Name=Power
+Name=High V Power
 Clearance=0.26
+TrackWidth=0.5
+ViaDiameter=1
+ViaDrill=0.6
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=Power
+Clearance=0.2
 TrackWidth=0.5
 ViaDiameter=1
 ViaDrill=0.6
