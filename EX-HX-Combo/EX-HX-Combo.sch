@@ -180,12 +180,8 @@ NoConn ~ 11200 4850
 NoConn ~ 11200 4950
 NoConn ~ 11200 5050
 NoConn ~ 11200 5150
-Text GLabel 10400 5150 0    50   Input ~ 0
-D0_BUF
 Text GLabel 10400 5050 0    50   Input ~ 0
 D1_BUF
-Text GLabel 10400 4950 0    50   Input ~ 0
-D2_BUF
 Text GLabel 10400 4850 0    50   Input ~ 0
 D3_BUF
 Text GLabel 10400 4750 0    50   Input ~ 0
@@ -336,18 +332,6 @@ A06
 Text GLabel 2700 3750 2    50   Input ~ 0
 A05
 Text GLabel 2700 3850 2    50   Input ~ 0
-A04
-Text GLabel 7200 4000 0    50   Input ~ 0
-A07
-Text GLabel 7200 4100 0    50   Input ~ 0
-A08
-Text GLabel 7200 4200 0    50   Input ~ 0
-A09
-Text GLabel 7200 3900 0    50   Input ~ 0
-A06
-Text GLabel 7200 3800 0    50   Input ~ 0
-A05
-Text GLabel 7200 3700 0    50   Input ~ 0
 A04
 Text GLabel 2700 2350 2    50   Input ~ 0
 A19
@@ -530,7 +514,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 10600 2200 50  0001 C CNN
 $EndComp
 Text GLabel 10100 2600 0    50   Input ~ 0
 BUFF_READ
-Text GLabel 8200 4000 2    50   Input ~ 0
+Text GLabel 7200 3600 0    50   Input ~ 0
 ATA_ADDR_JUMPER
 Text GLabel 2700 2850 2    50   Input ~ 0
 A14
@@ -1338,9 +1322,7 @@ Text GLabel 7200 1850 0    50   Input ~ 0
 A16
 Text GLabel 7200 1750 0    50   Input ~ 0
 A15
-Text GLabel 7200 3600 0    50   Input ~ 0
-A03
-Text GLabel 7200 3400 0    50   Input ~ 0
+Text GLabel 7200 3300 0    50   Input ~ 0
 UART_S1
 Text GLabel 8200 3300 2    39   Input ~ 0
 ~CS1~_ATA
@@ -1350,10 +1332,6 @@ Text GLabel 8200 1350 2    39   Input ~ 0
 ~CE~_RAM_DECODE
 Text GLabel 8200 1550 2    50   Input ~ 0
 A17_MAPPED
-Text GLabel 9000 9500 0    50   Input ~ 0
-BASE_RAM_SIZE
-Text GLabel 9000 9800 0    50   Input ~ 0
-ATA_ADDR_JUMPER
 Text GLabel 8200 3600 2    50   Input ~ 0
 IOR_DECODE
 Text GLabel 8200 1250 2    39   Input ~ 0
@@ -1361,8 +1339,6 @@ Text GLabel 8200 1250 2    39   Input ~ 0
 Text GLabel 8200 1450 2    50   Input ~ 0
 A18_MAPPED
 Text GLabel 7200 1250 0    50   Input ~ 0
-BASE_RAM_ENABLE
-Text GLabel 9000 9400 0    50   Input ~ 0
 BASE_RAM_ENABLE
 Text GLabel 7200 1350 0    50   Input ~ 0
 BASE_RAM_SIZE
@@ -1460,11 +1436,7 @@ Text GLabel 8200 3400 2    39   Input ~ 0
 ~CS3~_ATA
 Text GLabel 11200 6150 2    39   Input ~ 0
 ~CS3~_ATA
-Text GLabel 9000 9600 0    50   Input ~ 0
-UMB_ENABLE
-Text GLabel 9000 9700 0    50   Input ~ 0
-UMB_SIZE
-Text GLabel 7200 3300 0    50   Input ~ 0
+Text GLabel 7200 3400 0    50   Input ~ 0
 UART_S0
 Text GLabel 8200 3800 2    50   Input ~ 0
 RESET
@@ -1472,10 +1444,6 @@ Text GLabel 8200 3700 2    39   Input ~ 0
 ~RESET
 Text GLabel 8200 1950 2    50   Input ~ 0
 IOR_DECODE
-Text GLabel 9000 9900 0    50   Input ~ 0
-UART_S0
-Text GLabel 9000 10000 0    50   Input ~ 0
-UART_S1
 Text GLabel 1350 10150 0    50   Input ~ 0
 UART_IRQ
 Text GLabel 11100 10100 2    50   Input ~ 0
@@ -2386,7 +2354,7 @@ F 1 "SW_DIP_x10" H 10700 10576 50  0000 C CNN
 F 2 "Button_Switch_THT:SW_DIP_SPSTx10_Slide_9.78x27.58mm_W7.62mm_P2.54mm" H 10700 9900 50  0001 C CNN
 F 3 "~" H 10700 9900 50  0001 C CNN
 	1    10700 9900
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 Text GLabel 10400 10300 0    39   Input ~ 0
 ~CE~_BIOS_DECODE
@@ -2401,37 +2369,35 @@ Wire Wire Line
 Connection ~ 11050 10100
 Wire Wire Line
 	11050 10100 11100 10100
-Text GLabel 10100 1700 0    50   Input ~ 0
+Text GLabel 10100 2300 0    50   Input ~ 0
 D7_BUF
-Text GLabel 10100 1800 0    50   Input ~ 0
+Text GLabel 10100 2200 0    50   Input ~ 0
 D6_BUF
-Text GLabel 10100 1900 0    50   Input ~ 0
+Text GLabel 10100 2100 0    50   Input ~ 0
 D5_BUF
 Text GLabel 10100 2000 0    50   Input ~ 0
 D4_BUF
-Text GLabel 10100 2100 0    50   Input ~ 0
-D3_BUF
-Text GLabel 10100 2200 0    50   Input ~ 0
-D2_BUF
-Text GLabel 10100 2300 0    50   Input ~ 0
-D1_BUF
 Text GLabel 10100 2400 0    50   Input ~ 0
-D0_BUF
-Text GLabel 11100 2400 2    50   Input ~ 0
+D3_BUF
+Text GLabel 10100 1700 0    50   Input ~ 0
+D2_BUF
+Text GLabel 10100 1800 0    50   Input ~ 0
+D1_BUF
+Text GLabel 11100 1900 2    50   Input ~ 0
 D0
-Text GLabel 11100 2300 2    50   Input ~ 0
+Text GLabel 11100 1800 2    50   Input ~ 0
 D1
-Text GLabel 11100 2200 2    50   Input ~ 0
+Text GLabel 11100 1700 2    50   Input ~ 0
 D2
-Text GLabel 11100 2100 2    50   Input ~ 0
+Text GLabel 11100 2400 2    50   Input ~ 0
 D3
 Text GLabel 11100 2000 2    50   Input ~ 0
 D4
-Text GLabel 11100 1900 2    50   Input ~ 0
+Text GLabel 11100 2100 2    50   Input ~ 0
 D5
-Text GLabel 11100 1800 2    50   Input ~ 0
+Text GLabel 11100 2200 2    50   Input ~ 0
 D6
-Text GLabel 11100 1700 2    50   Input ~ 0
+Text GLabel 11100 2300 2    50   Input ~ 0
 D7
 Text Notes 2350 11050 0    50   ~ 0
 Connections to N/C pins\nare to assist with routing.
@@ -2632,4 +2598,38 @@ Wire Wire Line
 	5600 8350 5600 7650
 Wire Wire Line
 	5600 7650 6500 7650
+Text GLabel 10400 4950 0    50   Input ~ 0
+D2_BUF
+Text GLabel 10400 5150 0    50   Input ~ 0
+D0_BUF
+Text GLabel 10100 1900 0    50   Input ~ 0
+D0_BUF
+Text GLabel 7200 4100 0    50   Input ~ 0
+A03
+Text GLabel 7200 4000 0    50   Input ~ 0
+A04
+Text GLabel 7200 3900 0    50   Input ~ 0
+A05
+Text GLabel 7200 3800 0    50   Input ~ 0
+A06
+Text GLabel 8200 4000 2    50   Input ~ 0
+A09
+Text GLabel 7200 4200 0    50   Input ~ 0
+A08
+Text GLabel 7200 3700 0    50   Input ~ 0
+A07
+Text GLabel 9000 9700 0    50   Input ~ 0
+UMB_SIZE
+Text GLabel 9000 9600 0    50   Input ~ 0
+UMB_ENABLE
+Text GLabel 9000 9400 0    50   Input ~ 0
+BASE_RAM_ENABLE
+Text GLabel 9000 9800 0    50   Input ~ 0
+ATA_ADDR_JUMPER
+Text GLabel 9000 9500 0    50   Input ~ 0
+BASE_RAM_SIZE
+Text GLabel 9000 10000 0    50   Input ~ 0
+UART_S1
+Text GLabel 9000 9900 0    50   Input ~ 0
+UART_S0
 $EndSCHEMATC
