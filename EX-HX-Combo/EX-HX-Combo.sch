@@ -514,13 +514,13 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 10600 2200 50  0001 C CNN
 $EndComp
 Text GLabel 10100 2600 0    50   Input ~ 0
 BUFF_READ
-Text GLabel 7200 3600 0    50   Input ~ 0
+Text GLabel 7200 3500 0    50   Input ~ 0
 ATA_ADDR_JUMPER
 Text GLabel 2700 2850 2    50   Input ~ 0
 A14
 Wire Wire Line
 	2600 2850 2700 2850
-Text GLabel 7200 1650 0    39   Input ~ 0
+Text GLabel 7200 1550 0    39   Input ~ 0
 ~MEMR
 $Comp
 L 00Common:Bus_Tandy_Plus J3
@@ -888,7 +888,7 @@ F 3 "~" H 9350 7700 50  0001 C CNN
 $EndComp
 Text GLabel 8200 1850 2    50   Input ~ 0
 BUFF_READ
-Text GLabel 7200 3500 0    39   Input ~ 0
+Text GLabel 7200 3600 0    39   Input ~ 0
 ~IOR
 Wire Notes Line
 	12350 4050 12350 600 
@@ -1320,7 +1320,7 @@ Text GLabel 7200 1950 0    50   Input ~ 0
 A17
 Text GLabel 7200 1850 0    50   Input ~ 0
 A16
-Text GLabel 7200 1750 0    50   Input ~ 0
+Text GLabel 8200 1950 2    50   Input ~ 0
 A15
 Text GLabel 7200 3300 0    50   Input ~ 0
 UART_S1
@@ -1344,7 +1344,7 @@ Text GLabel 7200 1350 0    50   Input ~ 0
 BASE_RAM_SIZE
 Text GLabel 7200 1450 0    50   Input ~ 0
 UMB_ENABLE
-Text GLabel 7200 1550 0    50   Input ~ 0
+Text GLabel 7200 1750 0    50   Input ~ 0
 UMB_SIZE
 $Comp
 L power:+12V #PWR0175
@@ -1376,7 +1376,7 @@ Wire Wire Line
 	1600 1850 1250 1850
 Wire Wire Line
 	1250 1850 1250 4450
-Text GLabel 8200 3900 2    50   Input ~ 0
+Text GLabel 7200 4200 0    50   Input ~ 0
 AEN
 Text GLabel 13150 6500 0    50   Input ~ 0
 A18_MAPPED
@@ -1442,7 +1442,7 @@ Text GLabel 8200 3800 2    50   Input ~ 0
 RESET
 Text GLabel 8200 3700 2    39   Input ~ 0
 ~RESET
-Text GLabel 8200 1950 2    50   Input ~ 0
+Text GLabel 7200 1650 0    50   Input ~ 0
 IOR_DECODE
 Text GLabel 1350 10150 0    50   Input ~ 0
 UART_IRQ
@@ -2369,35 +2369,35 @@ Wire Wire Line
 Connection ~ 11050 10100
 Wire Wire Line
 	11050 10100 11100 10100
-Text GLabel 10100 2300 0    50   Input ~ 0
-D7_BUF
-Text GLabel 10100 2200 0    50   Input ~ 0
-D6_BUF
-Text GLabel 10100 2100 0    50   Input ~ 0
-D5_BUF
 Text GLabel 10100 2000 0    50   Input ~ 0
+D7_BUF
+Text GLabel 10100 2100 0    50   Input ~ 0
+D6_BUF
+Text GLabel 10100 2200 0    50   Input ~ 0
+D5_BUF
+Text GLabel 10100 2300 0    50   Input ~ 0
 D4_BUF
 Text GLabel 10100 2400 0    50   Input ~ 0
 D3_BUF
-Text GLabel 10100 1700 0    50   Input ~ 0
+Text GLabel 10100 1900 0    50   Input ~ 0
 D2_BUF
 Text GLabel 10100 1800 0    50   Input ~ 0
 D1_BUF
-Text GLabel 11100 1900 2    50   Input ~ 0
+Text GLabel 11100 1700 2    50   Input ~ 0
 D0
 Text GLabel 11100 1800 2    50   Input ~ 0
 D1
-Text GLabel 11100 1700 2    50   Input ~ 0
+Text GLabel 11100 1900 2    50   Input ~ 0
 D2
 Text GLabel 11100 2400 2    50   Input ~ 0
 D3
-Text GLabel 11100 2000 2    50   Input ~ 0
-D4
-Text GLabel 11100 2100 2    50   Input ~ 0
-D5
-Text GLabel 11100 2200 2    50   Input ~ 0
-D6
 Text GLabel 11100 2300 2    50   Input ~ 0
+D4
+Text GLabel 11100 2200 2    50   Input ~ 0
+D5
+Text GLabel 11100 2100 2    50   Input ~ 0
+D6
+Text GLabel 11100 2000 2    50   Input ~ 0
 D7
 Text Notes 2350 11050 0    50   ~ 0
 Connections to N/C pins\nare to assist with routing.
@@ -2602,7 +2602,7 @@ Text GLabel 10400 4950 0    50   Input ~ 0
 D2_BUF
 Text GLabel 10400 5150 0    50   Input ~ 0
 D0_BUF
-Text GLabel 10100 1900 0    50   Input ~ 0
+Text GLabel 10100 1700 0    50   Input ~ 0
 D0_BUF
 Text GLabel 7200 4100 0    50   Input ~ 0
 A03
@@ -2610,13 +2610,13 @@ Text GLabel 7200 4000 0    50   Input ~ 0
 A04
 Text GLabel 7200 3900 0    50   Input ~ 0
 A05
-Text GLabel 7200 3800 0    50   Input ~ 0
-A06
-Text GLabel 8200 4000 2    50   Input ~ 0
-A09
-Text GLabel 7200 4200 0    50   Input ~ 0
-A08
 Text GLabel 7200 3700 0    50   Input ~ 0
+A06
+Text GLabel 8200 3900 2    50   Input ~ 0
+A09
+Text GLabel 8200 4000 2    50   Input ~ 0
+A08
+Text GLabel 7200 3800 0    50   Input ~ 0
 A07
 Text GLabel 9000 9700 0    50   Input ~ 0
 UMB_SIZE
