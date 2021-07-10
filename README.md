@@ -61,7 +61,8 @@ The board optionally supports the following features:
 BasicSerial
 ===========
 
-**Status:** Built and fully tested. No issues found.
+**Status:** Built and fully tested. The Rear bracket is located too
+high and needs to be corrected. No other issues found.
 
 **Description:** Adds a single 9 pin serial port to a vintage PC. Created with early
 Tandy 1000's in mind which have no COM ports from the factory.
