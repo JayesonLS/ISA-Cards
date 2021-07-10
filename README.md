@@ -39,8 +39,8 @@ CF-Combo-Super-Lite <sup>1, 2</sup>
 **Status:** Design built and tested in all configurations. No issues found.
 
 **Description:** An 8 bit ISA card with fully-contained compact flash card and
-XT-IDE BIOS. This simplified design uses only 3 ICs. It makes use
-of a commonly availalbe, inexpensive compact flash adapter with
+XT-IDE BIOS. This simplified design uses only 3 ICs for the CF/BIOS functionality.
+It makes use of a commonly availalbe, inexpensive compact flash adapter with
 integrated mounting bracket.
 
 The board optionally supports the following features:
