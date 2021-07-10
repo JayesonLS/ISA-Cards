@@ -36,9 +36,7 @@ potential places to extend the board dimensions, etc.
 CF-Combo-Super-Lite <sup>1, 2</sup>
 ===================
 
-**Status:** The previous revision with numerous bodges has been
-tested to work. Revised boards are not yet tested. 
-BIOS image not yet created.
+**Status:** Design built and tested in all configurations. No issues found.
 
 **Description:** An 8 bit ISA card with fully-contained compact flash card and
 XT-IDE BIOS. This simplified design uses only 3 ICs. It makes use
