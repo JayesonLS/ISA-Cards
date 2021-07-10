@@ -618,7 +618,7 @@ F 1 "32.768 KHz" V 2345 5631 50  0000 L CNN
 F 2 "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal" H 2300 5500 50  0001 C CNN
 F 3 "~" H 2300 5500 50  0001 C CNN
 	1    2300 5500
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	3350 6250 3150 6250
