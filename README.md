@@ -36,6 +36,8 @@ potential places to extend the board dimensions, etc.
 CF-Combo-Super-Lite <sup>1, 2</sup>
 ===================
 
+![CF-Combo-Super-Lite](Images/CF-Combo-Super-Lite.jpg)
+
 **Status:** Design built and tested in all configurations. No issues found.
 
 **Description:** An 8 bit ISA card with fully-contained compact flash card and
@@ -51,10 +53,9 @@ The board optionally supports the following features:
 * 512K of SRAM for the Tandy 1000, 1000A or 1000 HD models only
   (25-1000, 25-1000A, 25-1001). This will bring a stock Tandy
   1000 to 640K. Remove any other memory upgradebefore installing.
-
-  *Do not use in any other model of Tandy 1000 or PC. The memory
-  mapping is only correct for the supported Tandy 1000 models and
-  will result in memory conflicts in any other system.*
+  *Do not use the 512K RAM option in any other model of Tandy 1000
+  or PC. The memory mapping is only correct for the supported Tandy
+  1000 models and will result in memory conflicts in any other system.*
 
 BasicSerial
 ===========
