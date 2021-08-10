@@ -512,8 +512,8 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 10600 2200 50  0001 C CNN
 	1    10600 2200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10100 2600 0    50   Input ~ 0
-BUFF_READ
+Text GLabel 10100 2600 0    39   Input ~ 0
+~BUFF_READ
 Text GLabel 7200 3500 0    50   Input ~ 0
 ATA_ADDR_JUMPER
 Text GLabel 2700 2850 2    50   Input ~ 0
@@ -886,8 +886,8 @@ F 3 "~" H 9350 7700 50  0001 C CNN
 	1    9350 7700
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 1850 2    50   Input ~ 0
-BUFF_READ
+Text GLabel 8200 1850 2    39   Input ~ 0
+~BUFF_READ
 Text GLabel 7200 3600 0    39   Input ~ 0
 ~IOR
 Wire Notes Line
@@ -2369,35 +2369,31 @@ Wire Wire Line
 Connection ~ 11050 10100
 Wire Wire Line
 	11050 10100 11100 10100
-Text GLabel 10100 2000 0    50   Input ~ 0
+Text GLabel 11100 1700 2    50   Input ~ 0
 D7_BUF
-Text GLabel 10100 2100 0    50   Input ~ 0
+Text GLabel 11100 1800 2    50   Input ~ 0
 D6_BUF
-Text GLabel 10100 2200 0    50   Input ~ 0
+Text GLabel 11100 2000 2    50   Input ~ 0
 D5_BUF
-Text GLabel 10100 2300 0    50   Input ~ 0
+Text GLabel 11100 2200 2    50   Input ~ 0
 D4_BUF
-Text GLabel 10100 2400 0    50   Input ~ 0
+Text GLabel 11100 2400 2    50   Input ~ 0
 D3_BUF
 Text GLabel 10100 1900 0    50   Input ~ 0
-D2_BUF
-Text GLabel 10100 1800 0    50   Input ~ 0
-D1_BUF
-Text GLabel 11100 1700 2    50   Input ~ 0
 D0
-Text GLabel 11100 1800 2    50   Input ~ 0
+Text GLabel 10100 2100 0    50   Input ~ 0
 D1
-Text GLabel 11100 1900 2    50   Input ~ 0
+Text GLabel 10100 2300 0    50   Input ~ 0
 D2
-Text GLabel 11100 2400 2    50   Input ~ 0
+Text GLabel 10100 2400 0    50   Input ~ 0
 D3
-Text GLabel 11100 2300 2    50   Input ~ 0
+Text GLabel 10100 2200 0    50   Input ~ 0
 D4
-Text GLabel 11100 2200 2    50   Input ~ 0
+Text GLabel 10100 2000 0    50   Input ~ 0
 D5
-Text GLabel 11100 2100 2    50   Input ~ 0
+Text GLabel 10100 1800 0    50   Input ~ 0
 D6
-Text GLabel 11100 2000 2    50   Input ~ 0
+Text GLabel 10100 1700 0    50   Input ~ 0
 D7
 Text Notes 2350 11050 0    50   ~ 0
 Connections to N/C pins\nare to assist with routing.
@@ -2602,8 +2598,6 @@ Text GLabel 10400 4950 0    50   Input ~ 0
 D2_BUF
 Text GLabel 10400 5150 0    50   Input ~ 0
 D0_BUF
-Text GLabel 10100 1700 0    50   Input ~ 0
-D0_BUF
 Text GLabel 7200 4100 0    50   Input ~ 0
 A03
 Text GLabel 7200 4000 0    50   Input ~ 0
@@ -2632,4 +2626,10 @@ Text GLabel 9000 10000 0    50   Input ~ 0
 UART_S1
 Text GLabel 9000 9900 0    50   Input ~ 0
 UART_S0
+Text GLabel 11100 1900 2    50   Input ~ 0
+D0_BUF
+Text GLabel 11100 2100 2    50   Input ~ 0
+D1_BUF
+Text GLabel 11100 2300 2    50   Input ~ 0
+D2_BUF
 $EndSCHEMATC
