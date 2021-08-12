@@ -1322,11 +1322,11 @@ Text GLabel 7200 1850 0    50   Input ~ 0
 A16
 Text GLabel 8200 1950 2    50   Input ~ 0
 A15
-Text GLabel 7200 3300 0    50   Input ~ 0
+Text GLabel 7200 3400 0    50   Input ~ 0
 UART_S1
-Text GLabel 8200 3300 2    39   Input ~ 0
-~CS1~_ATA
 Text GLabel 8200 3500 2    39   Input ~ 0
+~CS1~_ATA
+Text GLabel 8200 3400 2    39   Input ~ 0
 ~UART_CS
 Text GLabel 8200 1350 2    39   Input ~ 0
 ~CE~_RAM_DECODE
@@ -1432,11 +1432,11 @@ Wire Notes Line
 	12250 3850 12250 600 
 Wire Notes Line
 	12250 3950 12250 7050
-Text GLabel 8200 3400 2    39   Input ~ 0
+Text GLabel 8200 3300 2    39   Input ~ 0
 ~CS3~_ATA
 Text GLabel 11200 6150 2    39   Input ~ 0
 ~CS3~_ATA
-Text GLabel 7200 3400 0    50   Input ~ 0
+Text GLabel 7200 3300 0    50   Input ~ 0
 UART_S0
 Text GLabel 8200 3800 2    50   Input ~ 0
 RESET
@@ -2356,9 +2356,9 @@ F 3 "~" H 10700 9900 50  0001 C CNN
 	1    10700 9900
 	-1   0    0    -1  
 $EndComp
-Text GLabel 10400 10300 0    39   Input ~ 0
-~CE~_BIOS_DECODE
 Text GLabel 11000 10300 2    39   Input ~ 0
+~CE~_BIOS_DECODE
+Text GLabel 10400 10300 0    39   Input ~ 0
 ~CE~_BIOS_THRU
 Wire Wire Line
 	11000 10100 11050 10100
@@ -2663,6 +2663,39 @@ F 1 "100uF" H 13018 7655 50  0000 L CNN
 F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 12938 7550 50  0001 C CNN
 F 3 "~" H 12900 7700 50  0001 C CNN
 	1    12900 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C99
+U 1 1 6131AD4C
+P 12050 8600
+F 0 "C99" H 12165 8646 50  0000 L CNN
+F 1 "0.1uF" H 12165 8555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12088 8450 50  0001 C CNN
+F 3 "~" H 12050 8600 50  0001 C CNN
+	1    12050 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0173
+U 1 1 6131B788
+P 12050 8750
+F 0 "#PWR0173" H 12050 8500 50  0001 C CNN
+F 1 "GND" H 12055 8577 50  0000 C CNN
+F 2 "" H 12050 8750 50  0001 C CNN
+F 3 "" H 12050 8750 50  0001 C CNN
+	1    12050 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0174
+U 1 1 6131B792
+P 12050 8450
+F 0 "#PWR0174" H 12050 8300 50  0001 C CNN
+F 1 "VCC" H 12065 8623 50  0000 C CNN
+F 2 "" H 12050 8450 50  0001 C CNN
+F 3 "" H 12050 8450 50  0001 C CNN
+	1    12050 8450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
