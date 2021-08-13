@@ -2379,7 +2379,7 @@ Text GLabel 11100 2200 2    50   Input ~ 0
 D4_BUF
 Text GLabel 11100 2400 2    50   Input ~ 0
 D3_BUF
-Text GLabel 10100 1900 0    50   Input ~ 0
+Text GLabel 10100 2000 0    50   Input ~ 0
 D0
 Text GLabel 10100 2100 0    50   Input ~ 0
 D1
@@ -2389,11 +2389,11 @@ Text GLabel 10100 2400 0    50   Input ~ 0
 D3
 Text GLabel 10100 2200 0    50   Input ~ 0
 D4
-Text GLabel 10100 2000 0    50   Input ~ 0
-D5
-Text GLabel 10100 1800 0    50   Input ~ 0
-D6
 Text GLabel 10100 1700 0    50   Input ~ 0
+D5
+Text GLabel 10100 1900 0    50   Input ~ 0
+D6
+Text GLabel 10100 1800 0    50   Input ~ 0
 D7
 Text Notes 2350 11050 0    50   ~ 0
 Connections to N/C pins\nare to assist with routing.
