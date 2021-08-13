@@ -2369,11 +2369,11 @@ Wire Wire Line
 Connection ~ 11050 10100
 Wire Wire Line
 	11050 10100 11100 10100
-Text GLabel 11100 1700 2    50   Input ~ 0
-D7_BUF
 Text GLabel 11100 1800 2    50   Input ~ 0
+D7_BUF
+Text GLabel 11100 1900 2    50   Input ~ 0
 D6_BUF
-Text GLabel 11100 2000 2    50   Input ~ 0
+Text GLabel 11100 1700 2    50   Input ~ 0
 D5_BUF
 Text GLabel 11100 2200 2    50   Input ~ 0
 D4_BUF
@@ -2626,7 +2626,7 @@ Text GLabel 9000 10000 0    50   Input ~ 0
 UART_S1
 Text GLabel 9000 9900 0    50   Input ~ 0
 UART_S0
-Text GLabel 11100 1900 2    50   Input ~ 0
+Text GLabel 11100 2000 2    50   Input ~ 0
 D0_BUF
 Text GLabel 11100 2100 2    50   Input ~ 0
 D1_BUF
@@ -2696,6 +2696,39 @@ F 1 "VCC" H 12065 8623 50  0000 C CNN
 F 2 "" H 12050 8450 50  0001 C CNN
 F 3 "" H 12050 8450 50  0001 C CNN
 	1    12050 8450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C98
+U 1 1 6143E0B4
+P 12550 8600
+F 0 "C98" H 12665 8646 50  0000 L CNN
+F 1 "0.1uF" H 12665 8555 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 12588 8450 50  0001 C CNN
+F 3 "~" H 12550 8600 50  0001 C CNN
+	1    12550 8600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6143EB1E
+P 12550 8750
+F 0 "#PWR?" H 12550 8500 50  0001 C CNN
+F 1 "GND" H 12555 8577 50  0000 C CNN
+F 2 "" H 12550 8750 50  0001 C CNN
+F 3 "" H 12550 8750 50  0001 C CNN
+	1    12550 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6143EB28
+P 12550 8450
+F 0 "#PWR?" H 12550 8300 50  0001 C CNN
+F 1 "VCC" H 12565 8623 50  0000 C CNN
+F 2 "" H 12550 8450 50  0001 C CNN
+F 3 "" H 12550 8450 50  0001 C CNN
+	1    12550 8450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
