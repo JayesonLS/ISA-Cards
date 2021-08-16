@@ -884,7 +884,7 @@ F 3 "~" H 9350 7700 50  0001 C CNN
 	1    9350 7700
 	1    0    0    -1  
 $EndComp
-Text GLabel 8200 1550 2    39   Input ~ 0
+Text GLabel 8200 1750 2    39   Input ~ 0
 ~BUFF_READ
 Text GLabel 7200 3500 0    39   Input ~ 0
 ~IOR
@@ -894,7 +894,7 @@ Wire Notes Line
 	15050 4050 12350 4050
 Wire Notes Line
 	15050 600  15050 4050
-Text GLabel 8200 1750 2    39   Input ~ 0
+Text GLabel 8200 1650 2    39   Input ~ 0
 ~MEMR~_DELAYED
 $Comp
 L power:GND #PWR0134
@@ -1324,8 +1324,6 @@ Text GLabel 8200 3300 2    39   Input ~ 0
 ~UART_CS
 Text GLabel 8200 1350 2    39   Input ~ 0
 ~CE~_RAM_DECODE
-Text GLabel 8200 1650 2    50   Input ~ 0
-A17_MAPPED
 Text GLabel 8200 3500 2    50   Input ~ 0
 IOR_DECODE
 Text GLabel 8200 1250 2    39   Input ~ 0
@@ -2827,4 +2825,6 @@ Wire Notes Line
 	11800 8150 8200 8150
 Wire Notes Line
 	8200 7150 8200 8150
+Text GLabel 8200 1550 2    50   Input ~ 0
+A17_MAPPED
 $EndSCHEMATC

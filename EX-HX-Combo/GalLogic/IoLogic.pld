@@ -13,23 +13,23 @@ Device   G16V8AS;
 PIN  1  = UART_S0                ; /* UART (COM port) select jumper 0 */
 PIN  2  = UART_S1                ; /* UART (COM port) select jumper 1 */
 PIN  3  = !IOR                   ; /* ISA IO Read */
-PIN  4  = A03                    ; /* ISA address line */
-PIN  5  = A04                    ; /* ISA address line */
-PIN  6  = A05                    ; /* ISA address line */
-PIN  7  = A06                    ; /* ISA address line */
-PIN  8  = A07                    ; /* ISA address line */
-PIN  9  = A08                    ; /* ISA address line */
-PIN 11  = A09                    ; /* ISA address line */
-PIN 12  = ATA_ADDR_JMPR          ; /* ATA address Jumper */
-PIN 13  = AEN                    ; /* ISA AEN signal*/
-PIN 14  = RESET_IN               ; /* ISA reset in */
+PIN  4  = RESET_IN               ; /* ISA reset in */
+PIN  5  = A03                    ; /* ISA address line */
+PIN  6  = A04                    ; /* ISA address line */
+PIN  7  = ATA_ADDR_JMPR          ; /* ATA address Jumper */
+PIN  8  = A05                    ; /* ISA address line */
+PIN  9  = AEN                    ; /* ISA AEN signal*/
+PIN 11  = A07                    ; /* ISA address line */
+PIN 12  = A06                    ; /* ISA address line */
+PIN 13  = A08                    ; /* ISA address line */
+PIN 14  = A09                    ; /* ISA address line */
 
 /* *************** OUTPUT PINS *********************/
 PIN 15  = !RESET_OUT             ; /* Inverted reset */
-PIN 16  = IOR_DECODE             ; /* Asserted when an IO read occurs from a device on the board. */
-PIN 17  = !UART_CS               ; /* Chip select the UART. */
+PIN 16  = !CS1_ATA               ; /* Chip select 1 for ATA. */
+PIN 17  = IOR_DECODE             ; /* Asserted when an IO read occurs from a device on the board. */
 PIN 18  = !CS3_ATA               ; /* Chip select 3 for ATA. */
-PIN 19  = !CS1_ATA               ; /* Chip select 1 for ATA. */
+PIN 19  = !UART_CS               ; /* Chip select the UART. */
 
 /* Equations */
 DECODE_1F0 = !A09 & A08 &  A07 &  A06 &  A05 &  A04;
