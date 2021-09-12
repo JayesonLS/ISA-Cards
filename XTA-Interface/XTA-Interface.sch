@@ -314,9 +314,9 @@ Text GLabel 7900 4200 2    50   Input ~ 0
 D6_BUF
 Text GLabel 7900 4300 2    50   Input ~ 0
 D7_BUF
-Text GLabel 5250 1650 2    39   Input ~ 0
+Text GLabel 5250 1550 2    39   Input ~ 0
 ~CS_XTA0
-Text GLabel 5250 1750 2    39   Input ~ 0
+Text GLabel 5250 1450 2    39   Input ~ 0
 ~CE~_BIOS
 Text GLabel 2600 3400 2    50   Input ~ 0
 A06
@@ -346,7 +346,7 @@ Text GLabel 2600 2400 2    50   Input ~ 0
 A16
 Text GLabel 2600 2500 2    50   Input ~ 0
 A15
-Text GLabel 4250 2250 0    50   Input ~ 0
+Text GLabel 5250 1850 2    50   Input ~ 0
 A19
 Text GLabel 4250 2150 0    50   Input ~ 0
 A18
@@ -552,9 +552,9 @@ Text GLabel 4150 6050 0    50   Input ~ 0
 D1
 Text GLabel 4150 5950 0    50   Input ~ 0
 D0
-Text GLabel 5550 950  0    50   Input ~ 0
+Text GLabel 3850 2350 3    50   Input ~ 0
 ADDR_JUMPER_0
-Text GLabel 5550 850  0    50   Input ~ 0
+Text GLabel 5400 2300 3    50   Input ~ 0
 ADDR_JUMPER_1
 $Comp
 L 00Common:GAL16V8 U3
@@ -805,7 +805,7 @@ Text GLabel 9450 2850 0    39   Input ~ 0
 Text GLabel 9450 2450 0    50   Input ~ 0
 XTA_IRQ
 Text GLabel 9450 2350 0    50   Input ~ 0
-XTA_DRQ
+DRQ3
 Text GLabel 9450 2250 0    39   Input ~ 0
 ~XTA_DACK
 Text GLabel 9450 1950 0    50   Input ~ 0
@@ -952,7 +952,7 @@ Text GLabel 9450 5700 0    39   Input ~ 0
 Text GLabel 9450 5300 0    50   Input ~ 0
 XTA_IRQ
 Text GLabel 9450 5200 0    50   Input ~ 0
-XTA_DRQ
+DRQ3
 Text GLabel 9450 5100 0    39   Input ~ 0
 ~XTA_DACK
 Text GLabel 9450 4800 0    50   Input ~ 0
@@ -1168,7 +1168,7 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 4650 6450 50  0001 C CNN
 $EndComp
 Text GLabel 4150 6850 0    39   Input ~ 0
 ~MEMR
-Text GLabel 5250 1550 2    39   Input ~ 0
+Text GLabel 5250 1650 2    39   Input ~ 0
 ~CS_XTA1
 Text GLabel 4000 3350 0    50   Input ~ 0
 A03
@@ -1178,9 +1178,9 @@ Text GLabel 4250 1650 0    50   Input ~ 0
 A13
 Text GLabel 4250 1750 0    50   Input ~ 0
 A14
-Text GLabel 5250 1850 2    39   Input ~ 0
+Text GLabel 5250 1350 2    39   Input ~ 0
 ~MEMR~_DELAYED
-Text GLabel 5250 1950 2    39   Input ~ 0
+Text GLabel 5250 1750 2    39   Input ~ 0
 ~MEMR
 $Comp
 L Connector_Generic:Conn_01x06 J2
@@ -1296,7 +1296,7 @@ AEN
 Wire Wire Line
 	2500 2000 2600 2000
 Text GLabel 1000 2500 0    50   Input ~ 0
-XTA_DRQ
+DRQ3
 Text GLabel 1000 2400 0    39   Input ~ 0
 ~DACK3
 Wire Wire Line
@@ -1375,7 +1375,7 @@ Text GLabel 4000 4250 0    39   Input ~ 0
 ~DACK3
 Text GLabel 5000 4050 2    39   Input ~ 0
 ~XTA_DACK
-NoConn ~ 5250 2050
+NoConn ~ 5250 1950
 NoConn ~ 5000 3450
 NoConn ~ 5000 3350
 NoConn ~ 5000 3850
@@ -1394,20 +1394,16 @@ Wire Wire Line
 	3700 1450 3700 950 
 Wire Wire Line
 	3700 950  3850 950 
-Wire Wire Line
-	5250 1350 5650 1350
-Wire Wire Line
-	5650 1350 5650 950 
-Wire Wire Line
-	5650 950  5550 950 
-Wire Wire Line
-	5550 850  5750 850 
-Wire Wire Line
-	5750 850  5750 1450
-Wire Wire Line
-	5750 1450 5250 1450
-Text Notes 5150 2250 0    50   ~ 0
+Text Notes 2950 2200 0    50   ~ 0
 Spare for extra\ndelay if needed.
 Text Notes 4900 4350 0    50   ~ 0
 Unused pins are for\nadding propogation\ndelay. Need at least 4.
+Wire Wire Line
+	5250 2050 5400 2050
+Wire Wire Line
+	5400 2050 5400 2300
+Wire Wire Line
+	4250 2250 3850 2250
+Wire Wire Line
+	3850 2250 3850 2350
 $EndSCHEMATC
