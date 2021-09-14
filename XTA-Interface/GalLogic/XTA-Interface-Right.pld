@@ -1,0 +1,62 @@
+/* Implements glue logic. */
+Name     XTA-Interface-Right ;
+PartNo   XTARIGHT ;
+Date     14/09/2021 ;
+Revision 01 ;
+Designer Jayeson Lee-Steere ;
+Company  Titanium Studios Pty Ltd ;
+Assembly None ;
+Location  ;
+Device   G16V8AS;
+
+/* *************** INPUT PINS *********************/
+PIN  1  = ST_WD_JUMPER           ; /* ST05X or WDXT-150 model select jumper */
+PIN  2  = A02                    ; /* ISA address line */
+PIN  3  = A13                    ; /* ISA address line */
+PIN  4  = A14                    ; /* ISA address line */
+PIN  5  = A15                    ; /* ISA address line */
+PIN  6  = A16                    ; /* ISA address line */
+PIN  7  = A17                    ; /* ISA address line */
+PIN  8  = A18                    ; /* ISA address line */
+PIN  9  = A19                    ; /* ISA address line */
+PIN  11  = ADDR_JUMPER_0         ; /* Function depends on mode */
+PIN  12  = ADDR_JUMPER_1         ; /* Function depends on mode */
+PIN  13  = !MEMR                 ; /* ISA address line */
+PIN  14  = DECODE_320_RANGE      ; /* If address is in range 320h-327h. */
+
+/* *************** OUTPUT PINS *********************/
+PIN 15  = !CS_XTA0               ; /* CS for the primary XTA connector */
+PIN 16  = !CS_XTA1               ; /* CS for the secondary XTA connector */
+PIN 17  = !BUFF_DIR_READ    	 ; /* Direction of bus tranceiver */
+PIN 18  = !MEMR_DELAYED          ; /* Slightly delayed ~MEMR signal */
+PIN 19  = !CE_BIOS               ; /* CS for the BIOS rom connector */
+
+/* Equations */
+ST_MODE = !ST_WD_JUMPER;
+WD_MODE = ST_WD_JUMPER;
+
+DECODE_C800 = A19 & A18 & !A17 & !A16 &  A15 & !A14 & !A13;
+DECODE_CA00 = A19 & A18 & !A17 & !A16 &  A15 & !A14 & A13;
+DECODE_D000 = A19 & A18 & !A17 &  A16 & !A15 & !A14 & !A13;
+DECODE_D800 = A19 & A18 & !A17 &  A16 &  A15 & !A14 & !A13;
+DECODE_E000 = A19 & A18 &  A17 & !A16 & !A15 & !A14 & !A13;
+USE_C800 = (ST_MODE & !ADDR_JUMPER_0 & !ADDR_JUMPER_1) # (WD_MODE & !ADDR_JUMPER_0);
+USE_CA00 = WD_MODE & ADDR_JUMPER_0;
+USE_D000 = ST_MODE & ADDR_JUMPER_0 & !ADDR_JUMPER_1;
+USE_D800 = ST_MODE & !ADDR_JUMPER_0 & ADDR_JUMPER_1;
+USE_E000 = ST_MODE & ADDR_JUMPER_0 & ADDR_JUMPER_1;
+CE_BIOS_TEMP = (USE_C800 & DECODE_C800) #
+               (USE_CA00 & DECODE_CA00) #
+               (USE_D000 & DECODE_D000) #
+               (USE_D800 & DECODE_D800) #
+               (USE_E000 & DECODE_E000);
+CE_BIOS = CE_BIOS_TEMP;
+
+DECODE_320 = DECODE_320_RANGE & !A02;
+DECODE_324 = DECODE_320_RANGE & A02;
+CS_XTA0 = DECODE_320 & (ST_MODE # (WD_MODE & !ADDR_JUMPER_0));
+CS_XTA1 = DECODE_324 & (ST_MODE # (WD_MODE & ADDR_JUMPER_0));
+
+BUFF_DIR_READ = CE_BIOS_TEMP & MEMR;
+
+MEMR_DELAYED = MEMR & BUFF_DIR_READ;
