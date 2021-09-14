@@ -1,0 +1,44 @@
+/* Implements glue logic. */
+Name     XTA-Interface-Left ;
+PartNo   XTALEFT ;
+Date     14/09/2021 ;
+Revision 01 ;
+Designer Jayeson Lee-Steere ;
+Company  Titanium Studios Pty Ltd ;
+Assembly None ;
+Location  ;
+Device   G16V8AS;
+
+/* *************** INPUT PINS *********************/
+PIN  1  = A03                    ; /* ISA address line */
+PIN  2  = A04                    ; /* ISA address line */
+PIN  3  = A05                    ; /* ISA address line */
+PIN  4  = A06                    ; /* ISA address line */
+PIN  5  = A07                    ; /* ISA address line */
+PIN  6  = A08                    ; /* ISA address line */
+PIN  7  = A09                    ; /* ISA address line */
+PIN  8  = !IOW                   ; /* ISA IO Write */
+PIN  9  = !IOR                   ; /* ISA IO Read */
+PIN 11  = !DACK_IN               ; /* ISA DACK signal */
+
+/* *************** OUTPUT PINS *********************/
+PIN 12  = !DACK_OUT              ; /* Modified DACK */
+PIN 13  = IORW_DELAY1            ; /* IOR or IOW, with delay */
+PIN 14  = IORW_DELAY2            ; /* IOR or IOW, with delay */
+PIN 15  = !DECODE_320_RANGE      ; /* If address is in range 320h-327h. */
+PIN 16  = IORW_DELAY_DEBUG       ; /* No feedback so can't be used for DACK_OUT or delay */
+PIN 17  = IORW_DELAY3            ; /* IOR or IOW, with delay */
+PIN 18  = IORW_DELAY4            ; /* IOR or IOW, with delay */
+PIN 19  = IORW_DELAY5            ; /* IOR or IOW, with delay */
+
+/* Equations */
+DECODE_320_RANGE =  A09 & A08 & !A07 & !A06 &  A05 & !A04 & !A03;
+IORW_DELAY1 = IOR # IOW;
+IORW_DELAY2 = IORW_DELAY1;
+IORW_DELAY3 = IORW_DELAY2;
+IORW_DELAY4 = IORW_DELAY3;
+IORW_DELAY5 = IORW_DELAY4;
+IORW_DELAYED = IORW_DELAY5;
+/* Hold DACK_OUT while IOR or IOW is asserted, with a delay. */
+DACK_OUT = DACK_IN # (DACK_OUT & IORW_DELAYED);
+IORW_DELAY_DEBUG = IORW_DELAYED;

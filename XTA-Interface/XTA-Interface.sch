@@ -1266,7 +1266,7 @@ F 3 "" H 4500 3850 50  0001 C CNN
 	1    4500 3850
 	1    0    0    -1  
 $EndComp
-Text GLabel 5000 3950 2    50   Input ~ 0
+Text GLabel 5000 3750 2    50   Input ~ 0
 DECODE_IO_RANGE
 Text GLabel 5250 1550 2    50   Input ~ 0
 DECODE_IO_RANGE
@@ -1306,7 +1306,6 @@ NoConn ~ 5250 1950
 NoConn ~ 5000 3450
 NoConn ~ 5000 3350
 NoConn ~ 5000 3850
-NoConn ~ 5000 3750
 NoConn ~ 5000 3650
 NoConn ~ 5000 3550
 Wire Wire Line
@@ -1410,4 +1409,17 @@ F 3 "" H 9850 3700 50  0001 C CNN
 	1    9850 3700
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5000 3950
+Text Label 5000 3950 0    39   ~ 0
+IOR_DELAY1
+Text Label 5000 3850 0    39   ~ 0
+IOR_DELAY2
+Text Label 5000 3650 0    39   ~ 0
+IOR_DELAY_DEBUG
+Text Label 5000 3450 0    39   ~ 0
+IOR_DELAY4
+Text Label 5000 3350 0    39   ~ 0
+IOR_DELAY5
+Text Label 5000 3550 0    39   ~ 0
+IOR_DELAY3
 $EndSCHEMATC
