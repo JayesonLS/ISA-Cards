@@ -1256,11 +1256,6 @@ F 3 "" H 4950 7350 50  0001 C CNN
 	1    4950 7350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13250 2700 12650 2700
-Wire Wire Line
-	12650 2700 12650 2800
-Connection ~ 12650 2800
 NoConn ~ 1350 9350
 $Comp
 L 00Common:GAL16V8 U8
@@ -1342,8 +1337,6 @@ Text GLabel 7200 1750 0    50   Input ~ 0
 A16
 Text GLabel 7200 2150 0    50   Input ~ 0
 A15
-Text GLabel 7200 3400 0    50   Input ~ 0
-UART_S1
 Text GLabel 8200 3600 2    39   Input ~ 0
 ~CS1~_ATA
 Text GLabel 8200 3300 2    39   Input ~ 0
@@ -1455,7 +1448,7 @@ Text GLabel 8200 3400 2    39   Input ~ 0
 Text GLabel 11200 6150 2    39   Input ~ 0
 ~CS3~_ATA
 Text GLabel 7200 3300 0    50   Input ~ 0
-UART_S0
+UART_ENABLE
 Text GLabel 7200 3600 0    50   Input ~ 0
 RESET
 Text GLabel 8200 3700 2    39   Input ~ 0
@@ -1463,9 +1456,7 @@ Text GLabel 8200 3700 2    39   Input ~ 0
 Text GLabel 7200 1550 0    50   Input ~ 0
 IOR_DECODE
 Text GLabel 1350 10150 0    50   Input ~ 0
-UART_IRQ
-Text GLabel 11100 10100 2    50   Input ~ 0
-UART_IRQ
+IRQ4
 NoConn ~ 11200 6450
 Wire Wire Line
 	10400 6450 9800 6450
@@ -1492,10 +1483,6 @@ Wire Wire Line
 	11650 6350 11650 6150
 Wire Wire Line
 	11650 6350 11200 6350
-Text GLabel 10400 10100 0    50   Input ~ 0
-IRQ3
-Text GLabel 10400 10200 0    50   Input ~ 0
-IRQ4
 Wire Wire Line
 	10400 9400 10300 9400
 $Comp
@@ -2151,10 +2138,6 @@ Text GLabel 1100 3550 0    50   Input ~ 0
 IRQ4
 Wire Wire Line
 	1600 3550 1100 3550
-Text GLabel 1100 3650 0    50   Input ~ 0
-IRQ3
-Wire Wire Line
-	1600 3650 1100 3650
 Text GLabel 1050 1550 0    50   Input ~ 0
 IRQ2
 Text GLabel 1050 1750 0    50   Input ~ 0
@@ -2329,30 +2312,10 @@ Wire Wire Line
 	2600 2150 2700 2150
 Wire Wire Line
 	5300 10100 5300 10500
-$Comp
-L Switch:SW_DIP_x10 SW1
-U 1 1 60DCA93E
-P 10700 9700
-F 0 "SW1" H 10700 10467 50  0000 C CNN
-F 1 "SW_DIP_x10" H 10700 10376 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx10_Slide_9.78x27.58mm_W7.62mm_P2.54mm" H 10700 9700 50  0001 C CNN
-F 3 "~" H 10700 9700 50  0001 C CNN
-	1    10700 9700
-	-1   0    0    1   
-$EndComp
-Text GLabel 11000 9300 2    39   Input ~ 0
-~CE~_BIOS_DECODE
 Text GLabel 11000 9150 2    39   Input ~ 0
+~CE~_BIOS_DECODE
+Text GLabel 11000 9300 2    39   Input ~ 0
 ~CE~_BIOS_THRU
-Wire Wire Line
-	11000 10100 11050 10100
-Wire Wire Line
-	11000 10200 11050 10200
-Wire Wire Line
-	11050 10200 11050 10100
-Connection ~ 11050 10100
-Wire Wire Line
-	11050 10100 11100 10100
 Text GLabel 11100 1800 2    50   Input ~ 0
 D7_BUF
 Text GLabel 11100 1900 2    50   Input ~ 0
@@ -2609,9 +2572,9 @@ ATA_ADDR_JUMPER
 Text GLabel 9000 9500 0    50   Input ~ 0
 BASE_RAM_SIZE
 Text GLabel 9000 10000 0    50   Input ~ 0
-UART_S1
+CPU_TYPE
 Text GLabel 9000 9900 0    50   Input ~ 0
-UART_S0
+UART_ENABLE
 Text GLabel 11100 2000 2    50   Input ~ 0
 D0_BUF
 Text GLabel 11100 2100 2    50   Input ~ 0
@@ -2865,4 +2828,22 @@ F 4 "C386895" H 7550 5950 50  0001 C CNN "LCSC"
 	1    7550 5950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Switch:SW_DIP_x08 SW1
+U 1 1 60DCA93E
+P 10700 9700
+F 0 "SW1" H 10700 10467 50  0000 C CNN
+F 1 "SW_DIP_x10" H 10700 10376 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx10_Slide_9.78x27.58mm_W7.62mm_P2.54mm" H 10700 9700 50  0001 C CNN
+F 3 "~" H 10700 9700 50  0001 C CNN
+	1    10700 9700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 7200 3400
+Text GLabel 1100 3650 0    50   Input ~ 0
+IRQ3
+Wire Wire Line
+	1600 3650 1100 3650
+Text GLabel 13250 2700 0    50   Input ~ 0
+CPU_TYPE
 $EndSCHEMATC
