@@ -361,8 +361,6 @@ Wire Wire Line
 	6700 5300 6100 5300
 Wire Wire Line
 	6100 5300 6100 5400
-Text GLabel 6700 4900 0    50   Input ~ 0
-ST_WD_JUMPER
 $Comp
 L Device:C C1
 U 1 1 604303F2
@@ -1000,19 +998,9 @@ Wire Notes Line
 	5900 3050 5900 6450
 Wire Notes Line
 	5900 6450 8350 6450
-Wire Wire Line
-	6700 5000 6100 5000
-Wire Wire Line
-	6100 5000 6100 5100
 Connection ~ 6100 5300
 Wire Wire Line
-	6700 5100 6100 5100
-Connection ~ 6100 5100
-Wire Wire Line
-	6100 5100 6100 5200
-Wire Wire Line
 	6700 5200 6100 5200
-Connection ~ 6100 5200
 Wire Wire Line
 	6100 5200 6100 5300
 Text GLabel 2600 1800 2    50   Input ~ 0
@@ -1438,4 +1426,10 @@ Wire Wire Line
 	5550 4050 5550 3750
 Wire Wire Line
 	5550 3750 5200 3750
+Text GLabel 6700 5100 0    50   Input ~ 0
+ST_WD_JUMPER
+Text GLabel 6700 4900 0    50   Input ~ 0
+A13
+Text GLabel 6700 5000 0    50   Input ~ 0
+A14
 $EndSCHEMATC
