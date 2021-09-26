@@ -345,14 +345,9 @@ Text GLabel 2700 2650 2    50   Input ~ 0
 A16
 Text GLabel 2700 2750 2    50   Input ~ 0
 A15
-Wire Wire Line
-	13250 2800 12650 2800
-Wire Wire Line
-	12650 2800 12650 2900
 Connection ~ 12650 3000
 Wire Wire Line
 	13250 2900 12650 2900
-Connection ~ 12650 2900
 Wire Wire Line
 	12650 2900 12650 3000
 $Comp
@@ -1836,78 +1831,6 @@ F 3 "~" H 14200 8650 50  0001 C CNN
 	1    14200 8650
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole_Pad H1
-U 1 1 60D6AC46
-P 5500 9900
-F 0 "H1" V 5454 10050 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5545 10050 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 5500 9900 50  0001 C CNN
-F 3 "~" H 5500 9900 50  0001 C CNN
-	1    5500 9900
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H2
-U 1 1 60D6B05B
-P 5500 10100
-F 0 "H2" V 5454 10250 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5545 10250 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 5500 10100 50  0001 C CNN
-F 3 "~" H 5500 10100 50  0001 C CNN
-	1    5500 10100
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H3
-U 1 1 60D6B4F1
-P 5500 10500
-F 0 "H3" V 5454 10650 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5545 10650 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 5500 10500 50  0001 C CNN
-F 3 "~" H 5500 10500 50  0001 C CNN
-	1    5500 10500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 10500 5300 10500
-Connection ~ 5300 10500
-Wire Wire Line
-	5300 10500 5300 10700
-$Comp
-L Mechanical:MountingHole_Pad H4
-U 1 1 60D9AE58
-P 5500 10700
-F 0 "H4" V 5454 10850 50  0000 L CNN
-F 1 "MountingHole_Pad" V 5545 10850 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.5mm_Pad" H 5500 10700 50  0001 C CNN
-F 3 "~" H 5500 10700 50  0001 C CNN
-	1    5500 10700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 10700 5300 10700
-Connection ~ 5300 10700
-Wire Wire Line
-	5300 10700 5300 10800
-$Comp
-L power:GND #PWR0148
-U 1 1 60DA739E
-P 5300 10800
-F 0 "#PWR0148" H 5300 10550 50  0001 C CNN
-F 1 "GND" H 5305 10627 50  0000 C CNN
-F 2 "" H 5300 10800 50  0001 C CNN
-F 3 "" H 5300 10800 50  0001 C CNN
-	1    5300 10800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5400 10100 5300 10100
-Connection ~ 5300 10100
-Wire Wire Line
-	5400 9900 5300 9900
-Wire Wire Line
-	5300 9900 5300 10100
 Text GLabel 5650 1350 2    50   Input ~ 0
 D7
 Text GLabel 5650 1450 2    50   Input ~ 0
@@ -2310,8 +2233,6 @@ Text GLabel 2700 2150 2    50   Input ~ 0
 RDYIN
 Wire Wire Line
 	2600 2150 2700 2150
-Wire Wire Line
-	5300 10100 5300 10500
 Text GLabel 11000 9150 2    39   Input ~ 0
 ~CE~_BIOS_DECODE
 Text GLabel 11000 9300 2    39   Input ~ 0
@@ -2571,9 +2492,9 @@ Text GLabel 9000 9800 0    50   Input ~ 0
 ATA_ADDR_JUMPER
 Text GLabel 9000 9500 0    50   Input ~ 0
 BASE_RAM_SIZE
-Text GLabel 9000 10000 0    50   Input ~ 0
-CPU_TYPE
 Text GLabel 9000 9900 0    50   Input ~ 0
+CPU_TYPE
+Text GLabel 9000 10000 0    50   Input ~ 0
 UART_ENABLE
 Text GLabel 11100 2000 2    50   Input ~ 0
 D0_BUF
@@ -2682,80 +2603,6 @@ F 3 "" H 13400 7550 50  0001 C CNN
 	1    13400 7550
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole_Pad H5
-U 1 1 61187FCA
-P 7050 9900
-F 0 "H5" V 7004 10050 50  0000 L CNN
-F 1 "AlignmentHole_Pad" V 7095 10050 50  0000 L CNN
-F 2 "00Custom:AlignmentHole" H 7050 9900 50  0001 C CNN
-F 3 "~" H 7050 9900 50  0001 C CNN
-	1    7050 9900
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H6
-U 1 1 611A4105
-P 7050 10100
-F 0 "H6" V 7004 10250 50  0000 L CNN
-F 1 "AlignmentHole_Pad" V 7095 10250 50  0000 L CNN
-F 2 "00Custom:AlignmentHole" H 7050 10100 50  0001 C CNN
-F 3 "~" H 7050 10100 50  0001 C CNN
-	1    7050 10100
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H7
-U 1 1 611C6C9E
-P 7050 10300
-F 0 "H7" V 7004 10450 50  0000 L CNN
-F 1 "AlignmentHole_Pad" V 7095 10450 50  0000 L CNN
-F 2 "00Custom:AlignmentHole" H 7050 10300 50  0001 C CNN
-F 3 "~" H 7050 10300 50  0001 C CNN
-	1    7050 10300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6950 9900 6850 9900
-Wire Wire Line
-	6850 9900 6850 10100
-$Comp
-L power:GND #PWR0179
-U 1 1 6120C5C6
-P 6850 10600
-F 0 "#PWR0179" H 6850 10350 50  0001 C CNN
-F 1 "GND" H 6855 10427 50  0000 C CNN
-F 2 "" H 6850 10600 50  0001 C CNN
-F 3 "" H 6850 10600 50  0001 C CNN
-	1    6850 10600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6950 10100 6850 10100
-Connection ~ 6850 10100
-Wire Wire Line
-	6850 10100 6850 10300
-Wire Wire Line
-	6950 10300 6850 10300
-Connection ~ 6850 10300
-$Comp
-L Mechanical:MountingHole_Pad H8
-U 1 1 611975A0
-P 7050 10500
-F 0 "H8" V 7004 10650 50  0000 L CNN
-F 1 "DB-9 Faceplate" V 7095 10650 50  0000 L CNN
-F 2 "00Custom:DB9_Face" H 7050 10500 50  0001 C CNN
-F 3 "~" H 7050 10500 50  0001 C CNN
-	1    7050 10500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6850 10300 6850 10500
-Wire Wire Line
-	6950 10500 6850 10500
-Connection ~ 6850 10500
-Wire Wire Line
-	6850 10500 6850 10600
 Wire Wire Line
 	10400 9300 10400 9150
 Wire Wire Line
@@ -2784,24 +2631,8 @@ F 4 "C17902" V 9900 9050 50  0001 C CNN "LCSC"
 	1    9900 9050
 	1    0    0    -1  
 $EndComp
-Text Notes 5250 9650 0    79   ~ 0
-MOUNTING
 Wire Notes Line
-	5150 9500 5150 11100
-Wire Notes Line
-	5150 9500 8100 9500
-Wire Notes Line
-	5050 9400 8100 9400
-Wire Notes Line
-	5050 9400 5050 11100
-Wire Notes Line
-	5050 11100 600  11100
-Wire Notes Line
-	5150 11100 8100 11100
-Wire Notes Line
-	8100 11100 8100 9500
-Wire Notes Line
-	8100 9400 8100 6900
+	8100 11100 8100 6900
 Wire Notes Line
 	11800 8150 11800 9150
 Wire Notes Line
@@ -2844,6 +2675,10 @@ Text GLabel 1100 3650 0    50   Input ~ 0
 IRQ3
 Wire Wire Line
 	1600 3650 1100 3650
-Text GLabel 13250 2700 0    50   Input ~ 0
+Text GLabel 13250 2800 0    50   Input ~ 0
 CPU_TYPE
+Wire Notes Line
+	600  11100 8100 11100
+Text GLabel 13250 2700 0    50   Input ~ 0
+ATA_ADDR_JUMPER
 $EndSCHEMATC
