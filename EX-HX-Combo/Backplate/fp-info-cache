@@ -1,4 +1,116 @@
-19159904417122432
+19205262171169854
+00Custom
+AlignmentHole
+Hole for fitting PCB tab at right angles.
+
+0
+1
+1
+00Custom
+BUS_XT
+AT ISA 16 bits Bus Edge Connector
+BUS ISA AT Edge connector
+0
+62
+62
+00Custom
+C_Ceramic
+C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=4.3*1.9mm^2, Capacitor, http://www.vishay.com/docs/45233/krseries.pdf
+C Disc series Radial pin pitch 5.00mm  diameter 4.3mm width 1.9mm Capacitor
+0
+2
+2
+00Custom
+Crystal_DIP8_DIP14
+14-lead dip package, row spacing 7.62 mm (300 mils), longer pads
+dil dip 2.54 300
+0
+6
+6
+00Custom
+DB9_Face
+For right angle DB-9 faceplate. Cutout from: https://content.norcomp.net/rohspdfs/Connectors/PanelCutOuts/Panel_Cutout_D-Sub-Single.pdf
+
+0
+2
+1
+00Custom
+DB9_Face_NPTH
+For right angle DB-9 faceplate
+
+0
+0
+0
+00Custom
+Fuseholder5x20_horiz_open_universal_Type-III
+Fuseholder, 5x20, open, horizontal, Type-III, universal, inline, lateral,
+Fuseholder 5x20 open horizontal Type-III universal inline lateral Sicherungshalter offen 
+0
+8
+2
+00Custom
+GroundHook
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+00Custom
+MiniCFAdapter
+Through hole angled socket strip, 2x22, 2.00mm pitch, 6.35mm socket length, double cols (from Kicad 4.0.7), script generated
+Through hole angled socket strip THT 2x22 2.00mm double row
+0
+44
+44
+00Custom
+PinHeader_3x02_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+6
+6
+00Custom
+PinHeader_3x03_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+9
+9
+00Custom
+PinHeader_3x04_P2.54mm_Vertical
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
+0
+12
+12
+00Custom
+R_ThroughHole
+Resistor, Axial_DIN0309 series, Axial, Horizontal, pin pitch=12.7mm, 0.5W = 1/2W, length*diameter=9*3.2mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf
+Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W length 9mm diameter 3.2mm
+0
+2
+2
+00Custom
+TandyPlusLongPins
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
+00Custom
+TandyPlusShortPins
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
+00Custom
+TandyPlusSocket
+Through hole straight pin header, 2x31, 2.54mm pitch, double rows
+Through hole pin header THT 2x31 2.54mm double row
+0
+62
+62
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -83369,3 +83481,87 @@ varistor SIOV
 0
 2
 2
+w_conn_d-sub
+DB_9F
+D-SUB 9 pin socket, Tyco P/N 4-1634584-2
+
+0
+11
+9
+w_conn_d-sub
+DB_9M
+D-SUB 9 pin plug, Tyco P/N 4-338168-2
+
+0
+11
+9
+w_conn_d-sub
+DB_15F
+D-SUB 15 pin socket, Tyco P/N 5747845-5
+
+0
+17
+15
+w_conn_d-sub
+DB_15M
+D-SUB 15 pin plug, Tyco P/N 5747841-6
+
+0
+17
+15
+w_conn_d-sub
+DB_25F
+D-SUB 25 pin socket, Tyco P/N 4-106507-2
+
+0
+27
+25
+w_conn_d-sub
+DB_25M
+D-SUB 25 pin plug, Tyco P/N 5747842-5
+
+0
+27
+25
+w_conn_d-sub
+DB_26F
+D-SUB 26 pin receptacle, Tyco Amplimite P/N 5787082-2
+
+0
+28
+26
+w_conn_d-sub
+DB_28F
+D-SUB 28 pin receptacle, Tyco Amplimite P/N 5787082-3
+
+0
+30
+28
+w_conn_d-sub
+DB_37F
+D-SUB 37 pin socket, Assmann P/N A-DF37A/KG-T2
+
+0
+39
+37
+w_conn_d-sub
+DB_50F
+D-SUB 50 pin receptacle, Tyco Amplimite P/N 5787082-5
+
+0
+52
+50
+w_conn_d-sub
+DB_68F
+D-SUB 68 pin receptacle, Tyco Amplimite P/N 5787082-7
+
+0
+70
+68
+w_conn_d-sub
+DB_100F
+D-SUB 100 pin receptacle, Tyco Amplimite P/N 5787082-9
+
+0
+102
+100
