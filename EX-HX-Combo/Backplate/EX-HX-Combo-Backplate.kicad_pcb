@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 99)
+    (drawings 100)
     (tracks 0)
     (zones 0)
     (modules 7)
@@ -293,6 +293,7 @@
       (net 1 GND))
   )
 
+  (gr_poly (pts (xy 271.78 153.67) (xy 251.46 153.67) (xy 251.46 26.67) (xy 271.78 26.67)) (layer F.Mask) (width 0.1))
   (gr_line (start 244.54 37.54) (end 244.54 41.62) (layer Eco1.User) (width 0.1) (tstamp 61169710))
   (gr_poly (pts (xy 268.2875 136.0805) (xy 254.9525 136.0805) (xy 254.9525 103.9495) (xy 268.2875 103.9495)) (layer B.Mask) (width 0.1))
   (gr_line (start 256.88 102.86) (end 256.88 51.14) (layer Edge.Cuts) (width 0.1) (tstamp 6150810E))
@@ -441,7 +442,7 @@
   )
   (gr_line (start 242.84 142.54) (end 242.84 35.08) (layer Dwgs.User) (width 0.15) (tstamp 60CF5A3D))
 
-  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 611DBC83) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer B.Cu) (tstamp 61506C0A) (hatch edge 0.508)
     (connect_pads yes (clearance 0.2))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -546,7 +547,7 @@
       )
     )
   )
-  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 615007D3) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer F.Cu) (tstamp 61506C07) (hatch edge 0.508)
     (connect_pads yes (clearance 0.2))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
