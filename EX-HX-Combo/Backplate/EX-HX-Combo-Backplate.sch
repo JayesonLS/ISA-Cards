@@ -90,19 +90,8 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole_Pad H5
 U 1 1 61187FCA
-P 2500 1000
-F 0 "H5" V 2454 1150 50  0000 L CNN
-F 1 "AlignmentHole_Pad" V 2545 1150 50  0000 L CNN
-F 2 "00Custom:AlignmentHole" H 2500 1000 50  0001 C CNN
-F 3 "~" H 2500 1000 50  0001 C CNN
-	1    2500 1000
-	0    1    1    0   
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H6
-U 1 1 611A4105
 P 2500 1200
-F 0 "H6" V 2454 1350 50  0000 L CNN
+F 0 "H5" V 2454 1350 50  0000 L CNN
 F 1 "AlignmentHole_Pad" V 2545 1350 50  0000 L CNN
 F 2 "00Custom:AlignmentHole" H 2500 1200 50  0001 C CNN
 F 3 "~" H 2500 1200 50  0001 C CNN
@@ -110,10 +99,10 @@ F 3 "~" H 2500 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H7
+L Mechanical:MountingHole_Pad H6
 U 1 1 611C6C9E
 P 2500 1400
-F 0 "H7" V 2454 1550 50  0000 L CNN
+F 0 "H6" V 2454 1550 50  0000 L CNN
 F 1 "AlignmentHole_Pad" V 2545 1550 50  0000 L CNN
 F 2 "00Custom:AlignmentHole" H 2500 1400 50  0001 C CNN
 F 3 "~" H 2500 1400 50  0001 C CNN
@@ -121,12 +110,7 @@ F 3 "~" H 2500 1400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2400 1000 2300 1000
-Wire Wire Line
-	2300 1000 2300 1200
-Wire Wire Line
 	2400 1200 2300 1200
-Connection ~ 2300 1200
 Wire Wire Line
 	2300 1200 2300 1400
 Wire Wire Line
@@ -150,10 +134,10 @@ Wire Wire Line
 Wire Wire Line
 	2300 1400 2300 1600
 $Comp
-L Mechanical:MountingHole_Pad H8
+L Mechanical:MountingHole_Pad H7
 U 1 1 611975A0
 P 2500 1600
-F 0 "H8" V 2454 1750 50  0000 L CNN
+F 0 "H7" V 2454 1750 50  0000 L CNN
 F 1 "DB-9 Faceplate" V 2545 1750 50  0000 L CNN
 F 2 "00Custom:DB9_Face" H 2500 1600 50  0001 C CNN
 F 3 "~" H 2500 1600 50  0001 C CNN
