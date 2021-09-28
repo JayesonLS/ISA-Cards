@@ -2668,7 +2668,7 @@ F 3 "~" H 10700 9700 50  0001 C CNN
 F 4 "C99413" H 10700 9700 50  0001 C CNN "LCSC"
 F 5 "C99413, C3663, C16160, C319056" H 10700 9700 50  0001 C CNN "Part options"
 	1    10700 9700
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 NoConn ~ 7200 3400
 Text GLabel 1100 3650 0    50   Input ~ 0
