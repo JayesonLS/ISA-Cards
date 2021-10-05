@@ -38,8 +38,10 @@ CF-Combo-Super-Lite <sup>1, 2</sup>
 
 ![CF-Combo-Super-Lite](Images/CF-Combo-Super-Lite.jpg)
 
-**Status:** Design built and tested in all configurations. No issues found.
-
+**Status:** Design built and tested in all configurations. **There is a currently
+an error which may cause issues when other devices are performing DMA transfers.
+Recommend only the Tandy 1000 configuration of this card which has no DMA present.** 
+ 
 **Description:** An 8 bit ISA card with fully-contained compact flash card and
 XT-IDE BIOS. This simplified design uses only 3 ICs for the CF/BIOS functionality.
 It makes use of a commonly availalbe, inexpensive compact flash adapter with
