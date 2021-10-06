@@ -1,4 +1,4 @@
-19185833301587506
+19185856100764705
 00Custom
 AlignmentHole
 Hole for fitting PCB tab at right angles.
@@ -29,7 +29,7 @@ dil dip 2.54 300
 6
 00Custom
 DB9_Face
-For right angle DB-9 faceplate
+For right angle DB-9 faceplate. Cutout from: https://content.norcomp.net/rohspdfs/Connectors/PanelCutOuts/Panel_Cutout_D-Sub-Single.pdf
 
 0
 2
