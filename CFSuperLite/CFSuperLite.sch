@@ -280,7 +280,7 @@ Wire Wire Line
 Wire Wire Line
 	8550 1850 9150 1850
 Text GLabel 9150 2150 0    39   Input ~ 0
-~IOR~_DELAYED
+~IOR
 Text GLabel 9150 2050 0    39   Input ~ 0
 ~IOW
 Text GLabel 9150 950  0    39   Input ~ 0
@@ -288,12 +288,12 @@ Text GLabel 9150 950  0    39   Input ~ 0
 $Comp
 L power:GND #PWR0110
 U 1 1 60418ECC
-P 4450 2500
-F 0 "#PWR0110" H 4450 2250 50  0001 C CNN
-F 1 "GND" H 4455 2327 50  0000 C CNN
-F 2 "" H 4450 2500 50  0001 C CNN
-F 3 "" H 4450 2500 50  0001 C CNN
-	1    4450 2500
+P 4450 2400
+F 0 "#PWR0110" H 4450 2150 50  0001 C CNN
+F 1 "GND" H 4455 2227 50  0000 C CNN
+F 2 "" H 4450 2400 50  0001 C CNN
+F 3 "" H 4450 2400 50  0001 C CNN
+	1    4450 2400
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -353,31 +353,13 @@ $EndComp
 Text GLabel 6700 5600 0    39   Input ~ 0
 ~MEMW
 Text GLabel 6700 5900 0    39   Input ~ 0
-~MEMR~_DELAYED
+~MEMR
 Text GLabel 6700 5800 0    39   Input ~ 0
 ~CE~_BIOS
-Text GLabel 7900 3600 2    50   Input ~ 0
-D0_BUF
-Text GLabel 7900 3700 2    50   Input ~ 0
-D1_BUF
-Text GLabel 7900 3800 2    50   Input ~ 0
-D2_BUF
-Text GLabel 7900 3900 2    50   Input ~ 0
-D3_BUF
-Text GLabel 7900 4000 2    50   Input ~ 0
-D4_BUF
-Text GLabel 7900 4100 2    50   Input ~ 0
-D5_BUF
-Text GLabel 7900 4200 2    50   Input ~ 0
-D6_BUF
-Text GLabel 7900 4300 2    50   Input ~ 0
-D7_BUF
 Text GLabel 4950 1600 2    39   Input ~ 0
 ~CS1~_ATA
 Text GLabel 4950 1700 2    39   Input ~ 0
 ~CE~_BIOS_DECODE
-Text GLabel 4950 2100 2    39   Input ~ 0
-~IOR~_DELAYED
 Text GLabel 2600 3400 2    50   Input ~ 0
 A06
 Text GLabel 2600 3500 2    50   Input ~ 0
@@ -406,9 +388,9 @@ Text GLabel 2600 2400 2    50   Input ~ 0
 A16
 Text GLabel 2600 2500 2    50   Input ~ 0
 A15
-Text GLabel 3950 2300 0    50   Input ~ 0
+Text GLabel 4950 1800 2    50   Input ~ 0
 A19
-Text GLabel 3950 2200 0    50   Input ~ 0
+Text GLabel 4950 1900 2    50   Input ~ 0
 A18
 Text GLabel 3950 2100 0    50   Input ~ 0
 A17
@@ -621,7 +603,6 @@ NoConn ~ 1500 3100
 NoConn ~ 1500 3000
 NoConn ~ 1500 3600
 NoConn ~ 1500 2900
-NoConn ~ 2500 2000
 NoConn ~ 1500 1400
 NoConn ~ 1500 1600
 NoConn ~ 1500 1800
@@ -708,30 +689,17 @@ D1
 Text GLabel 4150 3850 0    50   Input ~ 0
 D0
 Text GLabel 4150 4750 0    39   Input ~ 0
-~IOR_OR_MEMR
+~IOR
 Text GLabel 4950 1200 2    50   Input ~ 0
 ROM_ADDR_JUMPER
 Text GLabel 4950 1300 2    50   Input ~ 0
 ATA_ADDR_JUMPER
-$Comp
-L 00Common:GAL22V10 U3
-U 1 1 604CA5F0
-P 4450 1700
-F 0 "U3" H 4650 2450 50  0000 C CNN
-F 1 "ATF/GAL22V10x-15" H 4900 2350 50  0000 C CNN
-F 2 "Package_DIP:DIP-24_W7.62mm_Socket" H 4450 1700 50  0001 C CNN
-F 3 "" H 4450 1700 50  0001 C CNN
-	1    4450 1700
-	1    0    0    -1  
-$EndComp
 Text GLabel 2600 2600 2    50   Input ~ 0
 A14
 Wire Wire Line
 	2500 2600 2600 2600
 Text GLabel 3950 1800 0    50   Input ~ 0
 RESET
-Text GLabel 4950 1800 2    39   Input ~ 0
-~MEMR
 $Comp
 L 00Common:Bus_ISA_8bit J3
 U 1 1 6039F90B
@@ -760,7 +728,7 @@ Text GLabel 4100 6700 2    39   Input ~ 0
 Wire Wire Line
 	3800 6600 4100 6600
 Text GLabel 4100 6600 2    39   Input ~ 0
-~MEMR~_DELAYED
+~MEMR
 $Comp
 L power:GND #PWR0127
 U 1 1 604E4DE7
@@ -909,109 +877,6 @@ Wire Notes Line
 Text Notes 600  6000 0    79   ~ 0
 REAL TIME CLOCK\n(OPTIONAL)
 $Comp
-L Memory_RAM:AS6C4008-55PCN U5
-U 1 1 605402C7
-P 9700 5000
-F 0 "U5" H 9850 6150 50  0000 C CNN
-F 1 "AS6C4008-55PCN" H 10150 6050 50  0000 C CNN
-F 2 "Package_DIP:DIP-32_W15.24mm_Socket" H 9700 5100 50  0001 C CNN
-F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 9700 5100 50  0001 C CNN
-	1    9700 5000
-	1    0    0    -1  
-$EndComp
-Text GLabel 9200 4100 0    50   Input ~ 0
-A00
-Text GLabel 9200 4200 0    50   Input ~ 0
-A01
-Text GLabel 9200 4300 0    50   Input ~ 0
-A02
-Text GLabel 9200 4400 0    50   Input ~ 0
-A03
-Text GLabel 9200 4500 0    50   Input ~ 0
-A04
-Text GLabel 9200 4600 0    50   Input ~ 0
-A05
-Text GLabel 9200 4700 0    50   Input ~ 0
-A06
-Text GLabel 9200 4800 0    50   Input ~ 0
-A07
-Text GLabel 9200 4900 0    50   Input ~ 0
-A08
-Text GLabel 9200 5000 0    50   Input ~ 0
-A09
-Text GLabel 9200 5100 0    50   Input ~ 0
-A10
-Text GLabel 9200 5200 0    50   Input ~ 0
-A11
-Text GLabel 9200 5300 0    50   Input ~ 0
-A12
-Text GLabel 9200 5400 0    50   Input ~ 0
-A13
-Text GLabel 9200 5500 0    50   Input ~ 0
-A14
-Text GLabel 9200 5900 0    50   Input ~ 0
-A18
-Text GLabel 9200 5800 0    50   Input ~ 0
-A17
-Text GLabel 9200 5700 0    50   Input ~ 0
-A16
-Text GLabel 9200 5600 0    50   Input ~ 0
-A15
-Text GLabel 10200 4100 2    50   Input ~ 0
-D0_BUF
-Text GLabel 10200 4200 2    50   Input ~ 0
-D1_BUF
-Text GLabel 10200 4300 2    50   Input ~ 0
-D2_BUF
-Text GLabel 10200 4400 2    50   Input ~ 0
-D3_BUF
-Text GLabel 10200 4500 2    50   Input ~ 0
-D4_BUF
-Text GLabel 10200 4600 2    50   Input ~ 0
-D5_BUF
-Text GLabel 10200 4700 2    50   Input ~ 0
-D6_BUF
-Text GLabel 10200 4800 2    50   Input ~ 0
-D7_BUF
-Text GLabel 10200 5100 2    50   Input ~ 0
-A19
-Text GLabel 10200 5200 2    39   Input ~ 0
-~MEMR~_DELAYED
-Text GLabel 10200 5300 2    39   Input ~ 0
-~MEMW
-Text Notes 8500 3750 0    79   ~ 0
-TANDY 1000 SRAM\n(OPTIONAL)
-Wire Notes Line
-	8450 3450 11150 3450
-Wire Notes Line
-	11150 3450 11150 6450
-Wire Notes Line
-	11150 6450 8450 6450
-Wire Notes Line
-	8450 6450 8450 3450
-$Comp
-L power:GND #PWR0130
-U 1 1 60513BF2
-P 9700 6100
-F 0 "#PWR0130" H 9700 5850 50  0001 C CNN
-F 1 "GND" H 9705 5927 50  0000 C CNN
-F 2 "" H 9700 6100 50  0001 C CNN
-F 3 "" H 9700 6100 50  0001 C CNN
-	1    9700 6100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0131
-U 1 1 60514347
-P 9700 3900
-F 0 "#PWR0131" H 9700 3750 50  0001 C CNN
-F 1 "VCC" H 9715 4073 50  0000 C CNN
-F 2 "" H 9700 3900 50  0001 C CNN
-F 3 "" H 9700 3900 50  0001 C CNN
-	1    9700 3900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0132
 U 1 1 6052F317
 P 2700 5000
@@ -1149,12 +1014,8 @@ F 5 "C84772,C263183" H 1700 5150 50  0001 C CNN "Part options"
 	1    1700 5150
 	1    0    0    -1  
 $EndComp
-Text GLabel 4950 2000 2    39   Input ~ 0
-~IOR_OR_MEMR
 Text GLabel 4950 1500 2    39   Input ~ 0
 ~RESET
-Text GLabel 4950 1400 2    39   Input ~ 0
-~IOR
 Wire Notes Line
 	5900 2950 5900 550 
 Wire Notes Line
@@ -1228,23 +1089,6 @@ Wire Wire Line
 Connection ~ 10500 1700
 Wire Wire Line
 	10500 1700 10500 1900
-Text GLabel 4950 1900 2    39   Input ~ 0
-~MEMR~_DELAYED
-$Comp
-L power:GND #PWR0134
-U 1 1 60C19D5B
-P 4050 5150
-F 0 "#PWR0134" H 4050 4900 50  0001 C CNN
-F 1 "GND" H 4055 4977 50  0000 C CNN
-F 2 "" H 4050 5150 50  0001 C CNN
-F 3 "" H 4050 5150 50  0001 C CNN
-	1    4050 5150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 4850 4050 4850
-Wire Wire Line
-	4050 4850 4050 5150
 Text GLabel 6700 5000 0    50   Input ~ 0
 A14
 $Comp
@@ -1419,4 +1263,37 @@ Text GLabel 6850 2300 0    50   Input ~ 0
 V20_JUMPER
 Text GLabel 6700 5200 0    50   Input ~ 0
 V20_JUMPER
+Text GLabel 7900 4300 2    50   Input ~ 0
+D7
+Text GLabel 7900 4200 2    50   Input ~ 0
+D6
+Text GLabel 7900 4100 2    50   Input ~ 0
+D5
+Text GLabel 7900 4000 2    50   Input ~ 0
+D4
+Text GLabel 7900 3900 2    50   Input ~ 0
+D3
+Text GLabel 7900 3800 2    50   Input ~ 0
+D2
+Text GLabel 7900 3700 2    50   Input ~ 0
+D1
+Text GLabel 7900 3600 2    50   Input ~ 0
+D0
+$Comp
+L 00Common:GAL16V8 U3
+U 1 1 615ED28D
+P 4450 1700
+F 0 "U3" H 4650 2450 50  0000 C CNN
+F 1 "ATF/GAL16V8x-15" H 4850 2350 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4450 1700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 4450 1700 50  0001 C CNN
+	1    4450 1700
+	1    0    0    -1  
+$EndComp
+Text GLabel 4950 1400 2    50   Input ~ 0
+AEN
+Text GLabel 4150 4850 0    39   Input ~ 0
+~CS1~_ATA
+Text GLabel 2500 2000 2    50   Input ~ 0
+AEN
 $EndSCHEMATC
