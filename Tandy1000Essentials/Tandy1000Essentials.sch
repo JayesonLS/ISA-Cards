@@ -979,8 +979,8 @@ Text GLabel 10200 5200 2    39   Input ~ 0
 ~MEMR~_DELAYED
 Text GLabel 10200 5300 2    39   Input ~ 0
 ~MEMW
-Text Notes 8500 3750 0    79   ~ 0
-TANDY 1000 SRAM\n(OPTIONAL)
+Text Notes 8500 3600 0    79   ~ 0
+512K SRAM
 Wire Notes Line
 	8450 3450 11150 3450
 Wire Notes Line
