@@ -364,7 +364,7 @@ Text GLabel 2600 3500 2    50   Input ~ 0
 A05
 Text GLabel 2600 3600 2    50   Input ~ 0
 A04
-Text GLabel 3950 1500 0    50   Input ~ 0
+Text GLabel 3950 1600 0    50   Input ~ 0
 A07
 Text GLabel 3950 1700 0    50   Input ~ 0
 A08
@@ -1271,7 +1271,7 @@ Wire Wire Line
 	6000 1700 6000 1800
 Text GLabel 4100 6800 2    39   Input ~ 0
 ~CE~_BIOS_THRU
-Text GLabel 3950 1600 0    50   Input ~ 0
+Text GLabel 3950 1500 0    50   Input ~ 0
 A06
 Text GLabel 4950 1800 2    50   Input ~ 0
 A05
