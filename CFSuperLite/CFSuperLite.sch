@@ -366,15 +366,11 @@ Text GLabel 2600 3600 2    50   Input ~ 0
 A04
 Text GLabel 3950 1500 0    50   Input ~ 0
 A07
-Text GLabel 3950 1600 0    50   Input ~ 0
-A08
 Text GLabel 3950 1700 0    50   Input ~ 0
+A08
+Text GLabel 3950 1800 0    50   Input ~ 0
 A09
-Text GLabel 3950 1400 0    50   Input ~ 0
-A06
-Text GLabel 3950 1300 0    50   Input ~ 0
-A05
-Text GLabel 3950 1200 0    50   Input ~ 0
+Text GLabel 3950 1900 0    50   Input ~ 0
 A04
 Text GLabel 2600 2100 2    50   Input ~ 0
 A19
@@ -388,14 +384,10 @@ Text GLabel 2600 2500 2    50   Input ~ 0
 A15
 Text GLabel 3950 2100 0    50   Input ~ 0
 A19
-Text GLabel 3950 2000 0    50   Input ~ 0
+Text GLabel 3950 1300 0    50   Input ~ 0
 A18
-Text GLabel 4950 1900 2    50   Input ~ 0
-A17
-Text GLabel 3950 1900 0    50   Input ~ 0
+Text GLabel 3950 1200 0    50   Input ~ 0
 A16
-Text GLabel 4950 1800 2    50   Input ~ 0
-A15
 Connection ~ 6100 5400
 Wire Wire Line
 	6700 5300 6100 5300
@@ -653,15 +645,15 @@ Text GLabel 4150 3850 0    50   Input ~ 0
 D0
 Text GLabel 4150 4750 0    39   Input ~ 0
 ~IOR
-Text GLabel 4950 1200 2    50   Input ~ 0
-ROM_ADDR_JUMPER
 Text GLabel 4950 1300 2    50   Input ~ 0
+ROM_ADDR_JUMPER
+Text GLabel 4950 1200 2    50   Input ~ 0
 ATA_ADDR_JUMPER
 Text GLabel 2600 2600 2    50   Input ~ 0
 A14
 Wire Wire Line
 	2500 2600 2600 2600
-Text GLabel 3950 1800 0    50   Input ~ 0
+Text GLabel 3950 2000 0    50   Input ~ 0
 RESET
 $Comp
 L 00Common:Bus_ISA_8bit J3
@@ -757,7 +749,7 @@ F 1 "32.768 KHz" V 1845 6181 50  0000 L CNN
 F 2 "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal" H 1800 6050 50  0001 C CNN
 F 3 "~" H 1800 6050 50  0001 C CNN
 	1    1800 6050
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	2850 6800 2650 6800
@@ -805,7 +797,7 @@ Wire Wire Line
 Wire Wire Line
 	3800 6300 3900 6300
 Text GLabel 2650 6800 0    50   Input ~ 0
-D0_BUF
+D0
 Text GLabel 2650 6700 0    50   Input ~ 0
 A00
 Text GLabel 2650 6400 0    50   Input ~ 0
@@ -838,38 +830,16 @@ Wire Notes Line
 Text Notes 600  6000 0    79   ~ 0
 REAL TIME CLOCK\n(OPTIONAL)
 $Comp
-L Device:CP C7
+L Device:CP C6
 U 1 1 60440B68
-P 6200 7050
-F 0 "C7" H 6318 7096 50  0000 L CNN
-F 1 "22uF-33uF 16-25v" V 6500 6650 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 6238 6900 50  0001 C CNN
-F 3 "~" H 6200 7050 50  0001 C CNN
-F 4 "C10785" H 6200 7050 50  0001 C CNN "LCSC"
-F 5 "C10785, C125779,  C139576" H 6200 7050 50  0001 C CNN "Part options"
-	1    6200 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0122
-U 1 1 6043C274
-P 6200 6900
-F 0 "#PWR0122" H 6200 6750 50  0001 C CNN
-F 1 "VCC" H 6215 7073 50  0000 C CNN
-F 2 "" H 6200 6900 50  0001 C CNN
-F 3 "" H 6200 6900 50  0001 C CNN
-	1    6200 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0121
-U 1 1 6043C26A
-P 6200 7200
-F 0 "#PWR0121" H 6200 6950 50  0001 C CNN
-F 1 "GND" H 6205 7027 50  0000 C CNN
-F 2 "" H 6200 7200 50  0001 C CNN
-F 3 "" H 6200 7200 50  0001 C CNN
-	1    6200 7200
+P 3200 5150
+F 0 "C6" H 3318 5196 50  0000 L CNN
+F 1 "22uF-33uF 16-25v" V 3500 4750 50  0000 L CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 3238 5000 50  0001 C CNN
+F 3 "~" H 3200 5150 50  0001 C CNN
+F 4 "C10785" H 3200 5150 50  0001 C CNN "LCSC"
+F 5 "C10785, C125779,  C139576" H 3200 5150 50  0001 C CNN "Part options"
+	1    3200 5150
 	1    0    0    -1  
 $EndComp
 Text GLabel 4950 1500 2    39   Input ~ 0
@@ -1148,7 +1118,7 @@ F 5 "" H 2200 5150 50  0001 C CNN "Part options"
 $EndComp
 $Comp
 L Device:C C5
-U 1 1 615EFBEE
+U 1 1 615EFEA0
 P 2700 5150
 F 0 "C5" H 2815 5196 50  0000 L CNN
 F 1 "0.1uF" H 2815 5105 50  0000 L CNN
@@ -1157,19 +1127,6 @@ F 3 "~" H 2700 5150 50  0001 C CNN
 F 4 " C24497" H 2700 5150 50  0001 C CNN "LCSC"
 F 5 "" H 2700 5150 50  0001 C CNN "Part options"
 	1    2700 5150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C6
-U 1 1 615EFEA0
-P 3200 5150
-F 0 "C6" H 3315 5196 50  0000 L CNN
-F 1 "0.1uF" H 3315 5105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 3238 5000 50  0001 C CNN
-F 3 "~" H 3200 5150 50  0001 C CNN
-F 4 " C24497" H 3200 5150 50  0001 C CNN "LCSC"
-F 5 "" H 3200 5150 50  0001 C CNN "Part options"
-	1    3200 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1312,4 +1269,14 @@ Wire Wire Line
 Connection ~ 6000 1700
 Wire Wire Line
 	6000 1700 6000 1800
+Text GLabel 4100 6800 2    39   Input ~ 0
+~CE~_BIOS_THRU
+Text GLabel 3950 1600 0    50   Input ~ 0
+A06
+Text GLabel 4950 1800 2    50   Input ~ 0
+A05
+Text GLabel 3950 1400 0    50   Input ~ 0
+A15
+Text GLabel 4950 1900 2    50   Input ~ 0
+A17
 $EndSCHEMATC
