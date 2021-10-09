@@ -2,7 +2,7 @@ Comment,Designator,Footprint,LCSC
 CR2032,BAT1,Battery:BatteryHolder_Keystone_103_1x20mm,C964748
 0.1uF,"C1,C2,C3,C4,C5",Capacitor_SMD:C_1206_3216Metric, C24497
 22-44uF 16-25v,C6,Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H,C10785
-IDE_CONNECTOR,J1,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,C35165
+IDE to CF adapter (mount flush and trim pins after soldering),J1,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,C35165
 CF Adapter Power,J2,Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical,C225499
 10K,"R1,R2,R3",Resistor_SMD:R_1206_3216Metric,C17902
 Options,SW1,Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm,C15781
