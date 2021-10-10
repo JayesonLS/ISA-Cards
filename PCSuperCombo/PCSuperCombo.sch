@@ -607,8 +607,6 @@ NoConn ~ 1500 3600
 NoConn ~ 1500 2900
 NoConn ~ 2500 2000
 NoConn ~ 1500 1400
-NoConn ~ 1500 1600
-NoConn ~ 1500 1800
 Wire Wire Line
 	9950 2750 10400 2750
 Wire Wire Line
@@ -675,21 +673,21 @@ Text GLabel 7400 1500 2    50   Input ~ 0
 D1_BUF
 Text GLabel 7400 1400 2    50   Input ~ 0
 D0_BUF
-Text GLabel 6400 2100 0    50   Input ~ 0
-D7
-Text GLabel 6400 2000 0    50   Input ~ 0
-D6
-Text GLabel 6400 1900 0    50   Input ~ 0
-D5
-Text GLabel 6400 1800 0    50   Input ~ 0
-D4
-Text GLabel 6400 1700 0    50   Input ~ 0
-D3
-Text GLabel 6400 1600 0    50   Input ~ 0
-D2
-Text GLabel 6400 1500 0    50   Input ~ 0
-D1
 Text GLabel 6400 1400 0    50   Input ~ 0
+D7
+Text GLabel 6400 2100 0    50   Input ~ 0
+D6
+Text GLabel 6400 1600 0    50   Input ~ 0
+D5
+Text GLabel 6400 2000 0    50   Input ~ 0
+D4
+Text GLabel 6400 1800 0    50   Input ~ 0
+D3
+Text GLabel 6400 1900 0    50   Input ~ 0
+D2
+Text GLabel 6400 1700 0    50   Input ~ 0
+D1
+Text GLabel 6400 1500 0    50   Input ~ 0
 D0
 Text GLabel 6400 2300 0    39   Input ~ 0
 ~IOR_OR_MEMR
@@ -716,17 +714,6 @@ Text GLabel 3950 1800 0    50   Input ~ 0
 RESET
 Text GLabel 4950 1800 2    39   Input ~ 0
 ~MEMR
-$Comp
-L 00Common:Bus_ISA_8bit J3
-U 1 1 6039F90B
-P 2000 2500
-F 0 "J3" H 2000 4267 50  0000 C CNN
-F 1 "Bus_ISA_8bit" H 2000 4176 50  0000 C CNN
-F 2 "00Custom:BUS_XT" H 2000 2500 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2000 2500 50  0001 C CNN
-	1    2000 2500
-	1    0    0    -1  
-$EndComp
 Text Label 2500 6300 0    50   ~ 0
 XTAL2
 Text Label 2500 6200 0    50   ~ 0
@@ -1462,10 +1449,10 @@ Text GLabel 12050 2350 0    39   Input ~ 0
 ~CARD_SEL
 Text GLabel 12650 2350 2    39   Input ~ 0
 ~CARD_SEL_ISA
-Text GLabel 1200 1700 0    39   Input ~ 0
+Text GLabel 1000 1700 0    39   Input ~ 0
 ~CARD_SEL_ISA
 Wire Wire Line
-	1500 1700 1200 1700
+	1500 1700 1000 1700
 Text GLabel 13900 1450 2    50   Input ~ 0
 BASE_RAM_0
 Text GLabel 13900 1550 2    50   Input ~ 0
@@ -1826,10 +1813,10 @@ F 5 "" H 3700 7950 50  0001 C CNN "Part options"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0153
 U 1 1 6167D171
 P 4200 7800
-F 0 "#PWR?" H 4200 7650 50  0001 C CNN
+F 0 "#PWR0153" H 4200 7650 50  0001 C CNN
 F 1 "VCC" H 4215 7973 50  0000 C CNN
 F 2 "" H 4200 7800 50  0001 C CNN
 F 3 "" H 4200 7800 50  0001 C CNN
@@ -1837,10 +1824,10 @@ F 3 "" H 4200 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0154
 U 1 1 6167D911
 P 4200 8100
-F 0 "#PWR?" H 4200 7850 50  0001 C CNN
+F 0 "#PWR0154" H 4200 7850 50  0001 C CNN
 F 1 "GND" H 4205 7927 50  0000 C CNN
 F 2 "" H 4200 8100 50  0001 C CNN
 F 3 "" H 4200 8100 50  0001 C CNN
@@ -1859,5 +1846,46 @@ F 4 " C24497" H 4200 7950 50  0001 C CNN "LCSC"
 F 5 "" H 4200 7950 50  0001 C CNN "Part options"
 	1    4200 7950
 	1    0    0    -1  
+$EndComp
+$Comp
+L 00Common:Bus_ISA_8bit J3
+U 1 1 6039F90B
+P 2000 2500
+F 0 "J3" H 2000 4267 50  0000 C CNN
+F 1 "Bus_ISA_8bit" H 2000 4176 50  0000 C CNN
+F 2 "00Custom:BUS_XT" H 2000 2500 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/Industry_Standard_Architecture" H 2000 2500 50  0001 C CNN
+	1    2000 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1800 1100 1800
+Wire Wire Line
+	1100 1800 1100 950 
+Wire Wire Line
+	1500 1600 1200 1600
+Wire Wire Line
+	1200 1600 1200 4200
+$Comp
+L power:+12V #PWR0155
+U 1 1 616413D9
+P 1100 950
+F 0 "#PWR0155" H 1100 800 50  0001 C CNN
+F 1 "+12V" H 1115 1123 50  0000 C CNN
+F 2 "" H 1100 950 50  0001 C CNN
+F 3 "" H 1100 950 50  0001 C CNN
+	1    1100 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR0156
+U 1 1 616422F6
+P 1200 4200
+F 0 "#PWR0156" H 1200 4300 50  0001 C CNN
+F 1 "-12V" H 1215 4373 50  0000 C CNN
+F 2 "" H 1200 4200 50  0001 C CNN
+F 3 "" H 1200 4200 50  0001 C CNN
+	1    1200 4200
+	-1   0    0    1   
 $EndComp
 $EndSCHEMATC
