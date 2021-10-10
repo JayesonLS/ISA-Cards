@@ -534,7 +534,7 @@ Text GLabel 2600 2600 2    50   Input ~ 0
 A14
 Wire Wire Line
 	2500 2600 2600 2600
-Text GLabel 4900 2000 2    50   Input ~ 0
+Text GLabel 5050 3800 2    50   Input ~ 0
 RESET
 Text GLabel 5050 3400 2    39   Input ~ 0
 ~MEMR
@@ -895,7 +895,7 @@ F 3 "" H 1700 8100 50  0001 C CNN
 	1    1700 8100
 	1    0    0    -1  
 $EndComp
-Text GLabel 4900 1500 2    39   Input ~ 0
+Text GLabel 5050 3700 2    39   Input ~ 0
 ~RESET
 Text GLabel 5050 3300 2    39   Input ~ 0
 ~IOR
@@ -1000,13 +1000,13 @@ F 3 "" H 12750 1050 50  0001 C CNN
 	1    12750 1050
 	1    0    0    -1  
 $EndComp
-Text GLabel 13900 2050 2    50   Input ~ 0
+Text GLabel 14050 2050 2    50   Input ~ 0
 ATA_ADDR_JUMPER
-Text GLabel 13900 1950 2    50   Input ~ 0
+Text GLabel 14050 1950 2    50   Input ~ 0
 ROM_ADDR_JUMPER
-Text GLabel 12050 2250 0    39   Input ~ 0
+Text GLabel 12050 2450 0    39   Input ~ 0
 ~CE~_BIOS
-Text GLabel 12650 2250 2    39   Input ~ 0
+Text GLabel 12650 2450 2    39   Input ~ 0
 ~CE~_BIOS_THRU
 $Comp
 L power:VCC #PWR0140
@@ -1030,7 +1030,7 @@ F 3 "" H 3200 8100 50  0001 C CNN
 	1    3200 8100
 	1    0    0    -1  
 $EndComp
-Text GLabel 13900 2150 2    50   Input ~ 0
+Text GLabel 14050 2250 2    50   Input ~ 0
 V20_JUMPER
 Text GLabel 6700 5400 0    50   Input ~ 0
 V20_JUMPER
@@ -1225,32 +1225,32 @@ Text Notes 9250 6500 0    50   ~ 0
 Text Notes 11350 6600 0    50   ~ 0
 128Kx8 for UMB only\nwhen all of 512Kx8\nneeded for base.
 $Comp
-L Switch:SW_DIP_x10 SW1
+L Switch:SW_DIP_x12 SW1
 U 1 1 61692810
-P 12350 1950
-F 0 "SW1" H 12350 2717 50  0000 C CNN
-F 1 "SW_DIP_x10" H 12350 2626 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx10_Slide_9.78x27.58mm_W7.62mm_P2.54mm" H 12350 1950 50  0001 C CNN
-F 3 "~" H 12350 1950 50  0001 C CNN
-	1    12350 1950
+P 12350 2050
+F 0 "SW1" H 12350 2817 50  0000 C CNN
+F 1 "Options" H 12350 1400 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx12_Slide_9.78x32.66mm_W7.62mm_P2.54mm" H 12350 2050 50  0001 C CNN
+F 3 "~" H 12350 2050 50  0001 C CNN
+	1    12350 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 12650 2350 2    39   Input ~ 0
+Text GLabel 12650 2550 2    39   Input ~ 0
 ~CARD_SEL
 Text GLabel 1000 1700 0    39   Input ~ 0
 ~CARD_SEL
 Wire Wire Line
 	1500 1700 1000 1700
-Text GLabel 13900 1450 2    50   Input ~ 0
+Text GLabel 14050 1450 2    50   Input ~ 0
 BASE_RAM_0
-Text GLabel 13900 1550 2    50   Input ~ 0
+Text GLabel 14050 1550 2    50   Input ~ 0
 BASE_RAM_1
-Text GLabel 13900 1650 2    50   Input ~ 0
+Text GLabel 14050 1650 2    50   Input ~ 0
 BASE_RAM_2
-Text GLabel 13900 1750 2    50   Input ~ 0
-UMB_ENABLE
-Text GLabel 13900 1850 2    50   Input ~ 0
-UBM_SIZE
+Text GLabel 14050 1750 2    50   Input ~ 0
+UMB_SIZE_0
+Text GLabel 14050 1850 2    50   Input ~ 0
+UMB_SIZE_1
 $Comp
 L power:GND #PWR0144
 U 1 1 616B1E65
@@ -1300,7 +1300,7 @@ Wire Wire Line
 	11400 2050 11400 2150
 Connection ~ 11400 2150
 Wire Wire Line
-	11400 2150 11400 2450
+	11400 2150 11400 2250
 $Comp
 L Device:R R1
 U 1 1 616D8EBF
@@ -1481,25 +1481,25 @@ Wire Wire Line
 Wire Wire Line
 	12650 1550 12900 1550
 Wire Wire Line
-	13900 1650 13050 1650
+	14050 1650 13050 1650
 Wire Wire Line
 	12650 1750 13200 1750
 Wire Wire Line
 	12650 1950 13500 1950
 Wire Wire Line
-	13900 2050 13650 2050
+	14050 2050 13650 2050
 Wire Wire Line
 	12650 2150 13800 2150
 Wire Wire Line
 	12750 1350 12750 1450
 Connection ~ 12750 1450
 Wire Wire Line
-	12750 1450 13900 1450
+	12750 1450 14050 1450
 Wire Wire Line
 	12900 1350 12900 1550
 Connection ~ 12900 1550
 Wire Wire Line
-	12900 1550 13900 1550
+	12900 1550 14050 1550
 Wire Wire Line
 	13050 1350 13050 1650
 Connection ~ 13050 1650
@@ -1509,19 +1509,19 @@ Wire Wire Line
 	13200 1350 13200 1750
 Connection ~ 13200 1750
 Wire Wire Line
-	13200 1750 13900 1750
+	13200 1750 14050 1750
 Wire Wire Line
 	13350 1350 13350 1850
 Wire Wire Line
 	12650 1850 13350 1850
 Connection ~ 13350 1850
 Wire Wire Line
-	13350 1850 13900 1850
+	13350 1850 14050 1850
 Wire Wire Line
 	13500 1350 13500 1950
 Connection ~ 13500 1950
 Wire Wire Line
-	13500 1950 13900 1950
+	13500 1950 14050 1950
 Wire Wire Line
 	13650 1350 13650 2050
 Connection ~ 13650 2050
@@ -1531,7 +1531,7 @@ Wire Wire Line
 	13800 1350 13800 2150
 Connection ~ 13800 2150
 Wire Wire Line
-	13800 2150 13900 2150
+	13800 2150 14050 2150
 $Comp
 L power:GND #PWR0114
 U 1 1 617A1B2E
@@ -1552,17 +1552,6 @@ F 1 "VCC" H 4565 3273 50  0000 C CNN
 F 2 "" H 4550 3100 50  0001 C CNN
 F 3 "" H 4550 3100 50  0001 C CNN
 	1    4550 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L 00Common:GAL16V8 U7
-U 1 1 617A2256
-P 4550 3800
-F 0 "U7" H 4750 4550 50  0000 C CNN
-F 1 "ATF/GAL16V8x-15" H 5000 4450 50  0000 C CNN
-F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4550 3800 50  0001 C CNN
-F 3 "" H 4550 3800 50  0001 C CNN
-	1    4550 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1682,9 +1671,9 @@ Text GLabel 6700 6000 0    39   Input ~ 0
 Text GLabel 3900 1500 0    50   Input ~ 0
 BASE_RAM_2
 Text GLabel 3900 1600 0    50   Input ~ 0
-UMB_ENABLE
+UMB_SIZE_0
 Text GLabel 3900 1700 0    50   Input ~ 0
-UBM_SIZE
+UMB_SIZE_1
 Text GLabel 4050 3300 0    50   Input ~ 0
 ATA_ADDR_JUMPER
 $Comp
@@ -1732,10 +1721,10 @@ LED_DRIVE
 Text GLabel 9150 2850 0    39   Input ~ 0
 ~DASP~_ATA
 $Comp
-L Device:R R9
+L Device:R R11
 U 1 1 617266A6
 P 6850 7750
-F 0 "R9" V 6750 7650 50  0000 L CNN
+F 0 "R11" V 6750 7650 50  0000 L CNN
 F 1 "180R" V 6950 7650 50  0000 L CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 6780 7750 50  0001 C CNN
 F 3 "~" H 6850 7750 50  0001 C CNN
@@ -1747,7 +1736,6 @@ Connection ~ 10300 1950
 Connection ~ 1400 1900
 Wire Wire Line
 	6900 7550 6900 7650
-NoConn ~ 4900 1400
 Text GLabel 4900 1300 2    50   Input ~ 0
 ROM_ADDR_JUMPER
 Text GLabel 3900 1400 0    50   Input ~ 0
@@ -1959,17 +1947,70 @@ F 3 "" H 1300 950 50  0001 C CNN
 $EndComp
 Text Notes 5200 1950 0    30   ~ 0
 Do not place ~CS~_RAM1\non pin 15 or 16
-NoConn ~ 5050 3700
-Text GLabel 12050 2350 0    39   Input ~ 0
+Text GLabel 12050 2550 0    39   Input ~ 0
 ~IOR_OR_MEMR
-Text GLabel 4900 1700 2    50   Input ~ 0
-MEM_DECODED
-Text GLabel 4050 4100 0    50   Input ~ 0
-MEM_DECODED
-Text GLabel 5050 3800 2    39   Input ~ 0
+Text GLabel 5050 4000 2    50   Input ~ 0
+IO_DECODED
+Text GLabel 4900 1500 2    39   Input ~ 0
 ~MEMR~_DELAYED
-Text GLabel 5050 3900 2    39   Input ~ 0
+Text GLabel 4900 2000 2    39   Input ~ 0
 ~IOR_OR_MEMR
-Text GLabel 5050 4000 2    39   Input ~ 0
+Text GLabel 4900 1400 2    39   Input ~ 0
 ~IOR~_DELAYED
+Text GLabel 4900 1700 2    50   Input ~ 0
+IO_DECODED
+$Comp
+L 00Common:GAL16V8 U7
+U 1 1 617A2256
+P 4550 3800
+F 0 "U7" H 4750 4550 50  0000 C CNN
+F 1 "ATF/GAL16V8x-15" H 5000 4450 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm_Socket" H 4550 3800 50  0001 C CNN
+F 3 "" H 4550 3800 50  0001 C CNN
+	1    4550 3800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 12050 2350
+NoConn ~ 12650 2350
+$Comp
+L power:VCC #PWR0157
+U 1 1 6166B6AD
+P 13950 1050
+F 0 "#PWR0157" H 13950 900 50  0001 C CNN
+F 1 "VCC" H 13965 1223 50  0000 C CNN
+F 2 "" H 13950 1050 50  0001 C CNN
+F 3 "" H 13950 1050 50  0001 C CNN
+	1    13950 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 6166BEF0
+P 13950 1200
+F 0 "R9" V 13900 1300 50  0000 L CNN
+F 1 "10K" V 13950 1150 50  0000 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 13880 1200 50  0001 C CNN
+F 3 "~" H 13950 1200 50  0001 C CNN
+F 4 "C17902" H 13950 1200 50  0001 C CNN "LCSC"
+	1    13950 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12650 2250 13950 2250
+Wire Wire Line
+	13950 1350 13950 2250
+Connection ~ 13950 2250
+Wire Wire Line
+	13950 2250 14050 2250
+Wire Wire Line
+	12050 2250 11400 2250
+Connection ~ 11400 2250
+Wire Wire Line
+	11400 2250 11400 2450
+Text GLabel 14050 2150 2    50   Input ~ 0
+COM1_ENABLE
+Text GLabel 4050 4100 0    50   Input ~ 0
+COM1_ENABLE
+Text GLabel 5050 3900 2    39   Input ~ 0
+~CS~_COM1
 $EndSCHEMATC
