@@ -1,4 +1,4 @@
-19185856110303331
+19190757724755588
 00Custom
 AlignmentHole
 Hole for fitting PCB tab at right angles.
@@ -90,6 +90,27 @@ Resistor Axial_DIN0309 series Axial Horizontal pin pitch 12.7mm 0.5W = 1/2W leng
 0
 2
 2
+00Custom
+SW_DIP_SPSTx04
+4x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x12.34mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
+DIP Switch SPST Slide 7.62mm 300mil
+0
+8
+8
+00Custom
+SW_DIP_SPSTx08
+8x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x22.5mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
+DIP Switch SPST Slide 7.62mm 300mil
+0
+16
+16
+00Custom
+SW_DIP_SPSTx10
+10x-dip-switch SPST , Slide, row spacing 7.62 mm (300 mils), body size 9.78x27.58mm (see e.g. https://www.ctscorp.com/wp-content/uploads/206-208.pdf)
+DIP Switch SPST Slide 7.62mm 300mil
+0
+20
+20
 00Custom
 TandyPlusLongPins
 Through hole straight pin header, 2x31, 2.54mm pitch, double rows
