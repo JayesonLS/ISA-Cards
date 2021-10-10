@@ -298,8 +298,6 @@ Text GLabel 5050 3600 2    39   Input ~ 0
 ~CS1~_ATA
 Text GLabel 4900 1600 2    39   Input ~ 0
 ~CE~_BIOS
-Text GLabel 5050 4000 2    39   Input ~ 0
-~IOR~_DELAYED
 Text GLabel 2600 3400 2    50   Input ~ 0
 A06
 Text GLabel 2600 3500 2    50   Input ~ 0
@@ -897,8 +895,6 @@ F 3 "" H 1700 8100 50  0001 C CNN
 	1    1700 8100
 	1    0    0    -1  
 $EndComp
-Text GLabel 5050 3900 2    39   Input ~ 0
-~IOR_OR_MEMR
 Text GLabel 4900 1500 2    39   Input ~ 0
 ~RESET
 Text GLabel 5050 3300 2    39   Input ~ 0
@@ -976,8 +972,6 @@ Wire Wire Line
 Connection ~ 10500 1700
 Wire Wire Line
 	10500 1700 10500 1900
-Text GLabel 5050 3800 2    39   Input ~ 0
-~MEMR~_DELAYED
 $Comp
 L power:GND #PWR0134
 U 1 1 60C19D5B
@@ -1241,12 +1235,10 @@ F 3 "~" H 12350 1950 50  0001 C CNN
 	1    12350 1950
 	1    0    0    -1  
 $EndComp
-Text GLabel 12050 2350 0    39   Input ~ 0
-~CARD_SEL
 Text GLabel 12650 2350 2    39   Input ~ 0
-~CARD_SEL_ISA
+~CARD_SEL
 Text GLabel 1000 1700 0    39   Input ~ 0
-~CARD_SEL_ISA
+~CARD_SEL
 Wire Wire Line
 	1500 1700 1000 1700
 Text GLabel 13900 1450 2    50   Input ~ 0
@@ -1687,8 +1679,6 @@ F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 11700
 $EndComp
 Text GLabel 6700 6000 0    39   Input ~ 0
 ~CE~_BIOS_THRU
-Text GLabel 5050 3700 2    39   Input ~ 0
-~CARD_SEL
 Text GLabel 3900 1500 0    50   Input ~ 0
 BASE_RAM_2
 Text GLabel 3900 1600 0    50   Input ~ 0
@@ -1697,10 +1687,6 @@ Text GLabel 3900 1700 0    50   Input ~ 0
 UBM_SIZE
 Text GLabel 4050 3300 0    50   Input ~ 0
 ATA_ADDR_JUMPER
-Text GLabel 4900 1700 2    50   Input ~ 0
-MEM_DECODED
-Text GLabel 4050 4100 0    50   Input ~ 0
-MEM_DECODED
 $Comp
 L power:VCC #PWR01
 U 1 1 6170ABDC
@@ -1762,8 +1748,6 @@ Connection ~ 1400 1900
 Wire Wire Line
 	6900 7550 6900 7650
 NoConn ~ 4900 1400
-Text Label 4900 1400 0    30   ~ 0
-PTERMS_SPARE
 Text GLabel 4900 1300 2    50   Input ~ 0
 ROM_ADDR_JUMPER
 Text GLabel 3900 1400 0    50   Input ~ 0
@@ -1973,6 +1957,19 @@ F 3 "" H 1300 950 50  0001 C CNN
 	1    1300 950 
 	1    0    0    -1  
 $EndComp
-Text Notes 5250 1950 0    30   ~ 0
+Text Notes 5200 1950 0    30   ~ 0
 Do not place ~CS~_RAM1\non pin 15 or 16
+NoConn ~ 5050 3700
+Text GLabel 12050 2350 0    39   Input ~ 0
+~IOR_OR_MEMR
+Text GLabel 4900 1700 2    50   Input ~ 0
+MEM_DECODED
+Text GLabel 4050 4100 0    50   Input ~ 0
+MEM_DECODED
+Text GLabel 5050 3800 2    39   Input ~ 0
+~MEMR~_DELAYED
+Text GLabel 5050 3900 2    39   Input ~ 0
+~IOR_OR_MEMR
+Text GLabel 5050 4000 2    39   Input ~ 0
+~IOR~_DELAYED
 $EndSCHEMATC
