@@ -623,7 +623,7 @@ F 1 "32.768 KHz" V 9445 7381 50  0000 L CNN
 F 2 "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Horizontal" H 9400 7250 50  0001 C CNN
 F 3 "~" H 9400 7250 50  0001 C CNN
 	1    9400 7250
-	0    1    1    0   
+	0    1    -1   0   
 $EndComp
 Wire Wire Line
 	10450 8000 10250 8000
@@ -710,16 +710,6 @@ F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 9700 
 	1    9700 5000
 	1    0    0    -1  
 $EndComp
-Text GLabel 9200 4100 0    50   Input ~ 0
-A00
-Text GLabel 9200 4200 0    50   Input ~ 0
-A01
-Text GLabel 9200 4300 0    50   Input ~ 0
-A02
-Text GLabel 9200 4400 0    50   Input ~ 0
-A03
-Text GLabel 9200 4500 0    50   Input ~ 0
-A04
 Text GLabel 9200 4600 0    50   Input ~ 0
 A05
 Text GLabel 9200 4700 0    50   Input ~ 0
@@ -1120,16 +1110,6 @@ Wire Notes Line
 	15950 6800 8450 6800
 Wire Notes Line
 	15950 3450 15950 6800
-Text GLabel 11200 4100 0    50   Input ~ 0
-A00
-Text GLabel 11200 4200 0    50   Input ~ 0
-A01
-Text GLabel 11200 4300 0    50   Input ~ 0
-A02
-Text GLabel 11200 4400 0    50   Input ~ 0
-A03
-Text GLabel 11200 4500 0    50   Input ~ 0
-A04
 Text GLabel 11200 4600 0    50   Input ~ 0
 A05
 Text GLabel 11200 4700 0    50   Input ~ 0
@@ -2471,4 +2451,40 @@ F 3 "" H 14400 2900 50  0001 C CNN
 	1    14400 2900
 	1    0    0    -1  
 $EndComp
+Text GLabel 9200 4500 0    50   Input ~ 0
+A00
+Text GLabel 9200 4400 0    50   Input ~ 0
+A01
+Text GLabel 9200 4300 0    50   Input ~ 0
+A02
+Text GLabel 9200 4200 0    50   Input ~ 0
+A03
+Text GLabel 9200 4100 0    50   Input ~ 0
+A04
+Text GLabel 11200 4500 0    50   Input ~ 0
+A00
+Text GLabel 11200 4400 0    50   Input ~ 0
+A01
+Text GLabel 11200 4300 0    50   Input ~ 0
+A02
+Text GLabel 11200 4200 0    50   Input ~ 0
+A03
+Text GLabel 11200 4100 0    50   Input ~ 0
+A04
+Text GLabel 7900 3800 2    50   Input ~ 0
+D0_BUF
+Text GLabel 7900 3900 2    50   Input ~ 0
+D1_BUF
+Text GLabel 7900 4000 2    50   Input ~ 0
+D2_BUF
+Text GLabel 7900 4100 2    50   Input ~ 0
+D3_BUF
+Text GLabel 7900 4200 2    50   Input ~ 0
+D4_BUF
+Text GLabel 7900 4300 2    50   Input ~ 0
+D5_BUF
+Text GLabel 7900 4400 2    50   Input ~ 0
+D6_BUF
+Text GLabel 7900 4500 2    50   Input ~ 0
+D7_BUF
 $EndSCHEMATC
